@@ -269,7 +269,7 @@ if ( $action == "edit" || $action == "new" )
 		$html .= "<p>Title: <input id=\"title\" type=\"text\" name=\"page\" /></p>\n";
 
 	if ( $action == "new" )
-		$text = "";
+		$text = NEW_FILE_CONTENT;
 
 	$html .= "<p><textarea id=\"text\" name=\"newText\" rows=\"" . EDIT_ROWS . "\">$text</textarea></p>\n";
 	$html .= "<p><input type=\"hidden\" name=\"action\" value=\"save\" />";

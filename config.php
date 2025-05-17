@@ -87,6 +87,12 @@ define('VALID_UPLOAD_TYPES', 'image/jpeg,image/pjpeg,image/png,image/gif,applica
 define('VALID_UPLOAD_EXTS', 'jpg,jpeg,png,gif,pdf,zip,dmg');
 
 // ------------------
+// File Creation settings
+// ------------------
+
+define('NEW_FILE_CONTENT', value:'<!-- Tags entered here are not visible, but are used to help search results !-->\n<div class="tags">character dwarf common-people</div>');
+
+// ------------------
 // Interface settings
 // ------------------
 
