@@ -134,9 +134,19 @@ textarea {
 	padding: 4px 4px 4px 12px;
 }
 
+.edittime {
+	margin:auto;
+	text-align: left;
+	color: #999999;	
+	font-size: 16px;	
+}
+
 .titledate {
-	font-size: 10px;
-	color: #999999;
+	padding: auto;
+	margin: auto;
+	text-align: center;
+	font-size: 18px;
+	color: #999999;	
 }
 
 .toolbar {

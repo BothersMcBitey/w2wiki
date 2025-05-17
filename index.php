@@ -530,7 +530,7 @@ print "<link type=\"text/css\" rel=\"stylesheet\" href=\"" . BASE_URI . "/" . CS
 print "<title>$title</title>\n";
 print "</head>\n";
 print "<body>\n";
-print "<div class=\"titlebar\">$title <span style=\"font-weight: normal; display: flex;\"><div class=\"edittext\">Last Edited: </div>$datetime</span></div>\n";
+print "<div class=\"titlebar\">$title <span style=\"font-weight: normal; display: flex;\"><div class=\"edittime\">Last Edited: </div>$datetime</span></div>\n";
 
 printToolbar();
 
