@@ -123,15 +123,32 @@ textarea {
 	border: solid 1px #666644;
 }
 
+.tags {
+	visibility:hidden;
+}
+
 .titlebar {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	background-color: #222222;
 	color: #ffffff;
 	font-size: 36px;
 	font-weight: bold;
 	text-align: center;
 	padding: 4px 4px 4px 12px;
+}
+
+.title {
+	display: flex;
+	justify-content: space-evenly;
+	align-content: center;
+	margin: auto;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.logo {
+	max-height: 5rem;
 }
 
 .edittime {
@@ -150,8 +167,10 @@ textarea {
 }
 
 .toolbar {
-	background-color: #777777;
-    background: -webkit-gradient(linear, left top, left bottom, from(#666666), to(#444444));
+	display:flex;
+	justify-content: space-evenly;
+	text-align: center;
+	background-color: #444444;
 	font-size: 12px;
 	padding: 4px 4px 4px 12px;
 }

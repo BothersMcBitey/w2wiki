@@ -105,22 +105,21 @@ function printToolbar()
 	global $upage, $page, $action;
 
 	print "<div class=\"toolbar\">";
-	print "<a class=\"tool first\" href=\"" . SELF . "?action=edit&amp;page=$upage\">Edit</a> ";
-	print "<a class=\"tool\" href=\"" . SELF . "?action=new\">New</a> ";
-
-	if ( !DISABLE_UPLOADS )
-		print "<a class=\"tool\" href=\"" . SELF . VIEW . "?action=upload\">Upload</a> ";
 
  	print "<a class=\"tool\" href=\"" . SELF . "?action=all_name\">All</a> ";
-	print "<a class=\"tool\" href=\"" . SELF . "?action=all_date\">Recent</a> ";
- 	print "<a class=\"tool\" href=\"" . SELF . "\">". DEFAULT_PAGE . "</a>";
- 	
+//	print "<a class=\"tool\" href=\"" . SELF . "?action=all_date\">Recent</a> ";
+// 	print "<a class=\"tool\" href=\"" . SELF . "\">". DEFAULT_PAGE . "</a>";
+
 	if ( REQUIRE_PASSWORD )
 		print '<a class="tool" href="' . SELF . '?action=logout">Exit</a>';
 
 	print "<form method=\"post\" action=\"" . SELF . "?action=search\">\n";
 	print "<input class=\"tool\" placeholder=\"Search\" size=\"6\" id=\"search\" type=\"text\" name=\"q\" /></form>\n";
-		
+
+	print "<a class=\"tool\" href=\"" . SELF . "?action=new\">New</a> ";
+	if ( !DISABLE_UPLOADS )
+		print "<a class=\"tool\" href=\"" . SELF . VIEW . "?action=upload\">Upload</a> ";
+
 	print "</div>\n";
 }
 
@@ -524,16 +523,19 @@ print "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w
 print "<html>\n";
 print "<head>\n";
 print "<link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\"/>";
-print "<link rel=\"icon\" href=\"icon.png\">";
+print "<link rel=\"icon\" href=\"/w2/images/icon.png\">";
 print "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=false\" />\n";
 
 print "<link type=\"text/css\" rel=\"stylesheet\" href=\"" . BASE_URI . "/" . CSS_FILE ."\" />\n";
 print "<title>$title</title>\n";
 print "</head>\n";
 print "<body>\n";
-print "<div class=\"titlebar\"><img class=\"logo\" src=\"icon.png\">$title <span style=\"font-weight: normal; display: flex;\"><div class=\"edittext\">Last Edited: </div>$datetime</span></div>\n";
 
 printToolbar();
+
+print "<div class=\"titlebar\"><a href=\"/w2/index.php\"><img class=\"logo\" src=\"/w2/images/icon.png\"></a><div class=\"title\">$title</div><span style=\"font-weight: normal; display: flex;\"><div class=\"edittime\">Last Edited: </div>$datetime</span></div>\n";
+//	print "<a class=\"tool first\" href=\"" . SELF . "?action=edit&amp;page=$upage\">Edit</a> ";
+
 
 print "<div class=\"main\">\n";
 print "$html\n";
@@ -543,3 +545,4 @@ print "</body>\n";
 print "</html>\n";
 
 ?>
+
