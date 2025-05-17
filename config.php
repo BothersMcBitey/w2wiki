@@ -90,7 +90,7 @@ define('VALID_UPLOAD_EXTS', 'jpg,jpeg,png,gif,pdf,zip,dmg');
 // File Creation settings
 // ------------------
 
-define('NEW_FILE_CONTENT', value:'<!-- Tags entered here are not visible, but are used to help search results !-->' . PHP_EOL . '<div class="tags">character dwarf common-people</div>');
+define('NEW_FILE_CONTENT', value:'<!-- Tags entered here are not visible, but are used to help search results !-->' . PHP_EOL . '<div class="tags">character dwarf common-people</div>' . PHP_EOL . PHP_EOL . "# Page Title" . PHP_EOL . "content");
 
 // ------------------
 // Interface settings
