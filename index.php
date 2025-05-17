@@ -106,19 +106,19 @@ function printToolbar()
 
 	print "<div class=\"toolbar\">";
 
- 	print "<a class=\"tool\" href=\"" . SELF . "?action=all_name\">All</a> ";
-//	print "<a class=\"tool\" href=\"" . SELF . "?action=all_date\">Recent</a> ";
-// 	print "<a class=\"tool\" href=\"" . SELF . "\">". DEFAULT_PAGE . "</a>";
+	print "<div class=\"look\">";
+	print "<form method=\"post\" action=\"" . SELF . "?action=search\">\n";
+	print "<input class=\"tool\" autocomplete=\"on\" placeholder=\"Search\" size=\"30\" id=\"search\" type=\"text\" name=\"q\" /></form>\n";
+ 	print "<a class=\"tool\" href=\"" . SELF . "?action=all_name\">See All Pages</a> ";
+	print "</div>";
 
+	print "<div class=\"build\">";
+	print "<a class=\"tool\" href=\"" . SELF . "?action=new\">New Entry</a> ";
+	if ( !DISABLE_UPLOADS )
+		print "<a class=\"tool\" href=\"" . SELF . VIEW . "?action=upload\">Upload Image</a> ";
+	print "</div>";
 	if ( REQUIRE_PASSWORD )
 		print '<a class="tool" href="' . SELF . '?action=logout">Exit</a>';
-
-	print "<form method=\"post\" action=\"" . SELF . "?action=search\">\n";
-	print "<input class=\"tool\" placeholder=\"Search\" size=\"6\" id=\"search\" type=\"text\" name=\"q\" /></form>\n";
-
-	print "<a class=\"tool\" href=\"" . SELF . "?action=new\">New</a> ";
-	if ( !DISABLE_UPLOADS )
-		print "<a class=\"tool\" href=\"" . SELF . VIEW . "?action=upload\">Upload</a> ";
 
 	print "</div>\n";
 }
