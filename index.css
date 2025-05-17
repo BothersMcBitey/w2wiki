@@ -13,9 +13,11 @@
 * {
 	font-family: Helvetica, sans-serif;
 	font-size: 13px;
-	margin: 0;
-	padding: 0;
 	border: 1px solid black;
+}
+
+body {
+	margin: 0;
 }
 
 blockquote {
@@ -129,7 +131,7 @@ textarea {
 
 .titlebar {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	background-color: #222222;
 	color: #ffffff;
 	font-size: 36px;
@@ -140,30 +142,65 @@ textarea {
 
 .title {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: flex-start;
 	align-content: center;
 	margin: auto;
+	padding-left: 0.5em;
+	width: 80%;
 	font-size: 1.4em;
 	font-weight: bold;
 }
 
+.titlebar .a {
+	display: flex;
+
+}
+
 .logo {
-	max-height: 5rem;
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo img {
+	max-height: 8rem;
+	min-height: 4rem;
 }
 
 .edittime {
-	margin:auto;
-	text-align: left;
+	text-align: right;
 	color: #999999;	
-	font-size: 16px;	
+	font-size: 12px;	
 }
 
 .titledate {
-	padding: auto;
-	margin: auto;
-	text-align: center;
-	font-size: 18px;
+	text-align: right;
+	font-size: 16px;
 	color: #999999;	
+}
+
+.edit-div {
+	width: 30%;
+	font-weight: normal;
+	display: flex;
+	flex-direction: row;
+}
+
+.edit-div .tool {
+	margin-right: 0em;
+}
+
+.edit-div div {
+	margin: auto;
+	margin-bottom: 0;
+	display: flex;
 }
 
 .toolbar {
@@ -176,9 +213,7 @@ textarea {
 }
 
 a.tool {
-	font-size: 11px;
-	margin-right: 8px;
-	color: #eeeeee;
+	color: white;
 }
 
 input.tool {

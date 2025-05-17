@@ -533,12 +533,13 @@ print "<body>\n";
 
 printToolbar();
 
-print "<div class=\"titlebar\"><a href=\"/w2/index.php\"><img class=\"logo\" src=\"/w2/images/icon.png\"></a>" .
-	"<div class=\"title\">$title</div><span style=\"font-weight: normal; display: flex;\">" .
-	"<a class=\"tool first\" href=\"" . SELF . "?action=edit&amp;page=$upage\">Edit</a> " .
-	"<div class=\"edittime\">Last Edited: </div>$datetime</span></div>\n";
-
-//	print "<a class=\"tool first\" href=\"" . SELF . "?action=edit&amp;page=$upage\">Edit</a> ";
+print "<div class=\"titlebar\">" .
+	"<div class=\"logo\"><a href=\"/w2/index.php\"><img src=\"/w2/images/icon.png\"></a></div>" .
+	"<div class=\"title\">$title</div>" .
+	"<div class=\"edit-div\"> " .
+		"<div><a class=\"tool first\" href=\"" . SELF . "?action=edit&amp;page=$upage\">Edit Page</a> </div>" .
+		"<div class=\"edittime\">Last Edited: </div> <div>$datetime</div>" .
+	"</div></div>\n";
 
 print "<div class=\"main\">\n";
 print "$html\n";
