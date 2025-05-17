@@ -514,7 +514,7 @@ else
 	}
 }
 
-// Disable caching on the client (the iPhone is pretty agressive about this
+// Disable caching on the client (the iPhone is pretty aggressive about this
 // and it can cause problems with the editing function)
 
 header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
@@ -530,7 +530,7 @@ print "<link type=\"text/css\" rel=\"stylesheet\" href=\"" . BASE_URI . "/" . CS
 print "<title>$title</title>\n";
 print "</head>\n";
 print "<body>\n";
-print "<div class=\"titlebar\">$title <span style=\"font-weight: normal;\">$datetime</span></div>\n";
+print "<div class=\"titlebar\">$title <span style=\"font-weight: normal; display: flex;\">Last Edited: $datetime</span></div>\n";
 
 printToolbar();
 
