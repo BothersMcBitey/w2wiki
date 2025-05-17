@@ -12,7 +12,7 @@
  
 * {
 	font-family: Helvetica, sans-serif;
-	font-size: 13px;
+	font-size: 10pt;
 	border: 0px solid black;
 }
 
@@ -35,19 +35,19 @@ li {
 }
 
 h1 {
-	font-size: 20px;
+	font-size: 20pt;
 	font-weight: bold;
 	margin-bottom: 8px;
 }
 
 h2 {
-	font-size: 16px;
+	font-size: 16pt;
 	font-weight: bold;
 	margin-bottom: 8px;
 }
 
 h3 {
-	font-size: 13px;
+	font-size: 14pt;
 	font-weight: bold;
 	margin-bottom: 8px;
 }
@@ -81,7 +81,7 @@ p {
 
 pre {
 	font-family: Menlo, Courier, monospace;
-	font-size: 11px;
+	font-size: 12pt;
 	margin-left: 12px;
 	margin-bottom: 12px;
 
@@ -95,7 +95,7 @@ pre {
 
 code {
 	font-family: Menlo, Courier, monospace;
-	font-size: 14pt;
+	font-size: 12pt;
 }
 
 table {
@@ -108,7 +108,7 @@ table, td {
 
 textarea {
 	font-family: Menlo, Courier, monospace;
-	font-size: 14pt;
+	font-size: 12pt;
 	width: 99%;
 	background-color: #ffffee;
 }
@@ -137,7 +137,7 @@ textarea {
 	justify-content: space-evenly;
 	background-color: #222222;
 	color: #ffffff;
-	font-size: 36px;
+	font-size: 36pt;
 	font-weight: bold;
 	text-align: center;
 	padding: 4px 4px 4px 12px;
@@ -180,12 +180,12 @@ textarea {
 .edittime {
 	text-align: right;
 	color: #999999;	
-	font-size: 12px;	
+	font-size: 12pt;	
 }
 
 .titledate {
 	text-align: right;
-	font-size: 16px;
+	font-size: 16pt;
 	color: #999999;	
 }
 
