@@ -13,7 +13,7 @@
 * {
 	font-family: Helvetica, sans-serif;
 	font-size: 13px;
-	margin: 0;
+	margin: 1px black;
 	padding: 0;
 }
 
@@ -123,6 +123,8 @@ textarea {
 }
 
 .titlebar {
+	display: flexbox;
+
 	background-color: #222222;
 	color: #ffffff;
 	font-size: 18px;
