@@ -524,6 +524,7 @@ print "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w
 print "<html>\n";
 print "<head>\n";
 print "<link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\"/>";
+print "<link rel=\"icon\" href=\"logo.png\">";
 print "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=false\" />\n";
 
 print "<link type=\"text/css\" rel=\"stylesheet\" href=\"" . BASE_URI . "/" . CSS_FILE ."\" />\n";
