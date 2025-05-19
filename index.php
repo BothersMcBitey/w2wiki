@@ -548,7 +548,7 @@ print "$html\n";
 print "</div>\n";
 
 print "</body>\n";
-print "<script src=\"/make_toc.js\"></script>";
+print "<script src=\"/w2/make_toc.js\"></script>";
 print "</html>\n";
 
 ?>
