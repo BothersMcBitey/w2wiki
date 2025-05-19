@@ -539,7 +539,8 @@ print "<div class=\"titlebar\">" .
 	"<div class=\"title\">$title</div>" .
 	"<div class=\"edit-div\"> " .
 		"<div><a class=\"tool first\" href=\"" . SELF . "?action=edit&amp;page=$upage\">Edit Page</a> </div>" .
-		"<div class=\"edittime\">Last Edited: </div> <div>$datetime</div>" .
+		"<div class=\"edittime\">Last Edited:</div>" .
+		"<div>$datetime</div>" .
 	"</div></div>\n";
 
 print "<div class=\"main\">\n";
