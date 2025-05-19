@@ -108,7 +108,7 @@ function printToolbar()
 
 	print "<div class=\"look\">";
 	print "<form method=\"post\" action=\"" . SELF . "?action=search\">\n";
-	print "<input class=\"tool\" autocomplete=\"on\" placeholder=\"Search\" size=\"30\" id=\"search\" type=\"text\" name=\"q\" /></form>\n";
+	print "<input class=\"tool\" autocomplete=\"on\" placeholder=\"Search all pages and tags...\" size=\"30\" id=\"search\" type=\"text\" name=\"q\" /></form>\n";
  	print "<a class=\"tool\" href=\"" . SELF . "?action=all_name\">See All Pages</a> ";
 	print "</div>";
 
@@ -548,6 +548,7 @@ print "$html\n";
 print "</div>\n";
 
 print "</body>\n";
+print "<script src=\"./make_toc.js\"></script>";
 print "</html>\n";
 
 ?>
