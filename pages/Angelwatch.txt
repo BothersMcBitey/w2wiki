@@ -17,7 +17,7 @@ The kingdom of Angelwatch and its namesake city sits on the south end of The Kin
 ### Factions
 
 #### Circus of Potas
-This is a combination of college, guild, and theater of magic users. The circus specialises in the training of illusion and enchantment magic, as well as bardic magic of all kinds. As the name suggests, they have a significant connection to the cult of Potas.
+This is a combination of college, guild, and theater of magic users. The circus specializes in the training of illusion and enchantment magic, as well as bardic magic of all kinds. As the name suggests, they have a significant connection to the cult of Potas.
 
 #### The Circle of Vahit
 
