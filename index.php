@@ -547,6 +547,7 @@ print "<div class=\"main\">\n";
 print "$html\n";
 print "</div>\n";
 
+print "<div id=\"foot\"></div>";
 print "</body>\n";
 print "<script src=\"/w2/make_toc.js\"></script>";
 print "</html>\n";
