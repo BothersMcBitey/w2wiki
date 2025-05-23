@@ -110,7 +110,7 @@ function printToolbar()
 
 	print "<div>";
 	print "<form class=\"tool\" method=\"post\" action=\"" . SELF . "?action=search\">\n";
-	print "<input autocomplete=\"on\" placeholder=\"Search all pages and tags...\" size=\"30\" id=\"search\" type=\"text\" name=\"q\" /></form>\n";
+	print "<input autocomplete=\"on\" placeholder=\"Search all pages and tags...\" size=\"35\" id=\"search\" type=\"text\" name=\"q\" /></form>\n";
  	print "<a class=\"tool\" href=\"" . SELF . "?action=all_name\">See All Pages</a> ";
 	print "</div>";
 
