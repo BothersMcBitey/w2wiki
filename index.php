@@ -285,7 +285,8 @@ if ( $action == "edit" || $action == "new" )
 	if ( $action == "new" )
 		$text = NEW_FILE_CONTENT;
 
-	$html .= "<p><textarea id=\"text\" name=\"newText\" rows=\"" . EDIT_ROWS . "\">$text</textarea></p>\n";
+	//$html .= "<p><textarea id=\"text\" name=\"newText\" rows=\"" . EDIT_ROWS . "\">$text</textarea></p>\n";
+	$html .= "<textarea id=\"text\" name=\"newText\" rows=\"" . EDIT_ROWS . "\">$text</textarea>\n";
 	$html .= "<p><a href=\"/w2/index.php/Markdown Syntax\">Guide to Markdown</a></p>";
 	$html .= "<p><input type=\"hidden\" name=\"action\" value=\"save\" />";
 	$html .= "<input id=\"save\" type=\"submit\" value=\"Save\" />\n";
