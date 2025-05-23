@@ -63,6 +63,12 @@ main form {
 	flex-direction: column;
 }
 
+footer {
+	width: 100%;
+	background-color: #444444;
+	min-height: 50px;
+}
+
 blockquote {
 	background-color: #f0f8f0;
 	margin: 0px 0px 12px 20px;
