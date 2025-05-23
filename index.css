@@ -54,7 +54,8 @@ header {
 
 main {	
 	background-color: white;
-	padding: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	margin: 0 10vw;
 	display: flex;
 	flex-direction: column;
@@ -65,7 +66,8 @@ main {
 main, .padding {
 	max-width: 1500px;
 	width: 75vw;
-	padding: inherit 2.5vw;
+	padding-left: 2.5vw;
+	padding-right: 2.5vw;
 }
 
 main form {
