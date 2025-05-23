@@ -356,7 +356,7 @@ else if ( $action == "save" )
 
 	if ( $success )	{
 		$html = "<p class=\"note\">Saved</p>\n";
-		shell_exec("")
+		shell_exec("/w2/commit_change.sh $page");
 	}
 	else
 		$html = "<p class=\"note\">Error saving changes! Make sure your web server has write access to " . PAGES_PATH . "</p>\n";
