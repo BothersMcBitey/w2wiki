@@ -82,6 +82,8 @@ if ( REQUIRE_PASSWORD && !isset($_SESSION['password']) )
 
 // Support functions
 
+// makes an <a> tag in the form of  "/rootdir/index.php/[match]", where match is the name of a page (in theory)
+//		if the page doesn't exist, it sends you to a weird empty page. So that's an issue.
 function _handle_links($match)
 {
 	return "<a href=\"" . SELF . VIEW . "/" . htmlentities($match[1]) . "\">" . htmlentities($match[1]) . "</a>";
@@ -145,8 +147,10 @@ function toHTML($inText)
 {
 	global $page;
 	
+	// removes any html <script> tags
 	$inText = preg_replace("/<[\/]*script>/", "", $inText);                
 
+	// not sure what this bit does. Something about looping through the Pages directory?
 	$dir = opendir(PAGES_PATH);
 	while ( $filename = readdir($dir) )
 	{
@@ -158,20 +162,29 @@ function toHTML($inText)
 	}
 	closedir($dir);
 	
+	// sorting for some reason?
 	uasort($filenames, "descLengthSort"); 
 
+	//
 	if ( AUTOLINK_PAGE_TITLES )
 	{	
 		foreach ( $filenames as $filename )
 		{
+			// this does a negative lookbehind and also a negative lookahead. Seems to be checking for directory/excess path stuff?
 	 		$inText = preg_replace("/(?<![\>\[\/])($filename)(?!\]\>)/im", "<a href=\"" . SELF . VIEW . "/$filename\">\\1</a>", $inText);
 		}
 	}
 	
+	// this bit looks for page links somehow
+	// trims the double brackets [[X]] that surround a name, then makes it an html <a> tag
 	$inText = preg_replace_callback("/\[\[(.*?)\]\]/", '_handle_links', $inText);
+	//this bit looks for image embeds somehow
 	$inText = preg_replace_callback("/\{\{(.*?)\}\}/", '_handle_images', $inText);
+	// replaces text of "message:[email@address]" to a mailto link
 	$inText = preg_replace_callback("/message:(.*?)\s/", '_handle_message', $inText);
 
+	// this uses the defaultTransform method defined in MarkdownInterface.php and implemented in Markdown.php
+	// but some of it is probably overridden in MarkdownExtra.php
 	$html = MarkdownExtra::defaultTransform($inText);
 	$inText = htmlentities($inText);
 
@@ -258,6 +271,7 @@ else
 	}
 }
 
+// Check all actions - if none apply, render the current document
 if ( $action == "edit" || $action == "new" )
 {
 	$formAction = SELF . (($action == 'edit') ? "/$page" : "");
@@ -340,8 +354,10 @@ else if ( $action == "save" )
 	$success = file_put_contents($filename, $newText);
  	error_reporting($errLevel);
 
-	if ( $success )	
+	if ( $success )	{
 		$html = "<p class=\"note\">Saved</p>\n";
+		shell_exec("")
+	}
 	else
 		$html = "<p class=\"note\">Error saving changes! Make sure your web server has write access to " . PAGES_PATH . "</p>\n";
 
