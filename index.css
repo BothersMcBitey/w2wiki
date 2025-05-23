@@ -54,15 +54,18 @@ header {
 
 main {	
 	background-color: white;
-	padding: 1em 2.5vw;
+	padding: 1em;
 	margin: 0 10vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	font-size: 14pt;
+}
+
+main, .padding {
 	max-width: 1500px;
 	width: 75vw;
-	/*height: 100%;*/
+	padding: inherit 2.5vw;
 }
 
 main form {
@@ -83,7 +86,6 @@ main .content {
 	background-color: white;
 	flex-grow: 1;
 	min-height: 0px;
-	width: 80vw;
 }
 
 footer {
