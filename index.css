@@ -26,6 +26,13 @@ body {
 	width: 50%;
 }
 
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
 blockquote {
 	background-color: #f0f8f0;
 	margin: 0px 0px 12px 20px;
@@ -127,6 +134,7 @@ textarea {
 .tb-element {
 	display: flex;
 	color: red;
+	padding: 1em;
 }
 
 .main {	
@@ -160,7 +168,6 @@ textarea {
 	font-weight: bold;
 	text-align: center;
 	padding: 4px 4px 4px 12px;
-	width: 100%;
 }
 
 .title {
@@ -231,7 +238,6 @@ textarea {
 	background-color: #444444;
 	padding: 0.5em 1em;
 	padding-top: 1em;
-	width: 100%;
 }
 
 img {
