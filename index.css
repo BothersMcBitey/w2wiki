@@ -33,7 +33,7 @@ blockquote {
 }
 
 form {
-	display: inline;
+	display: flex;
 }
 
 li {
@@ -126,6 +126,7 @@ textarea {
 
 .tb-element {
 	display: flex;
+	color: red;
 }
 
 .main {	
