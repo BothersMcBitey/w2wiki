@@ -52,7 +52,7 @@ main {
 	max-width: 1500px;
 }
 
-form {
+main form {
 	display: flex;
 	flex-direction: column;
 	min-width: 75vw;
