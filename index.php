@@ -287,6 +287,7 @@ if ( $action == "edit" || $action == "new" )
 
 	//$html .= "<p><textarea id=\"text\" name=\"newText\" rows=\"" . EDIT_ROWS . "\">$text</textarea></p>\n";
 	$html .= "<textarea id=\"text\" name=\"newText\" rows=\"" . EDIT_ROWS . "\">$text</textarea>\n";
+	$html .= "<script src=\"/w2/textbox_scale.js\"></script>";
 	$html .= "<p><a href=\"/w2/index.php/Markdown Syntax\">Guide to Markdown</a></p>";
 	$html .= "<p><input type=\"hidden\" name=\"action\" value=\"save\" />";
 	$html .= "<input id=\"save\" type=\"submit\" value=\"Save\" />\n";
