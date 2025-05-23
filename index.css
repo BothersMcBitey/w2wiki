@@ -77,9 +77,9 @@ main .content {
 	flex-direction: column;
 }
 
-main .content * {
+/*main .content * {
 	flex-grow: 1;
-}
+}*/
 
 main .padding {
 	background-color: blue;
