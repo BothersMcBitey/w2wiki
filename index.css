@@ -75,6 +75,10 @@ main .content {
 	height: 100%;
 }
 
+main .content * {
+	flex-grow: 1;
+}
+
 main .padding {
 	background-color: blue;
 	flex-grow: 1;
