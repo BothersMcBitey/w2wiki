@@ -33,6 +33,16 @@ header {
 	width: 100%;
 }
 
+.main {	
+	background-color: white;
+	padding: 1em 2.5vw;
+	margin: 0 10vw;
+	display: flex;
+	flex-direction: column;
+	font-size: 14pt;
+	max-width: 1500px;
+}
+
 blockquote {
 	background-color: #f0f8f0;
 	margin: 0px 0px 12px 20px;
@@ -135,26 +145,28 @@ a {
 	color: white;
 }
 
-.main {	
-	background-color: white;
-	padding: 1em 2.5vw;
-	margin: 0 10vw;
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.toolbar {
+	display:flex;
+	justify-content: space-between;
+	align-content: center;
+	text-align: center;
+	background-color: #444444;
+	padding: 0.5em 1em;
+	padding-top: 1em;
+}
+
+.toolbar div {
 	display: flex;
-	flex-direction: column;
-	font-size: 14pt;
-	max-width: 1500px;
 }
 
-.note {
-	background-color: #ffffcc;
-	padding: 4px;
-	margin: 0 8px 8px 8px;
-	color: #666644;
-	border: solid 1px #666644;
-}
-
-.tags {
-	visibility:hidden;
+.tool {
+	display: flex;
+	padding: 0 1em;
 }
 
 .titlebar {
@@ -202,20 +214,6 @@ a {
 	min-height: 4rem;
 }
 
-.edittime {
-	padding-bottom:3px;
-	font-size: 10pt;
-	text-align: right;
-	color: #999999;	
-	margin: 0 0 1em 1em;
-}
-
-.titledate {
-	font-size: 10pt;
-	text-align: right;
-	color: #999999;	
-}
-
 .edit-div {
 	width: 30%;
 	font-weight: normal;
@@ -231,26 +229,28 @@ a {
 	display: flex;
 }
 
-.toolbar {
-	display:flex;
-	justify-content: space-between;
-	align-content: center;
-	text-align: center;
-	background-color: #444444;
-	padding: 0.5em 1em;
-	padding-top: 1em;
+.edittime {
+	padding-bottom:3px;
+	font-size: 10pt;
+	text-align: right;
+	color: #999999;	
+	margin: 0 0 1em 1em;
 }
 
-.toolbar div {
-	display: flex;
+.titledate {
+	font-size: 10pt;
+	text-align: right;
+	color: #999999;	
 }
 
-.tool {
-	display: flex;
-	padding: 0 1em;
+.note {
+	background-color: #ffffcc;
+	padding: 4px;
+	margin: 0 8px 8px 8px;
+	color: #666644;
+	border: solid 1px #666644;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.tags {
+	visibility:hidden;
 }
