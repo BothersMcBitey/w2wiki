@@ -356,8 +356,9 @@ else if ( $action == "save" )
 
 	if ( $success )	{
 		$html = "<p class=\"note\">Saved</p>\n";
-		$return_code = shell_exec("./commit_change.sh $page");
-		shell_exec("echo $return_code >> log.txt");
+		$return_code = `git log -1 >> fuck.log`;
+		//$return_code = shell_exec("./commit_change.sh $page");
+		//shell_exec("echo $return_code >> log.txt");
 	}
 	else
 		$html = "<p class=\"note\">Error saving changes! Make sure your web server has write access to " . PAGES_PATH . "</p>\n";
