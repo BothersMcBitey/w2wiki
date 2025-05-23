@@ -63,10 +63,16 @@ main form {
 	flex-direction: column;
 }
 
+main .padding {
+	background-color: blue;
+}
+
 footer {
 	width: 100%;
 	background-color: #444444;
 	min-height: 50px;
+	text-align: center;
+	color: white;
 }
 
 blockquote {
