@@ -1,3 +1,3 @@
 console.log("hi")
 
-document.getElementById("foot").innerHTML += "<h1>HI THERE</h1>";
+document.getElementsByTagName("footer").innerHTML += "<h1>HI THERE</h1>";

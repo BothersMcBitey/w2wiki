@@ -574,7 +574,7 @@ print "$html\n";
 #print "</div>\n";
 print "</main>\n";
 
-print "<div id=\"foot\"></div>";
+print "<footer></footer>";
 print "</body>\n";
 print "<script src=\"/w2/make_toc.js\"></script>";
 print "</html>\n";
