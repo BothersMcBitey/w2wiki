@@ -69,6 +69,8 @@ main form {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 main .content {
@@ -189,9 +191,9 @@ table, td {
 
 textarea {
 	font-size: 12pt;
-	width: 100%;
+	width: 90%;
 	background-color: #fafafa;
-	padding: 1em 0;
+	padding: 1em;
 }
 
 
