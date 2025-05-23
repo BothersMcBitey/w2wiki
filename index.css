@@ -78,6 +78,7 @@ main .content {
 main .padding {
 	background-color: blue;
 	flex-grow: 1;
+	min-height: 10px;
 }
 
 footer {
