@@ -86,6 +86,7 @@ main .content {
 	background-color: white;
 	flex-grow: 1;
 	min-height: 0px;
+	padding:0;
 }
 
 footer {
