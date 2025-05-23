@@ -16,6 +16,10 @@
 	/*border: 0px solid black;*/
 }
 
+html {
+	height: 100%;
+}
+
 a {
 	color: blue;
 	text-decoration: none;
@@ -56,15 +60,18 @@ main {
 	font-size: 14pt;
 	max-width: 1500px;
 	width: 75vw;
+	height: 100%;
 }
 
 main form {
 	display: flex;
 	flex-direction: column;
+	height: 100%;
 }
 
 main .padding {
 	background-color: blue;
+	flex-grow: 1;
 }
 
 footer {
