@@ -11,3 +11,5 @@ fi
 git add ./pages/*
 
 git commit -m "$1"
+
+exit 0
