@@ -6,18 +6,11 @@ message:mail@site.com
 He's like a dwarf or something
 {{armour.png}}
 
-[[dwarf]]
 
-[[qsar]]
-
-This is a new line
-
-and again
-
-whhhy
-asd
-asfdsdasgdg
+asfdsdasgdgfuck
 And also this?
 
 
 but it isn't workingsdgsdg
+
+asdasd
