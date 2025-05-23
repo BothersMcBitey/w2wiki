@@ -16,6 +16,14 @@
 	/*border: 0px solid black;*/
 }
 
+a {
+	color: blue;
+}
+
+header a {
+	color: white;
+}
+
 body {
 	margin: 0;
 	background-color: cornsilk;
@@ -39,18 +47,21 @@ main {
 	margin: 0 10vw;
 	display: flex;
 	flex-direction: column;
+
 	font-size: 14pt;
 	max-width: 1500px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	min-width: 75vw;
 }
 
 blockquote {
 	background-color: #f0f8f0;
 	margin: 0px 0px 12px 20px;
 	padding-top: 4px 10px 4px 10px;
-}
-
-form {
-	display: flex;
 }
 
 li {
@@ -141,9 +152,6 @@ textarea {
 	padding: 1em;
 }
 
-a {
-	color: white;
-}
 
 img {
     max-width: 100%;
