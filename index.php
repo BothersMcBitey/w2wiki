@@ -572,10 +572,11 @@ print "<main>\n";
 print "<div class=\"content\">\n";
 print "$html\n";
 print "</div>\n";
-print "<div class=\"padding\"></div>";
 print "</main>\n";
 
-//print "<footer id=\"foot\"></footer>";
+print "<div class=\"padding\"></div>";
+
+print "<footer id=\"foot\"></footer>";
 print "</body>\n";
 print "<script src=\"/w2/make_toc.js\"></script>";
 print "</html>\n";
