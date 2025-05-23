@@ -356,7 +356,10 @@ else if ( $action == "save" )
 
 	if ( $success )	{
 		$html = "<p class=\"note\">Saved</p>\n";
-		$return_code = `git log -1 >> fuck.log`;
+		
+		// Auto committing to a git repo is on pause for now. 
+		//
+		//$return_code = `git log -1 >> fuck.log`;
 		//$return_code = shell_exec("./commit_change.sh $page");
 		//shell_exec("echo $return_code >> log.txt");
 	}
@@ -550,6 +553,8 @@ print "<title>$title</title>\n";
 print "</head>\n";
 print "<body>\n";
 
+print "<header>\n";
+
 printToolbar();
 
 print "<div class=\"titlebar\">" .
@@ -561,9 +566,13 @@ print "<div class=\"titlebar\">" .
 		"<div>$datetime</div>" .
 	"</div></div>\n";
 
+print "</header>\n";
+
+print "<main>\n";
 print "<div class=\"main\">\n";
 print "$html\n";
 print "</div>\n";
+print "<\main>\n";
 
 print "<div id=\"foot\"></div>";
 print "</body>\n";
