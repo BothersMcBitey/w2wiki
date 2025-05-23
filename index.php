@@ -108,19 +108,19 @@ function printToolbar()
 
 	print "<div class=\"toolbar\">";
 
-	print "<div class=\"tb-element\">";
-	print "<form class=\"tb-element\" method=\"post\" action=\"" . SELF . "?action=search\">\n";
-	print "<input class=\"tb-element\" autocomplete=\"on\" placeholder=\"Search all pages and tags...\" size=\"30\" id=\"search\" type=\"text\" name=\"q\" /></form>\n";
- 	print "<a class=\"tb-element\" href=\"" . SELF . "?action=all_name\">See All Pages</a> ";
+	print "<div>";
+	print "<form class=\"tool\" method=\"post\" action=\"" . SELF . "?action=search\">\n";
+	print "<input autocomplete=\"on\" placeholder=\"Search all pages and tags...\" size=\"30\" id=\"search\" type=\"text\" name=\"q\" /></form>\n";
+ 	print "<a class=\"tool\" href=\"" . SELF . "?action=all_name\">See All Pages</a> ";
 	print "</div>";
 
-	print "<div class=\"tb-element\">";
-	print "<a class=\"tb-element\" href=\"" . SELF . "?action=new\">New Entry</a> ";
+	print "<div>";
+	print "<a class=\"tool\" href=\"" . SELF . "?action=new\">New Entry</a> ";
 	if ( !DISABLE_UPLOADS )
-		print "<a class=\"tb-element\" href=\"" . SELF . VIEW . "?action=upload\">Upload Image</a> ";
+		print "<a class=\"tool\" href=\"" . SELF . VIEW . "?action=upload\">Upload Image</a> ";
 	print "</div>";
 	if ( REQUIRE_PASSWORD )
-		print '<a class="tb-element" href="' . SELF . '?action=logout">Exit</a>';
+		print '<a class="tool" href="' . SELF . '?action=logout">Exit</a>';
 
 	print "</div>\n";
 }

@@ -131,12 +131,6 @@ textarea {
 	padding: 1em;
 }
 
-.tb-element {
-	display: flex;
-	color: red;
-	padding: 1em;
-}
-
 .main {	
 	background-color: white;
 	padding: 1em 2.5vw;
@@ -238,6 +232,14 @@ textarea {
 	background-color: #444444;
 	padding: 0.5em 1em;
 	padding-top: 1em;
+}
+
+.toolbar div {
+	display: flex;
+}
+
+.tool {
+	display: flex;
 }
 
 img {
