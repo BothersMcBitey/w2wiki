@@ -23,7 +23,7 @@ body {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	width: 50%;
+	width: 100%;
 }
 
 header {
@@ -131,6 +131,10 @@ textarea {
 	padding: 1em;
 }
 
+a {
+	color: white;
+}
+
 .main {	
 	background-color: white;
 	padding: 1em 2.5vw;
@@ -203,6 +207,7 @@ textarea {
 	font-size: 10pt;
 	text-align: right;
 	color: #999999;	
+	margin: 0 0 1em 1em;
 }
 
 .titledate {
@@ -216,10 +221,12 @@ textarea {
 	font-weight: normal;
 	display: flex;
 	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-end;
 }
 
 .edit-div div {
-	margin: auto;
+	margin: 0 1em;
 	margin-bottom: 1em;
 	display: flex;
 }
@@ -240,6 +247,7 @@ textarea {
 
 .tool {
 	display: flex;
+	padding: 0 1em;
 }
 
 img {
