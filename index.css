@@ -124,6 +124,10 @@ textarea {
 	padding: 1em;
 }
 
+.tb-element {
+	display: flex;
+}
+
 .main {	
 	background-color: white;
 	padding: 1em 2.5vw;
@@ -225,6 +229,7 @@ textarea {
 .toolbar {
 	display:flex;
 	justify-content: space-between;
+	align-content: center;
 	text-align: center;
 	background-color: #444444;
 	padding: 0.5em 1em;
