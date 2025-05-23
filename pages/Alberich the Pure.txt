@@ -1,2 +1,11 @@
+message:mail@site.com
+
+<script>
+	console.log("CHERES");
+</script>
 He's like a dwarf or something
 {{armour.png}}
+
+[[dwarf]]
+
+[[qsar]]
