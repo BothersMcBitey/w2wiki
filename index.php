@@ -569,9 +569,9 @@ print "<div class=\"titlebar\">" .
 print "</header>\n";
 
 print "<main>\n";
-print "<div class=\"main\">\n";
+#print "<div class=\"main\">\n";
 print "$html\n";
-print "</div>\n";
+#print "</div>\n";
 print "</main>\n";
 
 print "<div id=\"foot\"></div>";
