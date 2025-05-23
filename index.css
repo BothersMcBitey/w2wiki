@@ -184,11 +184,17 @@ img {
 	display: flex;
 	justify-content: flex-start;
 	align-content: center;
-	margin: auto;
+	margin: auto 0;
 	padding-left: 0.5em;
 	width: 80%;
 	font-size: 1em;
 	font-weight: bold;
+}
+
+@media (max-width:1350px){
+	.title {
+		width: 50%;
+	}
 }
 
 .titlebar .a {
