@@ -356,7 +356,7 @@ else if ( $action == "save" )
 
 	if ( $success )	{
 		$html = "<p class=\"note\">Saved</p>\n";
-		$return_code = shell_exec("/w2/commit_change.sh $page");
+		$return_code = shell_exec("./commit_change.sh $page");
 		shell_exec("echo $return_code >> log.txt");
 	}
 	else
