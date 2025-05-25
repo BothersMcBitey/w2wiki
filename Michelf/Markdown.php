@@ -892,6 +892,7 @@ class Markdown implements MarkdownInterface {
 	 * @return string
 	 */
 	protected function doHeaders($text) {
+		debug_to_console($text);
 		/**
 		 * Setext-style headers:
 		 *	  Header 1
