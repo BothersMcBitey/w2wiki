@@ -579,7 +579,7 @@ print "<div class=\"titlebar\">" .
 print "</header>\n";
 
 print "<main>\n";
-print "<div class=\"content\">\n";
+print "<div id=\"markdown-content\" class=\"content\">\n";
 print "$html\n";
 print "</div>\n";
 print "</main>\n";

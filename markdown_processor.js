@@ -10,4 +10,4 @@ function process_md(content){
     console.log(content)
 }
 
-process_md(document.getElementById("content"))
+process_md(document.getElementById("markdown-content"))
