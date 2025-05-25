@@ -42,7 +42,7 @@ class Markdown implements MarkdownInterface {
 		$parser_class = static::class;
 
 		debug_to_console("HELP ME");
-		debug_to_console($text);
+		#debug_to_console($text);
 		debug_to_console("Huh");
 		// Try to take parser from the static parser list
 		static $parser_list;
