@@ -11,7 +11,7 @@ function inject_header_ids(content){
     for(var id_count = 0; id_count < h_tags.length; id_count++){
         //console.log(h_tags[id_count])
         h_name = h_tags[id_count].innerHTML
-        h_name = hname.replace(/\s/g, "-")
+        h_name = h_name.replace(/\s/g, "-")
         console.log(h_name)
         h_tags[id_count].id = h_name
     }
