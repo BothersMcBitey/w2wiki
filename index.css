@@ -184,6 +184,7 @@ pre {
 code {
 	font-family: Menlo, Courier, monospace;
 	font-size: 12pt;
+	border: 1px solid black;
 }
 
 table {
