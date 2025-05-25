@@ -82,6 +82,14 @@ if ( REQUIRE_PASSWORD && !isset($_SESSION['password']) )
 
 // Support functions
 
+function debug_to_console($data) {
+    $output = $data;
+    if (is_array($output))
+        $output = implode(',', $output);
+
+    echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
+}
+
 // makes an <a> tag in the form of  "/rootdir/index.php/[match]", where match is the name of a page (in theory)
 //		if the page doesn't exist, it sends you to a weird empty page. So that's an issue.
 function _handle_links($match)

@@ -968,6 +968,7 @@ class Markdown implements MarkdownInterface {
 	 * @return string
 	 */
 	protected function _generateIdFromHeaderValue($headerValue) {
+		debug_to_console($headerValue);
 		if (!is_callable($this->header_id_func)) {
 			return "";
 		}
