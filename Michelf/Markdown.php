@@ -251,7 +251,7 @@ class Markdown implements MarkdownInterface {
 
 		# Run document gamut methods.
 		foreach ($this->document_gamut as $method => $priority) {
-			debug_to_console(''. $method .''. $text);
+			#debug_to_console(''. $method .''. $text);
 			$text = $this->$method($text);
 		}
 
