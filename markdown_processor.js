@@ -7,10 +7,10 @@ function make_toc(){
 }
 
 function inject_header_ids(content){
-    var h12_tags = content.querySelectorAll("h1, h2")/*getElementsByTagName("h1") + content.getElementsByTagName("h2")*/
-    for(var id_count = 0; id_count < h12_tags.length; id_count++){
-        console.log(h12_tags[id_count])
-        h12_tags[id_count].id = h12_tags[id_count].innerHTML
+    var h_tags = content.querySelectorAll("h1, h2, h3, h4, h5, h6")
+    for(var id_count = 0; id_count < h_tags.length; id_count++){
+        console.log(h_tags[id_count])
+        h_tags[id_count].id = h_tags[id_count].innerHTML
     }
 }
 
