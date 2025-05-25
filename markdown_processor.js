@@ -7,7 +7,7 @@ function make_toc(){
 }
 
 function inject_header_ids(content){
-    h1_tags = content.getElementsByTagName("h1")
+    var h1_tags = content.getElementsByTagName("h1") + content.getElementsByTagName("h2")
     for(var id_count = 0; id_count < h1_tags.length; id_count++){
         console.log(h1_tags[id_count])
     }
