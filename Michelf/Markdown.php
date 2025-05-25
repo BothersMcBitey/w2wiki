@@ -20,6 +20,14 @@ class Markdown implements MarkdownInterface {
 	 */
 	const MARKDOWNLIB_VERSION = "2.0";
 
+	function debug_to_console($data) {
+		$output = $data;
+		if (is_array($output))
+			$output = implode(',', $output);
+
+		echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
+	}	
+
 	/**
 	 * Simple function interface - Initialize the parser and return the result
 	 * of its transform method. This will work fine for derived classes too.
