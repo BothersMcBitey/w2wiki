@@ -41,6 +41,8 @@ class Markdown implements MarkdownInterface {
 		// Take parser class on which this function was called.
 		$parser_class = static::class;
 
+		debug_to_console("HELP ME");
+		debug_to_console($text);
 		// Try to take parser from the static parser list
 		static $parser_list;
 		$parser =& $parser_list[$parser_class];
