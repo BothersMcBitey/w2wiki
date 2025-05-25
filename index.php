@@ -591,5 +591,7 @@ print "</body>\n";
 print "<script src=\"/w2/make_toc.js\"></script>";
 print "</html>\n";
 
+debug_to_console($action);
+
 ?>
 
