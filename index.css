@@ -10,6 +10,35 @@
  *
  */
  
+ /* FONT IMPORTING*/
+   /* Ubuntu Mono*/
+  	@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+	.ubuntu-mono-regular {
+		font-family: "Ubuntu Mono", monospace;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	.ubuntu-mono-bold {
+		font-family: "Ubuntu Mono", monospace;
+		font-weight: 700;
+		font-style: normal;
+	}
+
+	.ubuntu-mono-regular-italic {
+		font-family: "Ubuntu Mono", monospace;
+		font-weight: 400;
+		font-style: italic;
+	}
+
+	.ubuntu-mono-bold-italic {
+		font-family: "Ubuntu Mono", monospace;
+		font-weight: 700;
+		font-style: italic;
+	}
+
+ /* END FONTS */
+
 * {
 	font-family: Helvetica, sans-serif;
 	font-size: 12pt;
@@ -182,9 +211,12 @@ pre {
 }
 
 code {
-	font-family: Menlo, Courier, monospace;
+	font-family: "Ubuntu Mono", Menlo, Courier, monospace;
 	font-size: 12pt;
 	border: 1px solid black;
+	border-radius: 3px;
+	background-color: aliceblue;
+	padding: 0 0.2em;
 }
 
 table {
