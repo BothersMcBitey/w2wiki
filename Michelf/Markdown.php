@@ -251,6 +251,7 @@ class Markdown implements MarkdownInterface {
 
 		# Run document gamut methods.
 		foreach ($this->document_gamut as $method => $priority) {
+			debug_to_console(''. $method .''. $text);
 			$text = $this->$method($text);
 		}
 
@@ -904,7 +905,7 @@ class Markdown implements MarkdownInterface {
 	 */
 	protected function doHeaders($text) {
 		debug_to_console("HI THERE");
-		debug_to_console($text);
+		#debug_to_console($text);
 		/**
 		 * Setext-style headers:
 		 *	  Header 1
