@@ -15,6 +15,7 @@ function inject_header_ids(content){
 
 function process_md(content){
     console.log(content)
+    inject_header_ids(content)
 }
 
 process_md(document.getElementById("markdown-content"))
