@@ -14,6 +14,10 @@ function toggleScrollButton() {
     //document.getElementById("bottom").style.visibility = "hidden"
   }
 
+  console.log("=========================================")
+  console.log(document.body.scrollTop)
+  console.log(document.body.scrollHeight)
+  console.log(document.body.scrollHeight - 100)
   if (document.body.scrollTop < (document.body.scrollHeight - 100)) { // || document.documentElement.scrollTop > 40) {
     //console.log("show")
     document.getElementById("bottom").style.visibility = "visible"
