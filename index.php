@@ -578,7 +578,7 @@ print "<div class=\"titlebar\">" .
 
 print "</header>\n";
 
-print "<div class=\"float_button top\">" . 
+print "<div id=\"top\" class=\"float_button\">" . 
     	"<a href=\"#body\">Jump to Top</a>" .
 	  "</div>";
 
@@ -588,7 +588,7 @@ print "$html\n";
 print "</div>\n";
 print "</main>\n";
 
-print "<div class=\"float_button bottom\">" . 
+print "<div id=\"bottom\" class=\"float_button\">" . 
     	"<a href=\"#foot\">Jump to Bottom</a>" .
 	  "</div>";
 

@@ -359,12 +359,12 @@ img {
   text-decoration: none;
 }
 
-.top {
+#top {
   top: 50px;
   right: 10vw;
 }
 
-.bottom {
+#bottom {
   bottom: 50px;
   right: 10vw;
 }
