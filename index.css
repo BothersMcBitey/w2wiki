@@ -345,7 +345,7 @@ img {
 }
 
 .float_button {
-  display: none;
+  visibility: none;
   position: fixed;
   text-align: center;
   border: 1px solid gray;
