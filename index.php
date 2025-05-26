@@ -579,9 +579,9 @@ print "<div class=\"titlebar\">" .
 print "</header>\n";
 
 print "<main id=\"main\">\n";
-print "<div class=\"float_button\">" . 
-    	"<a href=\"#main\">Go to top</a>" . //"<asp:Button ID=\"Button\" runat=\"server\" onclick=\"SaveButton_Click\" Text=\"button\" / >" .
-	  "</div>";
+print "<div class=\"button_anchor\"><div class=\"float_button\">" . 
+    	"<a href=\"#main\">^ Go to top</a>" . //"<asp:Button ID=\"Button\" runat=\"server\" onclick=\"SaveButton_Click\" Text=\"button\" / >" .
+	  "</div></div>";
 
 print "<div id=\"markdown-content\" class=\"content\">\n";
 print "$html\n";
