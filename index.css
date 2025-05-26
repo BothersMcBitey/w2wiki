@@ -345,7 +345,6 @@ img {
 }
 
 .float_button {
-  visibility: hidden;
   position: fixed;
   text-align: center;
   border: 1px solid gray;
@@ -360,11 +359,13 @@ img {
 }
 
 #top {
+  visibility: hidden;
   top: 50px;
   right: 10vw;
 }
 
 #bottom {
+  visibility: visible;
   bottom: 50px;
   right: 10vw;
 }
