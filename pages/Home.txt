@@ -7,19 +7,6 @@ For full documentation, please read README.txt, included with the distribution.
 
 Click here to learn more about the [[Markdown Syntax]]. What about [[qsar]]?
 
-[[Alberich the Pure]]
-sdg
-sdg
-sdg
-sdg
-sdg
-sdg
-sdg
-sdg
-sdg
-sdg
-sdg
-sdg
-sdg
-sdg
-sdg
+{{gq_worldmap_big.jpg}}
+
+jg

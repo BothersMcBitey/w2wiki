@@ -1,0 +1,33 @@
+<!-- Tags entered here are not visible, but are used to help search results !-->
+<div class="tags">to do list</div>
+
+# Feature List
+
+## Backlog
+- page revision history 
+- automated backup
+- predictive/suggested search
+- autocomplete/suggested link in editor
+  - Maybe an `autocreate links` button at the bottom
+- Tab input allowed in browser editor
+- Something to stop like, Alberich and alberich pages being made
+- ToC generation
+- line up edit text in title bar
+- line numbers in editor?
+- footer
+- Extract GQ stuff so this can be released
+- image gallery?
+  - allow tags on images?
+  - both of these are non-markdown features
+- autoindent on editor
+- md prettier function?
+- fix the weird bullet point spacing
+
+## In Progress
+- within-page links
+  - jump to top/bottom floating buttons
+
+## Done
+- Auto scaling of editing boxes
+- hidden tags in pages
+- box around `code` blocks

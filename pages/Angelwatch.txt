@@ -1,4 +1,4 @@
-<!-- Tags entered here are not visible, but are used to help search results !-->
+<!-- Tags entered here are not visible but are used to help search results !-->
 <div class="tags"> location place city kingdom common-people</div>
 
 # Angelwatch
@@ -27,11 +27,11 @@ This is a druidic circle based in the nearby forest, inspired directly by the te
 
 Founded and run by “The Great Wizard Angstrom” (as he styles himself), this local school of magic takes in students from as young as 5 human-year-equivalents. It’s not very big \- maybe 30 students \- and entirely taught by Angstrom.
 
-#### The Mancer Corp {#the-mancer-corp}
+#### The Mancer Corp
 
 A branch of the Angelwatch military which specializes in war magic, the Mancer Corp has been significantly damaged by the changes brought by the Marian Empire. 
 
-#### The School of Economancy & Vocation {#the-school-of-economancy-&-vocation}
+#### The School of Economancy & Vocation
 
 Far from being a school, this is actually a guild of merchants dealing in magical goods and services, which has members all across the King’s Road.
 
@@ -57,7 +57,7 @@ Archmancer Valoron has held his position for nearly 40 years, and shares his Que
 
 #### The Mancer Camp
 
-See [The Watchers’ Nest](#the-watchers’-nest). This section of The Nest is dedicated to the training of war magic and storage of magical weapons. 
+See [The Watchers’ Nest](#The-Watchers’-Nest). This section of The Nest is dedicated to the training of war magic and storage of magical weapons. 
 
 #### Angstrom’s Academy
 
@@ -67,7 +67,7 @@ The academy consists of 2 locations: Angstrom’s mansion, where most classes ar
 
 The circus is held in a large circus tent in the center of the city’s largest park. It has been enchanted to be much, much bigger on the inside so that it can fit all the facilities needed to operate under one roof.
 
-#### Magic Stores and Services {#magic-stores-and-services}
+#### Magic Stores and Services
 
 ##### Tonics & Phonics
 
@@ -358,7 +358,7 @@ The leader of the kingdom’s military.
 
 ### Locations
 
-#### The Watchers’ Nest {#the-watchers’-nest}
+#### The Watchers’ Nest
 
 The home base for the city’s military.
 
