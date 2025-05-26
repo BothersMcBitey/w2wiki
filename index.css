@@ -339,6 +339,14 @@ img {
 	margin-right: 1em;
 }
 
+.float_button {
+   position: fixed;
+   top: 900px;
+   right: 90px;   
+   text-align: center;   
+   border: 1px solid red; 
+}
+
 .note {
 	background-color: #ffffcc;
 	padding: 4px;
