@@ -596,7 +596,10 @@ print "<div class=\"padding\"></div>";
 
 print "<footer id=\"foot\"></footer>";
 print "</body>\n";
+
 print "<script src=\"/w2/markdown_processor.js\"></script>";
+print "<script src=\"/w2/fancy_scroll.js\"></script>";
+
 print "</html>\n";
 
 #debug_to_console($action);

@@ -9,368 +9,374 @@
  * Written with Coda: <http://panic.com/coda/>
  *
  */
- 
- /* FONT IMPORTING*/
-   /* Ubuntu Mono*/
-  	@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-	.ubuntu-mono-regular {
-		font-family: "Ubuntu Mono", monospace;
-		font-weight: 400;
-		font-style: normal;
-	}
 
-	.ubuntu-mono-bold {
-		font-family: "Ubuntu Mono", monospace;
-		font-weight: 700;
-		font-style: normal;
-	}
+/* FONT IMPORTING*/
+/* Ubuntu Mono*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.ubuntu-mono-regular {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
 
-	.ubuntu-mono-regular-italic {
-		font-family: "Ubuntu Mono", monospace;
-		font-weight: 400;
-		font-style: italic;
-	}
+.ubuntu-mono-bold {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
 
-	.ubuntu-mono-bold-italic {
-		font-family: "Ubuntu Mono", monospace;
-		font-weight: 700;
-		font-style: italic;
-	}
+.ubuntu-mono-regular-italic {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
 
- /* END FONTS */
+.ubuntu-mono-bold-italic {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* END FONTS */
 
 * {
-	font-family: Helvetica, sans-serif;
-	font-size: 12pt;
-	/*border: 0px solid black;*/
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
+  /*border: 0px solid black;*/
 }
 
 html {
-	height: 100%;
+  height: 100%;
 }
 
 a {
-	color: blue;
-	text-decoration: none;
+  color: blue;
+  text-decoration: none;
 }
 
 header a {
-	color: white;
+  color: white;
 }
 
 body {
-	margin: 0;
-	background-color: cornsilk;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	width: 100%;
-	height:100%;
+  margin: 0;
+  background-color: cornsilk;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 
-	background-position: center;
-	background-image: url(/w2/images/gq_worldmap_big.jpg);
-	background-attachment: fixed;
-	background-size: cover;
+  background-position: center;
+  background-image: url(/w2/images/gq_worldmap_big.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 header {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 
-main {	
-	background-color: white;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	margin: 0 10vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	font-size: 14pt;
+main {
+  background-color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 14pt;
 }
 
 main form {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	justify-content: flex-start;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 main .content {
-	/*height: 100%;*/
-	display: flex;
-	flex-direction: column;
+  /*height: 100%;*/
+  display: flex;
+  flex-direction: column;
 }
 
 .padding {
-	background-color: white;
-	flex-grow: 1;
-	min-height: 0px;
-	padding:0;
+  background-color: white;
+  flex-grow: 1;
+  min-height: 0px;
+  padding: 0;
 }
 
-main, .padding {
-	max-width: 1500px;
-	width: 75vw;
-	padding-left: 2.5vw;
-	padding-right: 2.5vw;
+main,
+.padding {
+  max-width: 1500px;
+  width: 75vw;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
 }
 
 footer {
-	width: 100%;
-	background-color: #444444;
-	min-height: 50px;
-	text-align: center;
-	color: white;
-	display: flex;
-    flex-direction: column;
+  width: 100%;
+  background-color: #444444;
+  min-height: 50px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
 
-header, footer {
-	flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: auto;
+header,
+footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
 }
 
 blockquote {
-	background-color: #f0f8f0;
-	margin: 0px 0px 12px 20px;
-	padding-top: 4px 10px 4px 10px;
+  background-color: #f0f8f0;
+  margin: 0px 0px 12px 20px;
+  padding-top: 4px 10px 4px 10px;
 }
 
 li {
-	line-height: 1.5em;
+  line-height: 1.5em;
 }
 
-h1, h2, h3, h4, h5 {
-	margin-top: 0.7rem;
-	margin-bottom: 0;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0.7rem;
+  margin-bottom: 0;
 }
 
 h1 {
-	font-size: 20pt;
-	font-weight: bold;
-/*	margin-bottom: 8px;*/
+  font-size: 20pt;
+  font-weight: bold;
+  /*	margin-bottom: 8px;*/
 }
 
 h2 {
-	font-size: 16pt;
-	font-weight: bold;
-/*	margin-bottom: 8px;*/
+  font-size: 16pt;
+  font-weight: bold;
+  /*	margin-bottom: 8px;*/
 }
 
 h3 {
-	font-size: 14pt;
-	font-weight: bold;
-/*	margin-bottom: 8px;*/
+  font-size: 14pt;
+  font-weight: bold;
+  /*	margin-bottom: 8px;*/
 }
 
 hr {
-	border-top: 1px solid #cccccc;
-	border-bottom: 0;
-	border-left: 0;
-	border-right: 0;
-	margin-top: 12px;
-	margin-bottom: 12px;
+  border-top: 1px solid #cccccc;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 ul {
-	padding-left: 12px;
-	margin-left: 12px;
-	margin-bottom: 12px;
-	list-style-position: inside;
+  padding-left: 12px;
+  margin-left: 12px;
+  margin-bottom: 12px;
+  list-style-position: inside;
 }
 
 ol {
-	margin-left: 12px;
-	margin-bottom: 12px;
-	padding-left: 12px;
-        list-style-position: inside;
+  margin-left: 12px;
+  margin-bottom: 12px;
+  padding-left: 12px;
+  list-style-position: inside;
 }
 
 p {
-	margin: 12px 12px 12px 12px;
+  margin: 12px 12px 12px 12px;
 }
 
 pre {
-	font-family: Menlo, Courier, monospace;
-	font-size: 12pt;
-	margin-left: 12px;
-	margin-bottom: 12px;
+  font-family: Menlo, Courier, monospace;
+  font-size: 12pt;
+  margin-left: 12px;
+  margin-bottom: 12px;
 
-	/* stroke each browser so that they wrap lines in the pre tag */
-	white-space: pre-wrap;       /* css-3 */
-	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-	white-space: -pre-wrap;      /* Opera 4-6 */
-	white-space: -o-pre-wrap;    /* Opera 7 */
-	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  /* stroke each browser so that they wrap lines in the pre tag */
+  white-space: pre-wrap; /* css-3 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
 code {
-	font-family: "Ubuntu Mono", Menlo, Courier, monospace;
-	font-size: 12pt;
-	border: 1px solid black;
-	border-radius: 3px;
-	background-color: aliceblue;
-	padding: 0 0.2em;
+  font-family: "Ubuntu Mono", Menlo, Courier, monospace;
+  font-size: 12pt;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: aliceblue;
+  padding: 0 0.2em;
 }
 
 table {
-	border-collapse: collapse;
+  border-collapse: collapse;
 }
 
-table, td {
-	padding: 2px;
+table,
+td {
+  padding: 2px;
 }
 
 textarea {
-	font-size: 12pt;
-	width: 90%;
-	background-color: #fafafa;
-	padding: 1em;
+  font-size: 12pt;
+  width: 90%;
+  background-color: #fafafa;
+  padding: 1em;
 }
 
-
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .toolbar {
-	display:flex;
-	justify-content: space-between;
-	align-content: center;
-	text-align: center;
-	background-color: #444444;
-	padding: 0.5em 1em;
-	padding-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+  background-color: #444444;
+  padding: 0.5em 1em;
+  padding-top: 1em;
 }
 
 .toolbar div {
-	display: flex;
+  display: flex;
 }
 
 .tool {
-	display: flex;
-	padding: 0 1em;
+  display: flex;
+  padding: 0 1em;
 }
 
 .titlebar {
-	display: flex;
-	justify-content: space-evenly;
-	background-color: #222222;
-	color: #ffffff;
-	font-size: 36pt;
-	font-weight: bold;
-	text-align: center;
-	padding: 4px 4px 4px 12px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #222222;
+  color: #ffffff;
+  font-size: 36pt;
+  font-weight: bold;
+  text-align: center;
+  padding: 4px 4px 4px 12px;
 }
 
 .title {
-	display: flex;
-	justify-content: flex-start;
-	align-content: center;
-	margin: auto 0;
-	padding-left: 0.5em;
-	width: 80%;
-	font-size: 1em;
-	font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  margin: auto 0;
+  padding-left: 0.5em;
+  width: 80%;
+  font-size: 1em;
+  font-weight: bold;
 }
 
-@media (max-width:1400px){
-	.title {
-		width: 50%;
-	}
+@media (max-width: 1400px) {
+  .title {
+    width: 50%;
+  }
 }
 
 .titlebar .a {
-	display: flex;
-
+  display: flex;
 }
 
 .logo {
-	width: 10%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo a {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo img {
-	max-height: 8rem;
-	min-height: 4rem;
+  max-height: 8rem;
+  min-height: 4rem;
 }
 
 .edit-div {
-	width: 30%;
-	font-weight: normal;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: flex-end;
+  width: 30%;
+  font-weight: normal;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .edit-div div {
-	margin-bottom: 1em;
-	display: flex;
+  margin-bottom: 1em;
+  display: flex;
 }
 
 .edittime {
-	padding-bottom:3px;
-	font-size: 10pt;
-	text-align: right;
-	color: #999999;	
-	margin: 0 0.5em 1em 2em;
+  padding-bottom: 3px;
+  font-size: 10pt;
+  text-align: right;
+  color: #999999;
+  margin: 0 0.5em 1em 2em;
 }
 
 .titledate {
-	font-size: 10pt;
-	text-align: right;
-	color: #999999;	
-	margin-right: 1em;
+  font-size: 10pt;
+  text-align: right;
+  color: #999999;
+  margin-right: 1em;
 }
 
 .float_button {
-   position: fixed;
-   text-align: center;   
-   border: 1px solid black;
-   background-color: aliceblue;
-   border-radius: 10px;
-   padding: 0.2em 
+  display: none;
+  position: fixed;
+  text-align: center;
+  border: 1px solid gray;
+  background-color: yellowgreen;
+  border-radius: 10px;
+  padding: 0.2em;
 }
 
 .float_button a {
-	color: black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 .top {
-	top: 50px;
-	right: 10vw; 
+  top: 50px;
+  right: 10vw;
 }
 
 .bottom {
-	bottom: 50px;
-	right: 10vw; 
+  bottom: 50px;
+  right: 10vw;
 }
 
 .note {
-	background-color: #ffffcc;
-	padding: 4px;
-	margin: 0 8px 8px 8px;
-	color: #666644;
-	border: solid 1px #666644;
+  background-color: #ffffcc;
+  padding: 4px;
+  margin: 0 8px 8px 8px;
+  color: #666644;
+  border: solid 1px #666644;
 }
 
 .tags {
-	visibility:hidden;
+  visibility: hidden;
 }
