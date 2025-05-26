@@ -25,9 +25,9 @@
 
 ## In Progress
 - within-page links
-  - jump to top/bottom floating buttons
 
 ## Done
 - Auto scaling of editing boxes
 - hidden tags in pages
 - box around `code` blocks
+- jump to top/bottom floating buttons
