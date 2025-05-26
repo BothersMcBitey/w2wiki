@@ -561,7 +561,7 @@ print "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, 
 print "<link type=\"text/css\" rel=\"stylesheet\" href=\"" . BASE_URI . "/" . CSS_FILE ."\" />\n";
 print "<title>$title</title>\n";
 print "</head>\n";
-print "<body>\n";
+print "<body id=\"body\">\n";
 
 print "<header>\n";
 
@@ -578,15 +578,19 @@ print "<div class=\"titlebar\">" .
 
 print "</header>\n";
 
-print "<main id=\"main\">\n";
-print "<div class=\"button_anchor\"><div class=\"float_button\">" . 
-    	"<a href=\"#main\">^ Go to top</a>" . //"<asp:Button ID=\"Button\" runat=\"server\" onclick=\"SaveButton_Click\" Text=\"button\" / >" .
-	  "</div></div>";
+print "<div class=\"float_button top\">" . 
+    	"<a href=\"#body\">Jump to Top</a>" .
+	  "</div>";
 
+print "<main id=\"main\">\n";
 print "<div id=\"markdown-content\" class=\"content\">\n";
 print "$html\n";
 print "</div>\n";
 print "</main>\n";
+
+print "<div class=\"float_button bottom\">" . 
+    	"<a href=\"#foot\">Jump to Bottom</a>" .
+	  "</div>";
 
 print "<div class=\"padding\"></div>";
 

@@ -339,24 +339,28 @@ img {
 	margin-right: 1em;
 }
 
-.button_anchor{
-	position: relative;
-}
-
 .float_button {
-   position: absolute;
-   top: 900px;
-   right: 90px;   
+   position: fixed;
    text-align: center;   
    border: 1px solid black;
    background-color: aliceblue;
-   border-radius: 3px;
+   border-radius: 10px;
    padding: 0.2em 
 }
 
 .float_button a {
 	color: black;
 	text-decoration: none;
+}
+
+.float_button .top {
+	top: 50px;
+	right: 10vw; 
+}
+
+.float_button .bottom {
+	bottom: 50px;
+	right: 10vw; 
 }
 
 .note {
