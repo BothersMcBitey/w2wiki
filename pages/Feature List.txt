@@ -10,6 +10,7 @@
 - autocomplete/suggested link in editor
   - Maybe an `autocreate links` button at the bottom
 - Tab input allowed in browser editor
+  - [interesting related stackoverflow post](https://stackoverflow.com/questions/69983667/ability-to-enter-tab-characters-in-a-textfield)
 - Something to stop like, Alberich and alberich pages being made
 - ToC generation
 - line up edit text in title bar
@@ -20,11 +21,16 @@
   - allow tags on images?
   - both of these are non-markdown features
 - autoindent on editor
-- md prettier function?
+- md prettier function on save
 - fix the weird bullet point spacing
+- The idea of a graph-like structure between pages (related to Xanadu) is intriguing. This must be thought on.
+- The markdown guide is big and clunky.
+  - make a slimmer, simpler version (leaving the big one available ofc)
+  - Find a way to have the 'guide' visible/available without leaving the page; people should be able to get stuck into the flow of creating, not checking a manual every 30 seconds.
 
 ## In Progress
 - within-page links
+- jump floating buttons are still in weird places. and ugly
 
 ## Done
 - Auto scaling of editing boxes

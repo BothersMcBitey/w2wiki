@@ -1,5 +1,7 @@
 <!-- Help --!>
-<div class="tags">character dwarf common-people</div>
+<div class="tags">character common-people</div>
 
 
 asfasf
+
+dwarf 
