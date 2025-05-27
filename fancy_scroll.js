@@ -15,7 +15,7 @@ function toggleScrollButton() {
     //document.getElementById("bottom").style.visibility = "hidden"
   }
 
-  if (document.body.scrollTop < (document.body.scrollHeight - document.body.clientHeight - 50)) { // || document.documentElement.scrollTop > 40) {
+  if (document.body.scrollTop < (document.body.scrollHeight - document.body.clientHeight - 100)) { // || document.documentElement.scrollTop > 40) {
     //console.log("show")
     document.getElementById("bottom").style.visibility = "visible"
     //jQuery(".float_button").show();
