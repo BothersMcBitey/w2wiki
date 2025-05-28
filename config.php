@@ -60,7 +60,7 @@ define('DEFAULT_PAGE', 'Home');
 //
 // The CSS file to load to style the wiki, relative to BASE_URI
 
-define('CSS_FILE', 'index.css');
+define('CSS_FILE', 'styles.css');
 
 // --------------------
 // File upload settings
