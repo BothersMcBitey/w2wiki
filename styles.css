@@ -349,8 +349,8 @@ img {
 .float_button {
   position: fixed;
   text-align: center;
-  border: 1px solid slategray;
-  background-color: lightslategray;
+  border: 1px solid gray;
+  background-color: #444444;
   border-radius: 6px;
   padding: 0.2em 0.4em;
 }
