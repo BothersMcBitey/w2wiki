@@ -66,7 +66,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: 100%;
+/*  height: 100%;*/
 
   background-position: center;
   background-image: url(/w2/images/gq_worldmap_big.jpg);
@@ -75,7 +75,8 @@ body {
 }
 
 header {
-  position: fixed;
+  position: sticky;
+  top: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -361,7 +362,7 @@ img {
 
 #top {
   visibility: hidden;
-  top: 50px;
+  top: 200px;
 }
 
 #bottom {
