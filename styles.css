@@ -362,7 +362,7 @@ img {
 
 #top {
   visibility: hidden;
-  top: 200px;
+  top: 220px;
 }
 
 #bottom {
@@ -371,10 +371,10 @@ img {
 }
 
 #top, #bottom {
-  right: 20vw;
+  left: 50%;
 }
 
-@media (max-width: 2250px) {
+/*@media (max-width: 2250px) {
   #top, #bottom {
     right: 15vw;
   }
@@ -384,7 +384,7 @@ img {
   #top, #bottom {
     right: 10vw;
   }
-}
+}*/
 
 .note {
   background-color: #ffffcc;
