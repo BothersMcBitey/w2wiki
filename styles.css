@@ -361,13 +361,27 @@ img {
 #top {
   visibility: hidden;
   top: 50px;
-  right: 10vw;
 }
 
 #bottom {
   visibility: visible;
-  bottom: 50px;
-  right: 10vw;
+  bottom: 50px;  
+}
+
+#top, #bottom {
+  right: 25vw;
+}
+
+@media (max-width: 2250px) {
+  #top, #bottom {
+    right: 15vw;
+  }
+}
+
+@media (max-width: 2000px) {
+  #top, #bottom {
+    right: 10vw;
+  }
 }
 
 .note {
