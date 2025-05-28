@@ -598,8 +598,8 @@ print "<div class=\"padding\"></div>";
 print "<footer id=\"foot\">This is the footer</footer>";
 print "</body>\n";
 
-print "<script src=\"/w2/markdown_processor.js\"></script>";
-print "<script src=\"/w2/fancy_scroll.js\"></script>";
+print "<script src=\"/w2/proccess_intra_page_links.js\"></script>\n";
+print "<script src=\"/w2/fancy_scroll.js\"></script>\n";
 
 print "</html>\n";
 
