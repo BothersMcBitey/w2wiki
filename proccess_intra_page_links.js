@@ -1,11 +1,3 @@
-console.log("hi")
-
-document.getElementById("foot").innerHTML += "<h1>HI THERE</h1>";
-
-function make_toc(){
-
-}
-
 function inject_header_ids(content){
     var h_tags = content.querySelectorAll("h1, h2, h3, h4, h5, h6")
     for(var id_count = 0; id_count < h_tags.length; id_count++){
@@ -13,13 +5,15 @@ function inject_header_ids(content){
         h_name = h_tags[id_count].innerHTML
         h_name = h_name.replace(/\s/g, "-")
         console.log(h_name)
-        h_tags[id_count].id = h_name
+        h_tags[id_count].id = h_name.toLowerCase();
     }
 }
 
-function process_md(content){
-    console.log(content)
-    inject_header_ids(content)
+function lower_markdown_links(content){
+    var anchors = content.querySelectorAll("a href=\"#")
+    console.log(anchors)
 }
 
-process_md(document.getElementById("markdown-content"))
+let markdown_html = document.getElementById("markdown-content")
+lower_markdown_links(markdown_html)
+inject_header_ids(markdown_html)

@@ -579,25 +579,23 @@ print "<div class=\"titlebar\">" .
 
 print "</header>\n";
 
-
-
-print "<main id=\"main\">\n";
-print "<div id=\"markdown-content\" class=\"content\">\n";
 print "<div id=\"top\" class=\"float_button\">" . 
     	"<a href=\"#body\">Jump to Top</a>" .
 	  "</div>";
+
+print "<main id=\"main\">\n";
+print "<div id=\"markdown-content\" class=\"content\">\n";
 print "$html\n";
-print "<div id=\"bottom\" class=\"float_button\">" . 
-    	"<a href=\"#foot\">Jump to Bottom</a>" .
-	  "</div>";
 print "</div>\n";
 print "</main>\n";
 
-
+print "<div id=\"bottom\" class=\"float_button\">" . 
+    	"<a href=\"#foot\">Jump to Bottom</a>" .
+	  "</div>";
 
 print "<div class=\"padding\"></div>";
 
-print "<footer id=\"foot\"></footer>";
+print "<footer id=\"foot\">This is the footer</footer>";
 print "</body>\n";
 
 print "<script src=\"/w2/markdown_processor.js\"></script>";
