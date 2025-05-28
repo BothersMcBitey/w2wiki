@@ -10,9 +10,12 @@ function inject_header_ids(content){
 }
 
 function lower_markdown_links(content){
-    var anchors = content.querySelectorAll("a href=\"#")
-    console.log("In-page-links =========================================")
+    var anchors = content.querySelectorAll("a")
+    console.log("All Anchors =========================================")
     console.log(anchors)
+    for(var a_count = 0; a_count < anchors.length; a_count++){
+        
+    }
 }
 
 let markdown_html = document.getElementById("markdown-content")
