@@ -372,6 +372,7 @@ img {
 
 #top, #bottom {
   left: 50%;
+  transform: translate(0, -50%);
 }
 
 /*@media (max-width: 2250px) {
