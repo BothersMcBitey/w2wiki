@@ -14,7 +14,7 @@ function lower_markdown_links(content){
     console.log("All Anchors =========================================")
     console.log(anchors)
     for(var a_count = 0; a_count < anchors.length; a_count++){
-        
+        console.log(anchors[a_count])
     }
 }
 

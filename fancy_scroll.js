@@ -1,6 +1,6 @@
 window.onscroll = function() {toggleScrollButton()};
 toggleScrollButton();
-
+console.log("What?")
 function toggleScrollButton() {
   console.log(document.body.scrollTop)
   if (document.body.scrollTop > 160) { // || document.documentElement.scrollTop > 40) {
