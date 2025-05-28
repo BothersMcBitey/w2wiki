@@ -4,13 +4,14 @@ function inject_header_ids(content){
         //console.log(h_tags[id_count])
         h_name = h_tags[id_count].innerHTML
         h_name = h_name.replace(/\s/g, "-")
-        console.log(h_name)
+        //console.log(h_name)
         h_tags[id_count].id = h_name.toLowerCase();
     }
 }
 
 function lower_markdown_links(content){
     var anchors = content.querySelectorAll("a href=\"#")
+    console.log("In-page-links =========================================")
     console.log(anchors)
 }
 
