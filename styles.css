@@ -349,14 +349,14 @@ img {
 .float_button {
   position: fixed;
   text-align: center;
-  border: 1px solid gray;
-  background-color: yellowgreen;
-  border-radius: 10px;
-  padding: 0.2em;
+  border: 1px solid slategray;
+  background-color: lightslategray;
+  border-radius: 6px;
+  padding: 0.2em 0.4em;
 }
 
 .float_button a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -372,20 +372,8 @@ img {
 
 #top, #bottom {
   left: 50%;
-  transform: translate(0, -50%);
+  transform: translate(-50%, 0);
 }
-
-/*@media (max-width: 2250px) {
-  #top, #bottom {
-    right: 15vw;
-  }
-}
-
-@media (max-width: 2000px) {
-  #top, #bottom {
-    right: 10vw;
-  }
-}*/
 
 .note {
   background-color: #ffffcc;
