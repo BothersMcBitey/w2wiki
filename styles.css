@@ -241,6 +241,7 @@ textarea {
   width: 90%;
   background-color: #fafafa;
   padding: 1em;
+  resize:none;
 }
 
 img {
