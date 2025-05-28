@@ -369,7 +369,7 @@ img {
 }
 
 #top, #bottom {
-  right: 25vw;
+  right: 20vw;
 }
 
 @media (max-width: 2250px) {
