@@ -28,3 +28,6 @@ All pages should have relevant tags describing it. Tags are a key way to search 
 
 ## 7. Tools shouldn't need manuals
 Nobody wants to read a guide on how to use something, they want to use the thing. Anyone who uses this project should be able to look at it and know how to use it without instructions or explanation. (What about that big "guide to markdown" page sat in every edit screen? I refer you to principle 3).
+
+## 8. Features are atomic
+Every feature should be as small and seperated as possible. Making changes to a feature (or turning it off) should be easy, and shouldn't need digging through massive code files.

@@ -27,6 +27,8 @@
 - The markdown guide is big and clunky.
   - make a slimmer, simpler version (leaving the big one available ofc)
   - Find a way to have the 'guide' visible/available without leaving the page; people should be able to get stuck into the flow of creating, not checking a manual every 30 seconds.
+- change all the file extensions from .txt to .md. It's weird that they're like that.
+- Ability to edit small blocks of a file - like an edit stuff in this heading area feature. Would need to find a way to merge into actual file, but would make some stuff much easier to do.
 
 ## In Progress
 - within-page links
