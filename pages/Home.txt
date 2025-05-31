@@ -7,6 +7,8 @@ For full documentation, please read README.txt, included with the distribution.
 
 Click here to learn more about the [[Markdown Syntax]]. 
 
+Here is the current plan for work on this project: [[Feature List]].
+
 # Key Principles of this Project
 ## 1. Markdown first, everything else second
 Where possible, all documents should use basic markdown syntax. If you can do it with markdown, do it with markdown. Only use other tools when markdown fails. Why? See principle 2.
@@ -18,7 +20,7 @@ No information should be locked within this system. When someone downloads the c
 Guiding principles are good. Unbreakable rules aren't. If one of these ideas would get in the way of something good working, break that rule.
 
 ## 4. Everything is open
-The code base for this project is open-source. All documents are viewable by anyone. All documents are editable by anyone. Nothing is hidden.
+The code base for this project is open-source. All documents are viewable by anyone. All documents are editable by anyone. Nothing is hidden. Edit: Actually, the option for password-protected wikis (at maybe a couple levels) would be useful for people.
 
 ## 5. No hierarchy
 Nothing is stored in folders, sub-folders, or "belongs" to other files. Trying to find which folder something is stored in is annoying, time-consuming, and not necessary with computers. Our file storage is flat, and traversed through search, links, tags, and maybe a graph?

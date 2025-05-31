@@ -9,7 +9,6 @@
 - predictive/suggested search
 - autocomplete/suggested link in editor
   - Maybe an `autocreate links` button at the bottom
-- Tab input allowed in browser editor
   - [interesting related stackoverflow post](https://stackoverflow.com/questions/69983667/ability-to-enter-tab-characters-in-a-textfield)
 - Something to stop like, Alberich and alberich pages being made
 - ToC generation
@@ -22,18 +21,24 @@
   - both of these are non-markdown features
 - autoindent on editor
 - md prettier function on save
-- fix the weird bullet point spacing
 - The idea of a graph-like structure between pages (related to Xanadu) is intriguing. This must be thought on.
 - The markdown guide is big and clunky.
   - make a slimmer, simpler version (leaving the big one available ofc)
   - Find a way to have the 'guide' visible/available without leaving the page; people should be able to get stuck into the flow of creating, not checking a manual every 30 seconds.
 - change all the file extensions from .txt to .md. It's weird that they're like that.
 - Ability to edit small blocks of a file - like an edit stuff in this heading area feature. Would need to find a way to merge into actual file, but would make some stuff much easier to do.
-- make edit/save/cancel buttons also float?
+- password protection. Maybe three levels: Open, Write-protection, Read-Protection.
+  - Should this be project based on page based? Page based is a lot of overhead...
+- within-page links
+
+## Bugs
+- fix shortened footer position on small pages
+- fix the weird bullet point spacing
 
 ## In Progress
-- within-page links
-- make header fixed/float
+- Tab input allowed in browser editor
+- make edit/save/cancel buttons also float?
+- add "\<hr\> " after h1, maybe h2 tags
 
 ## Done
 - Auto scaling of editing boxes
@@ -41,3 +46,5 @@
 - box around `code` blocks
 - jump to top/bottom floating buttons
   - **A compromise has been made**. jump floating buttons are still in weird places. and ugly.  
+- make header fixed/float
+- Toolbar: move search to center, add Home button on left. Redistribute page list and graph
