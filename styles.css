@@ -83,6 +83,10 @@ header {
   width: 100%;
 }
 
+header input {
+  text-align: center;
+}
+
 main {
   background-color: white;
   padding-top: 1em;

@@ -119,13 +119,13 @@ function printToolbar()
 	print "<div>";	
 	print "<a class=\"tool\" href=\"/w2/index.php\">Home</a>";
  	print "<a class=\"tool\" href=\"" . SELF . "?action=all_name\">See All Pages</a> ";
-	print "<a class=\"tool\" href=\"" . SELF . "?action=graph\">View Graph</a> ";
+	#print "<a class=\"tool\" href=\"" . SELF . "?action=graph\">View Graph</a> ";
 	print "</div>";
 
 	# Center
-	print "<div>";
+	print "<div id=\"center\">";
 	print "<form class=\"tool\" method=\"post\" action=\"" . SELF . "?action=search\">\n";
-	print "<input autocomplete=\"on\" placeholder=\"Search all pages and tags...\" size=\"35\" id=\"search\" type=\"text\" name=\"q\" /></form>\n";
+	print "<input autocomplete=\"on\" placeholder=\"Search all pages and tags...\" size=\"40\" id=\"search\" type=\"text\" name=\"q\" /></form>\n";
 	print "</div>";
 
 	# right hand side
