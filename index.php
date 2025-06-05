@@ -301,7 +301,7 @@ if ( $action == "edit" || $action == "new" )
 		$text = NEW_FILE_CONTENT;
 
 	//$html .= "<p><textarea id=\"text\" name=\"newText\" rows=\"" . EDIT_ROWS . "\">$text</textarea></p>\n";
-	$html .= "<textarea id=\"text\" name=\"newText\" rows=\"" . EDIT_ROWS . "\">$text</textarea>\n";
+	$html .= "<textarea id=\"text_edit\" name=\"newText\" rows=\"" . EDIT_ROWS . "\">$text</textarea>\n";
 	//$html .= "<script src=\"/w2/textbox_scale.js\"></script>";
 	$html .= "<p><a href=\"/w2/index.php/Markdown Syntax\">Guide to Markdown</a></p>";
 	$html .= "<p><input type=\"hidden\" name=\"action\" value=\"save\" />";
