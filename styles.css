@@ -182,12 +182,11 @@ h3 {
 }
 
 hr {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #aaaaaa;
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  width: 100%;
 }
 
 ul {
