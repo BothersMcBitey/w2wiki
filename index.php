@@ -508,7 +508,7 @@ else if ( $action == "all_images" )
 			continue;
 		array_push($filelist,	"<div class=\"gallery-element\">" . 
 												"<img src=\"/w2/images/$file\"/>" . 
-												"<p><a href=\"images/$file\" target=\"_blank\">$file</a><p>" .
+												"<p><a href=\"images/$file\" target=\"_blank\">$file</a></p>" .
 												"</div>");
 	}
 	closedir($dir);
