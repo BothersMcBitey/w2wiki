@@ -611,6 +611,7 @@ print "</body>\n";
 
 print "<script src=\"/w2/proccess_intra_page_links.js\"></script>\n";
 print "<script src=\"/w2/fancy_scroll.js\"></script>\n";
+print "<script src=\"/w2/insert_horiztonal_rules.js\"></script>\n";
 
 print "</html>\n";
 

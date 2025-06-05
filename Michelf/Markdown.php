@@ -955,13 +955,7 @@ class Markdown implements MarkdownInterface {
 		$idAtt = $this->_generateIdFromHeaderValue($matches[1]);
 
 		$block = "<h$level$idAtt>".$this->runSpanGamut($matches[1])."</h$level>";
-		$rule = "";
-		debug_to_console($level);
-		if ($level == 1 || $level == 2) {
-			$rule .= "<hr>";
-			debug_to_console("should be adding HR tag here");
-		}
-		return "\n" . $this->hashBlock($block) . "\n" . $rule . "\n";
+		return "\n" . $this->hashBlock($block) . "\n\n";
 	}
 
 	/**
@@ -975,13 +969,7 @@ class Markdown implements MarkdownInterface {
 
 		$level = strlen($matches[1]);
 		$block = "<h$level$idAtt>".$this->runSpanGamut($matches[2])."</h$level>";
-		$rule = "";
-		debug_to_console($level);
-		if ($level == 1 || $level == 2) {
-			$rule .= "<hr>";
-			debug_to_console("should be adding HR tag here");
-		}
-		return "\n" . $this->hashBlock($block) . "\n" . $rule . "\n";
+		return "\n" . $this->hashBlock($block) . "\n\n";
 	}
 
 	/**
