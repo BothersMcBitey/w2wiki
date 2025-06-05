@@ -204,6 +204,10 @@ ol {
   list-style-position: inside;
 }
 
+ul ul, ul ol, ol ul, ol ol {
+  margin-bottom: 0;
+}
+
 p {
   margin: 12px 12px 12px 12px;
 }
