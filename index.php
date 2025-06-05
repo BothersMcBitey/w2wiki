@@ -281,7 +281,9 @@ if ( file_exists($filename) )
 }
 else
 {
-	if ( $action != "save" && $action != "all_name" && $action != "all_date" && $action != "all_images" && $action != "upload" && $action != "new" && $action != "logout" && $action != "uploaded" && $action != "search" && $action != "view" )
+	if ( $action != "save" && $action != "all_name" && $action != "all_date" && $action != "all_images" && 
+	$action != "upload" && $action != "new" && $action != "logout" && $action != "uploaded" && $action != "search" &&
+	$action != "view" && $action != "add_resource" )
 	{
 		$action = "edit";
 	}
@@ -550,6 +552,10 @@ else if ( $action == "search" )
 
 	$html .= "</ul>\n";
 	$html .= "<p>$matches matched</p>\n";
+}
+else if ( $action == "add_resource" )
+{
+	$html .= "<h1>Add Resource</h1>";
 }
 else
 {
