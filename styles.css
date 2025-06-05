@@ -416,11 +416,12 @@ hr.minor {
 
 .gallery-element {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
 .gallery-element p {
-  color: red;
+  color: black;
+  text-align: center;
 }
 
 .gallery-element img {

@@ -510,12 +510,9 @@ else if ( $action == "all_images" )
 		if ( $file[0] == "." )
 			continue;
 
-		//$img_name = preg_replace("/(.*?)\.md/", "<a href=\"" . SELF . VIEW . "/\\1\">\\1</a>", $file);
-
 		array_push($filelist,	"<div class=\"gallery-element\">" . 
-												"<p>$$file<p>" . 
-												"<img src=\"/w2/images/" . $file . "\"/>" . 
-												//"<td><img src=\"/w2/images/" . $file . "\"/></td>" . 
+												"<img src=\"/w2/images/$file\"/>" . 
+												"<p><a href=\"" . SELF . "images/" . $file . "\" target=\"_blank\">$file</a><p>" .
 												"</div>");
 
 		if ( $color == "#ffffff" )
