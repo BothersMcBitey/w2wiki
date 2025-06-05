@@ -503,8 +503,6 @@ else if ( $action == "all_images" )
 	$dir = opendir(IMAGES_PATH);
 	$filelist = array();
 
-	$color = "#ffffff";
-
 	while ( $file = readdir($dir) )
 	{
 		if ( $file[0] == "." )
@@ -512,13 +510,8 @@ else if ( $action == "all_images" )
 
 		array_push($filelist,	"<div class=\"gallery-element\">" . 
 												"<img src=\"/w2/images/$file\"/>" . 
-												"<p><a href=\"" . SELF . "images/" . $file . "\" target=\"_blank\">$file</a><p>" .
+												"<p><a href=\"" . IMAGES_PATH . $file . "\" target=\"_blank\">$file</a><p>" .
 												"</div>");
-
-		if ( $color == "#ffffff" )
-			$color = "#f4f4f4";
-		else
-			$color = "#ffffff";
 	}
 
 	closedir($dir);
