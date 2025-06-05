@@ -407,3 +407,22 @@ hr.major {
 hr.minor {
   border-top: 1px solid #aaaaaa;
 }
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gallery-element {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.gallery-element p {
+  color: red;
+}
+
+.gallery-element img {
+  max-height: 200px;
+}

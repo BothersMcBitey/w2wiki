@@ -510,11 +510,13 @@ else if ( $action == "all_images" )
 		if ( $file[0] == "." )
 			continue;
 
-		$afile = preg_replace("/(.*?)\.md/", "<a href=\"" . SELF . VIEW . "/\\1\">\\1</a>", $file);
-		//$efile = preg_replace("/(.*?)\.md/", "<img src=\"" . IMAGES_PATH . "/" . $file . "\"/>", urlencode($file));
+		//$img_name = preg_replace("/(.*?)\.md/", "<a href=\"" . SELF . VIEW . "/\\1\">\\1</a>", $file);
 
-		array_push($filelist, "<tr style=\"background-color: $color;\"><td>$afile</td>" . 
-											  "<td width=\"20\"></td><td><img src=\"/w2/images/" . $file . "\"/></td></tr>");
+		array_push($filelist,	"<div class=\"gallery-element\">" . 
+												"<p>$$file<p>" . 
+												"<img src=\"/w2/images/" . $file . "\"/>" . 
+												//"<td><img src=\"/w2/images/" . $file . "\"/></td>" . 
+												"</div>");
 
 		if ( $color == "#ffffff" )
 			$color = "#f4f4f4";
@@ -526,7 +528,7 @@ else if ( $action == "all_images" )
 
 	natcasesort($filelist);
 	
-	$html = "<table>";
+	$html = "<div class=\"gallery\">";
 
 
 	for ($i = 0; $i < count($filelist); $i++)
@@ -534,7 +536,7 @@ else if ( $action == "all_images" )
 		$html .= $filelist[$i];
 	}
 
-	$html .= "</table>\n";
+	$html .= "</div>\n";
 
 }
 else if ( $action == "search" )
