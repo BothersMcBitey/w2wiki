@@ -5,5 +5,4 @@ function inject_horizontal_rules(content){
     }
 }
 
-let markdown_html = document.getElementById("markdown-content")
-inject_horizontal_rules(markdown_html)
+inject_horizontal_rules(document.getElementById("markdown-content"))
