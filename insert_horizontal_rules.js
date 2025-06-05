@@ -1,7 +1,9 @@
 function inject_horizontal_rules(content){
     var h_tags = content.querySelectorAll("h1, h2")
+    let hr = document.createElement("hr")
     for(var id_count = 0; id_count < h_tags.length; id_count++){
-        h_tags[id_count].after("<hr>")
+
+        h_tags[id_count].after(hr)
     }
 }
 
