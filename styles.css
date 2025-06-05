@@ -429,3 +429,7 @@ hr.minor {
 .gallery-element img {
   max-height: 200px;
 }
+
+.gallery.resource {
+  justify-content: space-evenly;
+}
