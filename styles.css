@@ -430,6 +430,30 @@ hr.minor {
   max-height: 200px;
 }
 
-.gallery.resource {
+.resource-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
   justify-content: space-evenly;
+}
+
+.resource-gallery-element {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
+.resource-gallery-element p {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+.resource-gallery-element a {
+  color: black;
+}
+
+.resource-gallery-element img {
+  max-height: 500px;
 }

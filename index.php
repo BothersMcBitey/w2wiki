@@ -556,22 +556,22 @@ else if ( $action == "search" )
 }
 else if ( $action == "add_resource" )
 {
-	$html .= "<div class=\"gallery resource\">" . 
-				"<div class=\"gallery-element\">" .
+	$html .= "<div class=\"resource-gallery\">" . 
+				"<div class=\"resource-gallery-element\">" .
 					"<img src=\"/w2/icons/new_markdown.png\"/>" . 
-					"<h1><a href=\"" . SELF . "?action=new\">New Page</a></h1>" .
+					"<p><a href=\"" . SELF . "?action=new\">New Page</a></p>" .
 				"</div>" .
-				"<div class=\"gallery-element\">" .
+				"<div class=\"resource-gallery-element\">" .
 					"<img src=\"/w2/icons/upload_markdown.png\"/>" . 
-					"<h1><a href=\"" . SELF . "?action=none\">Upload Markdown</a></h1>" .
+					"<p><a href=\"" . SELF . "?action=none\">Upload Markdown</a></p>" .
 					"<p>[Doesn't work yet]</p>" . 
 				"</div>" .
 			"</div>" . 
 			"<hr>" . 
-			"<div class=\"gallery\">" . 
-				"<div class=\"gallery-element\">" .
+			"<div class=\"resource-gallery\">" . 
+				"<div class=\"resource-gallery-element\">" .
 					"<img src=\"/w2/icons/new_markdown.png\"/>" . 
-					"<h1><a href=\"" . SELF . "?action=upload\">Upload Image</a></h1>" .
+					"<p><a href=\"" . SELF . "?action=upload\">Upload Image</a></p>" .
 				"</div>" .
 			"</div>";		
 }
