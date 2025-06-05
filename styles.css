@@ -412,6 +412,7 @@ hr.minor {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 1em;
 }
 
 .gallery-element {

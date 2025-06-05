@@ -119,6 +119,7 @@ function printToolbar()
 	print "<div>";	
 	print "<a class=\"tool\" href=\"/w2/index.php\">Home</a>";
  	print "<a class=\"tool\" href=\"" . SELF . "?action=all_name\">See All Pages</a> ";
+	print "<a class=\"tool\" href=\"" . SELF . "?action=all_images\">See All Images</a> ";
 	#print "<a class=\"tool\" href=\"" . SELF . "?action=graph\">View Graph</a> ";
 	print "</div>";
 
@@ -499,35 +500,25 @@ else if ( $action == "all_date" )
 }
 else if ( $action == "all_images" )
 {
-
 	$dir = opendir(IMAGES_PATH);
 	$filelist = array();
-
 	while ( $file = readdir($dir) )
 	{
 		if ( $file[0] == "." )
 			continue;
-
 		array_push($filelist,	"<div class=\"gallery-element\">" . 
 												"<img src=\"/w2/images/$file\"/>" . 
 												"<p><a href=\"images/$file\" target=\"_blank\">$file</a><p>" .
 												"</div>");
 	}
-
 	closedir($dir);
-
 	natcasesort($filelist);
-	
 	$html = "<div class=\"gallery\">";
-
-
 	for ($i = 0; $i < count($filelist); $i++)
 	{
 		$html .= $filelist[$i];
 	}
-
 	$html .= "</div>\n";
-
 }
 else if ( $action == "search" )
 {
