@@ -384,11 +384,12 @@ img {
 }
 
 .note {
+  text-align: center;
   background-color: #ffffcc;
   padding: 4px;
   margin: 0 8px 8px 8px;
-  color: #666644;
-  border: solid 1px #666644;
+  color: black;
+  border: 1px solid black;
 }
 
 .tags {

@@ -6,7 +6,7 @@
  * Copyright (C) 2007-2011 Steven Frank <http://stevenf.com/>
  *
  * Code may be re-used as long as the above copyright notice is retained.
- * See README.md for full details.
+ * See README.txt for full details.
  *
  * Written with Coda: <http://panic.com/coda/>
  *
@@ -304,9 +304,9 @@ if ( $action == "edit" || $action == "new" )
 	$html .= "<textarea id=\"text_edit\" name=\"newText\" rows=\"" . EDIT_ROWS . "\">$text</textarea>\n";
 	
 	# Edit specific Scripts
-	$html .= "<script src=\"/w2/textbox_scale.js\"></script>";
-	$html .= "<script src=\"/w2/trap_tab.js\"></script>";
-	$html .= "<script src=\"/w2/trap_control.js\"></script>";
+	$html .= "<script src=\"/w2/javascript/textbox_scale.js\"></script>";
+	$html .= "<script src=\"/w2/javascript/trap_tab.js\"></script>";
+	$html .= "<script src=\"/w2/javascript/trap_control.js\"></script>";
 
 	$html .= "<p><a href=\"/w2/index.php/Markdown Syntax\">Guide to Markdown</a></p>";
 	$html .= "<p><input type=\"hidden\" name=\"action\" value=\"save\" />";
@@ -609,9 +609,9 @@ print "<div class=\"padding\"></div>";
 print "<footer id=\"foot\">This is the footer</footer>";
 print "</body>\n";
 
-print "<script src=\"/w2/proccess_intra_page_links.js\"></script>\n";
-print "<script src=\"/w2/fancy_scroll.js\"></script>\n";
-print "<script src=\"/w2/insert_horizontal_rules.js\"></script>\n";
+print "<script src=\"/w2/javascript/proccess_intra_page_links.js\"></script>\n";
+print "<script src=\"/w2/javascript/fancy_scroll.js\"></script>\n";
+print "<script src=\"/w2/javascript/insert_horizontal_rules.js\"></script>\n";
 
 print "</html>\n";
 
