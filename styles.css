@@ -411,13 +411,13 @@ hr.minor {
 .gallery {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin: 1em;
+  flex-wrap: wrap;  
 }
 
 .gallery-element {
   display: flex;
   flex-direction: column;
+  margin: 1em;
 }
 
 .gallery-element p {
