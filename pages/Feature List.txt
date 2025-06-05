@@ -30,15 +30,19 @@
 - password protection. Maybe three levels: Open, Write-protection, Read-Protection.
   - Should this be project based on page based? Page based is a lot of overhead...
 - within-page links
+- floating contents
+- floating edit tools (e.g. insert image, bold, etc)
+- page templates
+- downloading resources/whole wiki
+- modify search to ONLY use page names and tags
+- find an actual Rich Text Editor and convert to markdown in the background??? feels like a cop-out
+- fix unpredictable indentation rules for lists
 
 ## Bugs
-- fix shortened footer position on small pages
-- fix the weird bullet point spacing
+
 
 ## In Progress
-- Tab input allowed in browser editor
 - make edit/save/cancel buttons also float?
-- add "\<hr\> " after h1, maybe h2 tags
 
 ## Done
 - Auto scaling of editing boxes
@@ -48,3 +52,8 @@
   - **A compromise has been made**. jump floating buttons are still in weird places. and ugly.  
 - make header fixed/float
 - Toolbar: move search to center, add Home button on left. Redistribute page list and graph
+- Tab input allowed in browser editor
+- fix the weird bullet point spacing
+- fix shortened footer position on small pages
+- found how to override browser shortcuts (e.g. ctrl+b) to affect editor. CTRL + S now hits the save button
+- add "\<hr\> " after h1, maybe h2 tags
