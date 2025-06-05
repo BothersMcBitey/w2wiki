@@ -182,7 +182,7 @@ h3 {
 }
 
 hr {
-  border-top: 1px solid red;
+  border-top: 1px solid black;
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
@@ -457,5 +457,5 @@ hr.minor {
 }
 
 .resource-gallery-element img {
-  max-height: 30vw;
+  max-height: 30vh;
 }
