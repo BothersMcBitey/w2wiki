@@ -6,7 +6,7 @@
  * Copyright (C) 2007-2011 Steven Frank <http://stevenf.com/>
  *
  * Code may be re-used as long as the above copyright notice is retained.
- * See README.txt for full details.
+ * See README.md for full details.
  *
  * Written with Coda: <http://panic.com/coda/>
  *
@@ -172,7 +172,7 @@ function toHTML($inText)
 		if ( $filename[0] == '.' )
 			continue;
 			
-		$filename = preg_replace("/(.*?)\.txt/", "\\1", $filename);
+		$filename = preg_replace("/(.*?)\.md/", "\\1", $filename);
 		$filenames[] = $filename;
 	}
 	closedir($dir);
@@ -272,7 +272,7 @@ $upage = urlencode($page);
 if ( $page == "" )
 	$page = DEFAULT_PAGE;
 
-$filename = PAGES_PATH . "/$page.txt";
+$filename = PAGES_PATH . "/$page.md";
 
 if ( file_exists($filename) )
 {
@@ -383,7 +383,7 @@ else if ( $action == "save" )
 		//
 		//$return_code = `git log -1 >> fuck.log`;
 		//$return_code = shell_exec("./commit_change.sh $page");
-		//shell_exec("echo $return_code >> log.txt");
+		//shell_exec("echo $return_code >> log.md");
 	}
 	else
 		$html = "<p class=\"note\">Error saving changes! Make sure your web server has write access to " . PAGES_PATH . "</p>\n";
@@ -409,7 +409,7 @@ else if ( $action == "renamed" )
 	$prevpage = sanitizeFilename($pp);
 	$prevpage = urlencode($prevpage);
 	
-	$prevfilename = PAGES_PATH . "/$prevpage.txt";
+	$prevfilename = PAGES_PATH . "/$prevpage.md";
 
 	if ( rename($prevfilename, $filename) )
 	{
@@ -443,8 +443,8 @@ else if ( $action == "all_name" )
 		if ( $file[0] == "." )
 			continue;
 
-		$afile = preg_replace("/(.*?)\.txt/", "<a href=\"" . SELF . VIEW . "/\\1\">\\1</a>", $file);
-		$efile = preg_replace("/(.*?)\.txt/", "<a href=\"?action=edit&amp;page=\\1\">edit</a>", urlencode($file));
+		$afile = preg_replace("/(.*?)\.md/", "<a href=\"" . SELF . VIEW . "/\\1\">\\1</a>", $file);
+		$efile = preg_replace("/(.*?)\.md/", "<a href=\"?action=edit&amp;page=\\1\">edit</a>", urlencode($file));
 
 		array_push($filelist, "<tr style=\"background-color: $color;\"><td>$afile</td><td width=\"20\"></td><td>$efile</td></tr>");
 
@@ -478,7 +478,7 @@ else if ( $action == "all_date" )
 		if ( $file[0] == "." )
 			continue;
 			
-		$filelist[preg_replace("/(.*?)\.txt/", "<a href=\"" . SELF . VIEW . "/\\1\">\\1</a>", $file)] = filemtime(PAGES_PATH . "/$file");
+		$filelist[preg_replace("/(.*?)\.md/", "<a href=\"" . SELF . VIEW . "/\\1\">\\1</a>", $file)] = filemtime(PAGES_PATH . "/$file");
 	}
 
 	closedir($dir);
@@ -517,7 +517,7 @@ else if ( $action == "search" )
                         if ( preg_match("/{$q}/i", $text) || preg_match("/{$q}/i", $file) )
 			{
 				++$matches;
-				$file = preg_replace("/(.*?)\.txt/", "<a href=\"" . SELF . VIEW . "/\\1\">\\1</a>", $file);
+				$file = preg_replace("/(.*?)\.md/", "<a href=\"" . SELF . VIEW . "/\\1\">\\1</a>", $file);
 				$html .= "<li>$file</li>\n";
 			}
 		}
