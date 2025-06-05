@@ -182,7 +182,7 @@ h3 {
 }
 
 hr {
-  border-top: 1px solid #aaaaaa;
+  border-top: 1px solid red;
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
@@ -397,4 +397,12 @@ img {
 
 #text_edit {
   height: 100%;
+}
+
+hr.major {
+  border-top: 2px solid #aaaaaa;
+}
+
+hr.minor {
+  border-top: 1px solid #aaaaaa;
 }
