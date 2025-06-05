@@ -1,4 +1,4 @@
-document.getElementById('text').addEventListener('keydown', function(e) {
+document.getElementById('text_edit').addEventListener('keydown', function(e) {
   if (e.key == 's' && e.ctrlKey) {
     e.preventDefault();
     console.log("Page Saved!")

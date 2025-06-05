@@ -306,7 +306,7 @@ if ( $action == "edit" || $action == "new" )
 	# Edit specific Scripts
 	$html .= "<script src=\"/w2/textbox_scale.js\"></script>";
 	$html .= "<script src=\"/w2/trap_tab.js\"></script>";
-	$html .= "<script src=\"/w2/trap_ctrl_s.js\"></script>";
+	$html .= "<script src=\"/w2/trap_control.js\"></script>";
 
 	$html .= "<p><a href=\"/w2/index.php/Markdown Syntax\">Guide to Markdown</a></p>";
 	$html .= "<p><input type=\"hidden\" name=\"action\" value=\"save\" />";
