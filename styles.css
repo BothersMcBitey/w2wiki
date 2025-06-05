@@ -452,8 +452,10 @@ hr.minor {
 
 .resource-gallery-element a {
   color: black;
+  font-weight: bold;
+  font-size: 20pt;
 }
 
 .resource-gallery-element img {
-  max-height: 500px;
+  max-height: 30vw;
 }
