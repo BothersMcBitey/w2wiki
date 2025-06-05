@@ -457,7 +457,7 @@ hr.minor {
 }
 
 .resource-gallery-element img {
-  max-height: min(30vh, 600px);
+  max-height: min(30vh, 550px);
   width: 100%;
   object-fit: contain;
 }
