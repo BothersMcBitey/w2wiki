@@ -3,6 +3,8 @@ document.addEventListener('keydown', function(e) {
   if (e.key == 's' && e.ctrlKey) {
     e.preventDefault();
     console.log("Page Saved!")
+    var save_button = document.getElementById("save");
+    save_button.click();
     /*var start = this.selectionStart;
     var end = this.selectionEnd;
 
