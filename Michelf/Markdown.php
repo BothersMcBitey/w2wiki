@@ -969,7 +969,11 @@ class Markdown implements MarkdownInterface {
 
 		$level = strlen($matches[1]);
 		$block = "<h$level$idAtt>".$this->runSpanGamut($matches[2])."</h$level>";
-		return "\n" . $this->hashBlock($block) . "\n\n";
+		$rule = "";
+		if ($level == 1 || $level == 2) {
+			$rule .= "<hr>";
+		}
+		return "\n" . $this->hashBlock($block) . "\n" . $rule . "\n";
 	}
 
 	/**
