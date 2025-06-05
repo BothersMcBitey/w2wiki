@@ -280,7 +280,7 @@ if ( file_exists($filename) )
 }
 else
 {
-	if ( $action != "save" && $action != "all_name" && $action != "all_date" && $action != "upload" && $action != "new" && $action != "logout" && $action != "uploaded" && $action != "search" && $action != "view" )
+	if ( $action != "save" && $action != "all_name" && $action != "all_date" && $action != "all_images" && $action != "upload" && $action != "new" && $action != "logout" && $action != "uploaded" && $action != "search" && $action != "view" )
 	{
 		$action = "edit";
 	}
@@ -295,7 +295,7 @@ if ( $action == "edit" || $action == "new" )
 	if ( $action == "edit" )
 		$html .= "<input type=\"hidden\" name=\"page\" value=\"$page\" />\n";
 	else
-		$html .= "<p>Title: <input id=\"title\" type=\"text\" name=\"page\" /></p>\n";
+		$html .= "<p>Name: <input id=\"title\" type=\"text\" name=\"page\" /></p>\n";
 
 	if ( $action == "new" )
 		$text = NEW_FILE_CONTENT;
@@ -496,6 +496,45 @@ else if ( $action == "all_date" )
 			$color = "#ffffff";
 	}
 	$html .= "</table>\n";
+}
+else if ( $action == "all_images" )
+{
+
+	$dir = opendir(BASE_PATH . "/images");
+	$filelist = array();
+
+	$color = "#ffffff";
+
+	while ( $file = readdir($dir) )
+	{
+		if ( $file[0] == "." )
+			continue;
+
+		$afile = preg_replace("/(.*?)\.md/", "<a href=\"" . SELF . VIEW . "/\\1\">\\1</a>", $file);
+		$efile = preg_replace("/(.*?)\.md/", "<a href=\"?action=edit&amp;page=\\1\">edit</a>", urlencode($file));
+
+		array_push($filelist, "<tr style=\"background-color: $color;\"><td>$afile</td><td width=\"20\"></td><td>$efile</td></tr>");
+
+		if ( $color == "#ffffff" )
+			$color = "#f4f4f4";
+		else
+			$color = "#ffffff";
+	}
+
+	closedir($dir);
+
+	natcasesort($filelist);
+	
+	$html = "<table>";
+
+
+	for ($i = 0; $i < count($filelist); $i++)
+	{
+		$html .= $filelist[$i];
+	}
+
+	$html .= "</table>\n";
+
 }
 else if ( $action == "search" )
 {
