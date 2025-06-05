@@ -500,7 +500,7 @@ else if ( $action == "all_date" )
 else if ( $action == "all_images" )
 {
 
-	$dir = opendir(BASE_PATH . "/images");
+	$dir = opendir(IMAGES_PATH);
 	$filelist = array();
 
 	$color = "#ffffff";
@@ -511,7 +511,7 @@ else if ( $action == "all_images" )
 			continue;
 
 		$afile = preg_replace("/(.*?)\.md/", "<a href=\"" . SELF . VIEW . "/\\1\">\\1</a>", $file);
-		$efile = preg_replace("/(.*?)\.md/", "<a href=\"?action=edit&amp;page=\\1\">edit</a>", urlencode($file));
+		$efile = preg_replace("/(.*?)\.md/", "<img src=\"" . IMAGES_PATH . "/" . $file . "\"/>, urlencode($file));
 
 		array_push($filelist, "<tr style=\"background-color: $color;\"><td>$afile</td><td width=\"20\"></td><td>$efile</td></tr>");
 

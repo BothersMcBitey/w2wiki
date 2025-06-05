@@ -24,10 +24,17 @@ define('BASE_PATH', getcwd());
 
 // PAGES_PATH
 //
-// The path to the raw text documents maintained by W2
+// The path to the raw markdown documents maintained by W2
 // You should not use a trailing slash.
 
 define('PAGES_PATH', BASE_PATH . '/pages');
+
+// IMAGES_PATH
+//
+// The path to the images maintained by W2
+// You should not use a trailing slash.
+
+define('IMAGES_PATH', BASE_PATH . '/images');
 
 // BASE_URI
 //
