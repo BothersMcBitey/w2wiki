@@ -557,7 +557,7 @@ else if ( $action == "search" )
 else if ( $action == "add_resource" )
 {
 	$html .= "<div class=\"gallery\">" . 
-				"<div class=\"gallery-element\">";
+				"<div class=\"gallery-element\">" .
 					"<img src=\"/w2/icons/new_markdown.png\"/>" . 
 					"<h1><a href=\"" . SELF . "?action=new\">New Page</a></h1>" .
 				"</div>" .
@@ -569,7 +569,7 @@ else if ( $action == "add_resource" )
 			"</div>" . 
 			"<hr>" . 
 			"<div class=\"gallery\">" . 
-				"<div class=\"gallery-element\">";
+				"<div class=\"gallery-element\">" .
 					"<img src=\"/w2/icons/new_markdown.png\"/>" . 
 					"<h1><a href=\"" . SELF . "?action=upload\">Upload Image</a></h1>" .
 				"</div>" .
