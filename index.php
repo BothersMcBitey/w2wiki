@@ -558,20 +558,23 @@ else if ( $action == "add_resource" )
 {
 	$html .= "<div class=\"resource-gallery\">" . 
 				"<div class=\"resource-gallery-element\">" .
+					"<a href=\"" . SELF . "?action=new\">".
 					"<img src=\"/w2/icons/new_markdown.png\"/>" . 
-					"<p><a href=\"" . SELF . "?action=new\">New Page</a></p>" .
+					"<p>New Page</p></a>" .
 				"</div>" .
 				"<div class=\"resource-gallery-element\">" .
+					"<a href=\"" . SELF . "?action=none\">" .
 					"<img src=\"/w2/icons/upload_markdown.png\"/>" . 
-					"<p><a href=\"" . SELF . "?action=none\">Upload Markdown</a></p>" .
+					"<p>Upload Markdown</a></p>" .
 					"<p>[Doesn't work yet]</p>" . 
 				"</div>" .
 			"</div>" . 
 			"<hr>" . 
 			"<div class=\"resource-gallery\">" . 
 				"<div class=\"resource-gallery-element\">" .
+				    "<a href=\"" . SELF . "?action=upload\">" .
 					"<img src=\"/w2/icons/new_markdown.png\"/>" . 
-					"<p><a href=\"" . SELF . "?action=upload\">Upload Image</a></p>" .
+					"<p>Upload Image</p></a>" .
 				"</div>" .
 			"</div>";		
 }
