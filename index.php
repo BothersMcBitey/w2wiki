@@ -131,9 +131,10 @@ function printToolbar()
 
 	# right hand side
 	print "<div>";
-	print "<a class=\"tool\" href=\"" . SELF . "?action=new\">New Entry</a> ";
-	if ( !DISABLE_UPLOADS )
-		print "<a class=\"tool\" href=\"" . SELF . VIEW . "?action=upload\">Upload Image</a> ";
+	print "<a class=\"tool\" href=\"" . SELF . "?action=add_resource\">Create or Upload</a> ";
+	//print "<a class=\"tool\" href=\"" . SELF . "?action=new\">New Entry</a> ";
+	//if ( !DISABLE_UPLOADS )
+		//print "<a class=\"tool\" href=\"" . SELF . VIEW . "?action=upload\">Upload Image</a> ";
 	print "</div>";
 	if ( REQUIRE_PASSWORD )
 		print '<a class="tool" href="' . SELF . '?action=logout">Exit</a>';
@@ -555,7 +556,24 @@ else if ( $action == "search" )
 }
 else if ( $action == "add_resource" )
 {
-	$html .= "<h1>Add Resource</h1>";
+	$html .= "<div class=\"gallery\">" . 
+				"<div class=\"gallery-element\">";
+					"<img src=\"/w2/icons/new_markdown.png\"/>" . 
+					"<h1><a href=\"" . SELF . "?action=new\">New Page</a></h1>" .
+				"</div>" .
+				"<div class=\"gallery-element\">";
+					"<img src=\"/w2/icons/upload_markdown.png\"/>" . 
+					"<h1><a href=\"" . SELF . "?action=none\">Upload Markdown</a></h1>" .
+					"<p>[Doesn't work yet]</p>" . 
+				"</div>" .
+			"</div>" . 
+			"<hr>" . 
+			"<div class=\"gallery\">" . 
+				"<div class=\"gallery-element\">";
+					"<img src=\"/w2/icons/new_markdown.png\"/>" . 
+					"<h1><a href=\"" . SELF . "?action=upload\">Upload Image</a></h1>" .
+				"</div>" .
+			"</div>";		
 }
 else
 {
