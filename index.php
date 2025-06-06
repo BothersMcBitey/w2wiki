@@ -565,7 +565,7 @@ else if ( $action == "add_resource" )
 				"<div class=\"resource-gallery-element\">" .
 					"<a href=\"" . SELF . "?action=none\">" .
 					"<img src=\"/w2/icons/upload_markdown.png\"/>" . 
-					"<p>Upload Markdown</a></p>" .
+					"<p>Upload Markdown</p></a>" .
 					"<p>[Doesn't work yet]</p>" . 
 				"</div>" .
 			"</div>" . 
