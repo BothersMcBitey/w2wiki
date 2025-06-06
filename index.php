@@ -362,6 +362,8 @@ else if ( $action == "uploaded" || $action == "markdown_uploaded" )
 			$valid_ext = VALID_UPLOAD_PAGE_EXTS;
 			$dest_folder = "pages";
 		}
+		debug_to_console("Filetype:");
+		debug_to_console($fileType);
 
 		if (in_array($fileType, explode(',', VALID_UPLOAD_TYPES)) &&
 			in_array($fileExt, explode(',', $valid_ext)))
