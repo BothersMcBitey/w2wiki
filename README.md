@@ -1,3 +1,5 @@
+An extension of the [w2wiki project by Steven Frank](https://github.com/panicsteve/w2wiki)
+
 w2wiki
 ======
 
@@ -16,13 +18,5 @@ Notable features:
 - Plaintext storage
 - Image attachment uploading
 - Public or password-protected
-- Unlike cloud / hosted solutions, you retain control of your data
-
-#### Demo
-
-[See a sample W2 installation](http://stevenf.com/w2demo/)
-
-#### Forum
-
-http://groups.google.com/group/w2wiki
+- Unlike cloud / hosted solutions, you retain control of your dat
 
