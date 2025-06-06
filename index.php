@@ -324,7 +324,7 @@ else if ( $action == "logout" )
 	header("Location: " . SELF);
 	exit;
 }
-else if ( $action == "upload" )
+else if ( $action == "upload" || $action == "upload_markdown" )
 {
 	if ( DISABLE_UPLOADS )
 	{
@@ -333,14 +333,20 @@ else if ( $action == "upload" )
 	else
 	{
 		$html = "<form id=\"upload\" method=\"post\" action=\"" . SELF . "\" enctype=\"multipart/form-data\"><p>\n";
-		$html .= "<input type=\"hidden\" name=\"action\" value=\"uploaded\" />";
+		if ( $action == "upload" )
+		{
+			$html .= "<input type=\"hidden\" name=\"action\" value=\"uploaded\" />";
+		}
+		else {
+			$html .= "<input type=\"hidden\" name=\"action\" value=\"markdown_uploaded\" />";
+		}
 		$html .= "<input id=\"file\" type=\"file\" name=\"userfile\" />\n";
 		$html .= "<input id=\"upload\" type=\"submit\" value=\"Upload\" />\n";
 		$html .= "<input id=\"cancel\" type=\"button\" onclick=\"history.go(-1);\" value=\"Cancel\" />\n";
 		$html .= "</p></form>\n";
 	}
 }
-else if ( $action == "uploaded")
+else if ( $action == "uploaded" || $action == "markdown_uploaded" )
 {
 	if ( !DISABLE_UPLOADS )
 	{
@@ -349,13 +355,21 @@ else if ( $action == "uploaded")
 		preg_match('/\.([^.]+)$/', $dstName, $matches);
 		$fileExt = isset($matches[1]) ? $matches[1] : null;
 		
+		$valid_ext = VALID_UPLOAD_IMG_EXTS;
+		$dest_folder = "images";
+		if ( $action == "markdown_uploaded" )
+		{
+			$valid_ext = VALID_UPLOAD_PAGE_EXTS;
+			$dest_folder = "pages";
+		}
+
 		if (in_array($fileType, explode(',', VALID_UPLOAD_TYPES)) &&
-			in_array($fileExt, explode(',', VALID_UPLOAD_IMG_EXTS)))
+			in_array($fileExt, explode(',', $valid_ext)))
 		{
 			$errLevel = error_reporting(0);
 
 			if ( move_uploaded_file($_FILES['userfile']['tmp_name'], 
-				BASE_PATH . "/images/$dstName") === true ) 
+				BASE_PATH . "/$dest_folder/$dstName") === true ) 
 			{
 				$html = "<p class=\"note\">File '$dstName' uploaded</p>\n";
 			}
@@ -371,35 +385,6 @@ else if ( $action == "uploaded")
 	}
 
 	$html .= toHTML($text);
-}
-else if ( $action == "upload_markdown" ){
-	if ( !DISABLE_UPLOADS )
-	{
-		$dstName = sanitizeFilename($_FILES['userfile']['name']);
-		$fileType = $_FILES['userfile']['type'];
-		preg_match('/\.([^.]+)$/', $dstName, $matches);
-		$fileExt = isset($matches[1]) ? $matches[1] : null;
-		
-		if (in_array($fileType, explode(',', VALID_UPLOAD_TYPES)) &&
-			in_array($fileExt, explode(',', VALID_UPLOAD_PAGE_EXTS)))
-		{
-			$errLevel = error_reporting(0);
-
-			if ( move_uploaded_file($_FILES['userfile']['tmp_name'], 
-				BASE_PATH . "/pages/$dstName") === true ) 
-			{
-				$html = "<p class=\"note\">File '$dstName' uploaded</p>\n";
-			}
-			else
-			{
-				$html = "<p class=\"note\">Upload error</p>\n";
-			}
-
-			error_reporting($errLevel);
-		} else {
-			$html = "<p class=\"note\">Upload error: invalid file type</p>\n";
-		}
-	}
 }
 else if ( $action == "save" )
 {
