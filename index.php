@@ -375,7 +375,30 @@ else if ( $action == "uploaded")
 else if ( $action == "upload_markdown" ){
 	if ( !DISABLE_UPLOADS )
 	{
+		$dstName = sanitizeFilename($_FILES['userfile']['name']);
+		$fileType = $_FILES['userfile']['type'];
+		preg_match('/\.([^.]+)$/', $dstName, $matches);
+		$fileExt = isset($matches[1]) ? $matches[1] : null;
+		
+		if (in_array($fileType, explode(',', VALID_UPLOAD_TYPES)) &&
+			in_array($fileExt, explode(',', VALID_UPLOAD_PAGE_EXTS)))
+		{
+			$errLevel = error_reporting(0);
 
+			if ( move_uploaded_file($_FILES['userfile']['tmp_name'], 
+				BASE_PATH . "/pages/$dstName") === true ) 
+			{
+				$html = "<p class=\"note\">File '$dstName' uploaded</p>\n";
+			}
+			else
+			{
+				$html = "<p class=\"note\">Upload error</p>\n";
+			}
+
+			error_reporting($errLevel);
+		} else {
+			$html = "<p class=\"note\">Upload error: invalid file type</p>\n";
+		}
 	}
 }
 else if ( $action == "save" )
