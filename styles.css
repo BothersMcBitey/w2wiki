@@ -455,10 +455,14 @@ hr.minor {
   font-size: 20pt;
 }
 
+@media (max-height: 900px){
+  .resource-gallery-element p {
+    font-size: 14pt;
+  }
+}
+
 .resource-gallery-element a {
   color: black;
-  font-weight: bold;
-  font-size: 20pt;
 }
 
 .resource-gallery-element img {
