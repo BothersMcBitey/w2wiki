@@ -1,4 +1,8 @@
 autocommit.log
+webhook.js
 pages/
 images/
 templates/
+package.json
+package-lock.json
+node_modules/
