@@ -271,7 +271,7 @@ img {
   width: 30%;
 }
 
-.toolbar:last-of-type {
+.toolbar div:last-of-type {
   justify-content: flex-end;
 }
 
