@@ -563,6 +563,11 @@ else if ( $action == "add_resource" )
 					"<p>New Page</p></a>" .
 				"</div>" .
 				"<div class=\"resource-gallery-element\">" .
+					"<a href=\"" . SELF . "?action=new_from_template\">".
+					"<img src=\"/w2/icons/new_markdown_from_template.png\"/>" . 
+					"<p>New From</p><p>Template</p></a>" .
+				"</div>" .
+				"<div class=\"resource-gallery-element\">" .
 					"<a href=\"" . SELF . "?action=none\">" .
 					"<img src=\"/w2/icons/upload_markdown.png\"/>" . 
 					"<p>Upload Markdown</p></a>" .
