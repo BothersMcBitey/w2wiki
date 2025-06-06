@@ -5,6 +5,8 @@ This is your home page.  Feel free to edit it, and replace the content with anyt
 
 For full documentation, please read README.txt, included with the distribution.
 
+Test modification.
+
 Click here to learn more about the [[Markdown Syntax]]. 
 
 Here is the current plan for work on this project: [[Feature List]].
