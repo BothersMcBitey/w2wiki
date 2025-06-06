@@ -9,7 +9,7 @@ Click here to learn more about the [[Markdown Syntax]].
 
 Here is the current plan for work on this project: [[Feature List]].
 
-# Key Principles of this Project
+# Key Principles of this Project (??mdwiki)
 ## 1. Markdown first, everything else second
 Where possible, all documents should use basic markdown syntax. If you can do it with markdown, do it with markdown. Only use other tools when markdown fails. Why? See principle 2.
 

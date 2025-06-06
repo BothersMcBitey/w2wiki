@@ -12,7 +12,6 @@
   - [interesting related stackoverflow post](https://stackoverflow.com/questions/69983667/ability-to-enter-tab-characters-in-a-textfield)
 - Something to stop like, Alberich and alberich pages being made
 - ToC generation
-- line numbers in editor?
 - footer
 - Extract GQ stuff so this can be released
 - allow tags on images?
@@ -28,12 +27,14 @@
 - within-page links
 - floating contents
 - floating edit tools (e.g. insert image, bold, etc)
-- page templates
+- page templates (people, places, concepts, modules, etc)
 - downloading resources/whole wiki
 - modify search to ONLY use page names and tags
 - find an actual Rich Text Editor and convert to markdown in the background??? feels like a cop-out
 - fix unpredictable indentation rules for lists
 - make edit/save/cancel buttons also float?
+- config file that's not in php, index.php should be able to read it "on start"
+- js script to highlight/display leading whitespace?
 
 ## Bugs
 - line up edit text in title bar
