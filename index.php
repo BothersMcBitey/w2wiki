@@ -340,7 +340,7 @@ else if ( $action == "upload" )
 		$html .= "</p></form>\n";
 	}
 }
-else if ( $action == "uploaded" )
+else if ( $action == "uploaded")
 {
 	if ( !DISABLE_UPLOADS )
 	{
@@ -350,7 +350,7 @@ else if ( $action == "uploaded" )
 		$fileExt = isset($matches[1]) ? $matches[1] : null;
 		
 		if (in_array($fileType, explode(',', VALID_UPLOAD_TYPES)) &&
-			in_array($fileExt, explode(',', VALID_UPLOAD_EXTS)))
+			in_array($fileExt, explode(',', VALID_UPLOAD_IMG_EXTS)))
 		{
 			$errLevel = error_reporting(0);
 
@@ -371,6 +371,12 @@ else if ( $action == "uploaded" )
 	}
 
 	$html .= toHTML($text);
+}
+else if ( $action == "upload_markdown" ){
+	if ( !DISABLE_UPLOADS )
+	{
+
+	}
 }
 else if ( $action == "save" )
 {
@@ -568,7 +574,7 @@ else if ( $action == "add_resource" )
 					"<p>New From</p><p>Template</p></a>" .
 				"</div>" .
 				"<div class=\"resource-gallery-element\">" .
-					"<a href=\"" . SELF . "?action=none\">" .
+					"<a href=\"" . SELF . "?action=upload_markdown\">" .
 					"<img src=\"/w2/icons/upload_markdown.png\"/>" . 
 					"<p>Upload Markdown</p></a>" .
 					"<p>[Doesn't work yet]</p>" . 
@@ -596,8 +602,14 @@ if ( ($action == "all_name") || ($action == "all_date"))
 else if ( $action == "upload" )
 	$title = "Upload Image";
 
+else if ( $action == "upload_markdown" )
+	$title = "Upload Markdown";
+
 else if ( $action == "new" )
 	$title = "New";
+
+else if ( $action == "new_from_template" )
+	$title = "New From Template";
 
 else if ( $action == "search" )
 	$title = "Search";

@@ -93,6 +93,20 @@ define('VALID_UPLOAD_TYPES', 'image/jpeg,image/pjpeg,image/png,image/gif,applica
 
 define('VALID_UPLOAD_EXTS', 'jpg,jpeg,png,gif,pdf,zip,dmg');
 
+// VALID_UPLOAD_IMG_EXTS
+//
+// Acceptable filename extensions for image uploads
+// Value is a comma-separated string of filename extensions (case-sensitive!)
+
+define('VALID_UPLOAD_IMG_EXTS', 'jpg,jpeg,png,gif');
+
+// VALID_UPLOAD_PAGE_EXTS
+//
+// Acceptable filename extensions for image uploads
+// Value is a comma-separated string of filename extensions (case-sensitive!)
+
+define('VALID_UPLOAD_PAGE_EXTS', 'md');
+
 // ------------------
 // File Creation settings
 // ------------------
