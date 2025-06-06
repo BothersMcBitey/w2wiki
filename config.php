@@ -84,7 +84,7 @@ define('DISABLE_UPLOADS', false);
 // Acceptable file types for file uploads.  This is a good idea for security.
 // Value is a comma-separated string of MIME types.
 
-define('VALID_UPLOAD_TYPES', 'image/jpeg,image/pjpeg,image/png,image/gif,page/md,application/pdf,application/zip,application/x-diskcopy');
+define('VALID_UPLOAD_TYPES', 'image/jpeg,image/pjpeg,image/png,image/gif,application/octet-stream,application/pdf,application/zip,application/x-diskcopy');
 
 // VALID_UPLOAD_EXTS
 //
