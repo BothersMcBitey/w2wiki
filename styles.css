@@ -471,3 +471,7 @@ hr.minor {
   width: 100%;
   object-fit: contain;
 }
+
+#center {
+  justify-content: center;
+}
