@@ -277,6 +277,9 @@ if ( $action == "edit" || $action == "new" )
 	$html .= "<input id=\"save\" type=\"submit\" value=\"Save\" />\n";
 	$html .= "<input id=\"cancel\" type=\"button\" onclick=\"history.go(-1);\" value=\"Cancel\" /></p>\n";
 	$html .= "</form>\n";
+
+	# javascript add-ons
+	$html .= "<script src=\"/w2/javascript/scale_textbox.js\"></script>";
 }
 else if ( $action == "logout" )
 {
