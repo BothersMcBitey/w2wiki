@@ -12,6 +12,17 @@
  */
 
 // --------------------
+// Javascript settings
+// --------------------
+
+// ENABLE_JAVASCRIPT
+//
+// Global flag to disable/enable javascript features.
+// Each js feature is configured seperate below.
+
+define('JS_ENABLE', true);
+
+// --------------------
 // Site layout settings
 // --------------------
 
@@ -131,6 +142,12 @@ define('TITLE_DATE_NO_TIME', 'j-M-Y');
 // Default size of the text editing area in text rows.
 
 define('EDIT_ROWS', 18);
+
+// AUTOSCALE_TEXTEDIT_BOX (JS)
+//
+// Automatically scales the text editing area to fit all content.
+
+define('AUTOSCALE_TEXTEDIT', $JS_ENABLE ? "<script src=\"/w2/javascript/textbox_scale.js\"></script>" : "");
 
 // AUTOLINK_PAGE_TITLES
 //
