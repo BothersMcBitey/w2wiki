@@ -138,7 +138,7 @@ define('EDIT_ROWS', 18);
 // to the named page. This might degrade performance if you have many
 // thousands of pages.
 
-define('AUTOLINK_PAGE_TITLES', false);
+define('AUTOLINK_PAGE_TITLES', true);
 
 
 // -----------------------------
