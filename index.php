@@ -116,7 +116,7 @@ function printToolbar()
 
 	print "<div class=\"toolbar\">";
 	# left hand side
-	print "<div>";	
+	print "<div id=\"left\">";	
 	print "<a class=\"tool\" href=\"/w2/index.php\">Home</a>";
  	print "<a class=\"tool\" href=\"" . SELF . "?action=all_name\">See All Pages</a> ";
 	print "<a class=\"tool\" href=\"" . SELF . "?action=all_images\">See All Images</a> ";
@@ -130,7 +130,7 @@ function printToolbar()
 	print "</div>";
 
 	# right hand side
-	print "<div>";
+	print "<div id=\"right\">";
 	print "<a class=\"tool\" href=\"" . SELF . "?action=add_resource\">Create or Upload</a> ";
 	//print "<a class=\"tool\" href=\"" . SELF . "?action=new\">New Entry</a> ";
 	//if ( !DISABLE_UPLOADS )
