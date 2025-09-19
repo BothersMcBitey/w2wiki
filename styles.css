@@ -479,9 +479,7 @@ hr.minor {
   width: 100%;
 }
 
-#mobile-logo{
-    display: none;
-}
+
 
 @media (max-height: 900px){
   .resource-gallery-element p {
@@ -492,6 +490,12 @@ hr.minor {
 @media (max-width: 1400px) {
   #banner-title {
     width: 50%;
+  }
+}
+
+@media (min-width: 501px){
+  #mobile-logo{
+      display: none;
   }
 }
 
