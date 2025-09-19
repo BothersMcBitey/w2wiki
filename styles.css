@@ -510,13 +510,13 @@ hr.minor {
   }
 
   /* Switch to mobile toolbar */
-  #left, #right{
+  #toolbar #left, #toolbar #right{
     display: none;
   }
-  #center{
+  #toolbar #center{
     width: 70%;
   }
-  #center .tool {
+  #toolbar #center .tool {
     padding: 0 0.5em;
   }
 }
