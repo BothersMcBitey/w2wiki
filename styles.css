@@ -508,6 +508,17 @@ hr.minor {
     padding-left: 0.1em;
     width: 80%;
   }
+
+  /* Switch to mobile toolbar */
+  #left, #right{
+    display: none;
+  }
+  #center{
+    width: 70%;
+  }
+  #center .tool {
+    padding: 0 0.5em;
+  }
 }
 
 /*
