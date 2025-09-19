@@ -269,6 +269,10 @@ img {
   width: 30%;
 }
 
+.toolbar form{
+  width: 100%;
+}
+
 .toolbar div:last-of-type {
   justify-content: flex-end;
 }
@@ -278,10 +282,6 @@ img {
   padding: 0 1em;
   align-items: center;
   margin: 0;
-}
-
-.tool form{
-  width: 100%;
 }
 
 .titlebar {
