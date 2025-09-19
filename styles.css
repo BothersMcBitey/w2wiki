@@ -98,22 +98,32 @@ header input {
   font-size: 1rem;
 }
 
-#main,
-#padding {
+#main, #padding {
   max-width: 1200px;
   width: max(60vw, 350px);
   padding-left: 2.5vw;
   padding-right: 2.5vw;
 }
 
+/* Mobile devices =====================================================*/
 @media (max-width: 500px) {
-    #main,
-  #padding {
+  
+  #main, #padding {
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
   }
+  
+  #logo, #edittime, #titledate{
+    display: none;
+  }
 }
+
+/*
+    document.getElementById("left").style.display = "none";
+    document.getElementById("right").style.display = "none";
+
+/* ====================================================================*/
 
 #main form {
   display: flex;
