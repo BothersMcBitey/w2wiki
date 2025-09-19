@@ -1,0 +1,41 @@
+<html>
+ <header>
+
+ <div class=\"toolbar\">
+	<!-- left hand side -->
+	 <div>	
+	 <a class=\"tool\" href=\"/w2/index.php\">Home</a>
+ 	 <a class=\"tool\" href=\"" . SELF . "?action=all_name\">See All Pages</a>
+	 <a class=\"tool\" href=\"" . SELF . "?action=all_images\">See All Images</a>
+	 <!-- <a class=\"tool\" href=\"" . SELF . "?action=graph\">View Graph</a> " -->
+	 </div>
+
+     <!-- Search bar -->
+	 <div id=\"center\">
+	 <form class=\"tool\" method=\"post\" action=\"" . SELF . "?action=search\">\n"
+	 <input autocomplete=\"on\" placeholder=\"Search all pages and tags...\" size=\"40\" id=\"search\" type=\"text\" name=\"q\" /></form>
+	 </div>
+
+	<!-- right hand side -->
+	 <div>
+	 <a class=\"tool\" href=\"" . SELF . "?action=add_resource\">Create or Upload</a>
+	<!-- // <a class=\"tool\" href=\"" . SELF . "?action=new\">New Entry</a> "
+	//if ( !DISABLE_UPLOADS )
+		// <a class=\"tool\" href=\"" . SELF . VIEW . "?action=upload\">Upload Image</a>
+	 </div>
+	if ( REQUIRE_PASSWORD )
+		 '<a class="tool" href="' . SELF . '?action=logout">Exit</a>' -->
+
+	 </div>\n"
+
+ <div class=\"titlebar\"> .
+	<div class=\"logo\"><a href=\"/w2/index.php\"><img src=\"/w2/images/icon.png\"></a></div> .
+	<div class=\"title\">$title</div> .
+	<div class=\"edit-div\"> " .
+		<div><a class=\"first\" href=\"" . SELF . "?action=edit&amppage=$upage\">Edit Page</a> </div> .
+		<div><span class=\"edittime\">Last Edited:</span></div> .
+		<div>$datetime</div> .
+	</div></div>
+
+ </header>
+</html>

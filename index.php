@@ -657,7 +657,7 @@ print "<header>\n";
 printToolbar();
 
 print "<div class=\"titlebar\">" .
-	"<div class=\"logo\"><a href=\"/w2/index.php\"><img src=\"/w2/images/icon.png\"></a></div>" .
+	"<div id=\"logo\"><a href=\"/w2/index.php\"><img src=\"/w2/images/icon.png\"></a></div>" .
 	"<div class=\"title\">$title</div>" .
 	"<div class=\"edit-div\"> " .
 		"<div><a class=\"first\" href=\"" . SELF . "?action=edit&amp;page=$upage\">Edit Page</a> </div>" .
@@ -689,6 +689,8 @@ print "</body>\n";
 print "<script src=\"/w2/javascript/proccess_intra_page_links.js\"></script>\n";
 print "<script src=\"/w2/javascript/fancy_scroll.js\"></script>\n";
 print "<script src=\"/w2/javascript/insert_horizontal_rules.js\"></script>\n";
+
+print "<script src=\"/w2/javascript/mobile_page.js\"></script>\n";
 
 print "</html>\n";
 

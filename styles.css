@@ -314,6 +314,7 @@ img {
   width: 80%;
   font-size: 1em;
   font-weight: bold;
+  text-align: left;
 }
 
 @media (max-width: 1400px) {
@@ -326,20 +327,20 @@ img {
   display: flex;
 }
 
-.logo {
+#logo {
   width: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.logo a {
+#logo a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.logo img {
+#logo img {
   max-height: 6rem;
   min-height: 4rem;
 }
