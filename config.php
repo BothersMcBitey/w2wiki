@@ -147,7 +147,7 @@ define('EDIT_ROWS', 18);
 //
 // Automatically scales the text editing area to fit all content.
 
-define('AUTOSCALE_TEXTEDIT', $JS_ENABLE ? "<script src=\"/w2/javascript/textbox_scale.js\"></script>" : "");
+define('AUTOSCALE_TEXTEDIT', $JS_ENABLE ? "<script src=\"/w2/javascript/textbox_scale.js\"></script>" : "<p>Butts</p>");
 
 // AUTOLINK_PAGE_TITLES
 //

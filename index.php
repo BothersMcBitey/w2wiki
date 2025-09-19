@@ -90,6 +90,14 @@ function debug_to_console($data) {
     echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
 }
 
+function dd($data)
+{
+    # echo '<pre>'.print_r($data,1).'</pre>';
+    # exit;
+    echo "<script>console.log('Debug Dump: " . var_dump($data) . "' );</script>";
+    var_dump($data);
+}
+
 // makes an <a> tag in the form of  "/rootdir/index.php/[match]", where match is the name of a page (in theory)
 //		if the page doesn't exist, it sends you to a weird empty page. So that's an issue.
 function _handle_links($match)
@@ -308,6 +316,11 @@ if ( $action == "edit" || $action == "new" )
 	$html .= "<textarea id=\"text_edit\" name=\"newText\" rows=\"" . EDIT_ROWS . "\">$text</textarea>\n";
 	
 	# Edit specific Scripts
+	dd($BASE_PATH);
+	dd($JS_ENABLE);
+	dd($AUTOSCALE_TEXTEDIT);
+	echo "<p>" . $JS_ENABLE . "</p>";
+	debug_to_console("THIS BLOWS");
 	$html .= $AUTOSCALE_TEXTEDIT;
 	$html .= "<script src=\"/w2/javascript/trap_tab.js\"></script>";
 	$html .= "<script src=\"/w2/javascript/trap_control.js\"></script>";
