@@ -98,6 +98,23 @@ main {
   font-size: 14pt;
 }
 
+main,
+.padding {
+  max-width: 1200px;
+  width: max(60vw, 350px);
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+}
+
+@media (max-width: 400px) {
+    main,
+  .padding {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
 main form {
   display: flex;
   flex-direction: column;
@@ -119,13 +136,6 @@ main .content {
   padding: 0;
 }
 
-main,
-.padding {
-  max-width: 1500px;
-  width: 75vw;
-  padding-left: 2.5vw;
-  padding-right: 2.5vw;
-}
 
 footer {
   width: 100%;
