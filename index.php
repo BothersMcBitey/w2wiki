@@ -90,6 +90,12 @@ function debug_to_console($data) {
     echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
 }
 
+function dd($data)
+{
+    echo '<pre>'.print_r($data,1).'</pre>';
+    exit;
+}
+
 // makes an <a> tag in the form of  "/rootdir/index.php/[match]", where match is the name of a page (in theory)
 //		if the page doesn't exist, it sends you to a weird empty page. So that's an issue.
 function _handle_links($match)
