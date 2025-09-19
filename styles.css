@@ -345,7 +345,7 @@ img {
   min-height: 4rem;
 }
 
-.edit-div {
+#edit-div {
   width: 30%;
   font-weight: normal;
   display: flex;
@@ -354,12 +354,12 @@ img {
   align-items: flex-end;
 }
 
-.edit-div div {
+#edit-div div {
   margin-bottom: 1em;
   display: flex;
 }
 
-.edittime {
+#edittime {
   padding-bottom: 0.1rem;
   font-size: 0.8rem;
   text-align: right;
@@ -367,7 +367,7 @@ img {
   margin: 0 0.2rem 0 2rem;
 }
 
-.titledate {
+#titledate {
   padding-bottom: 0.1rem;
   font-size: 0.8rem;
   text-align: right;

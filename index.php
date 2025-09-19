@@ -630,7 +630,7 @@ else
 
 	if ( TITLE_DATE )
 	{
-		$datetime = "<span class=\"titledate\">" . date(TITLE_DATE, @filemtime($filename)) . "</span>";
+		$datetime = "<span id=\"titledate\">" . date(TITLE_DATE, @filemtime($filename)) . "</span>";
 	}
 }
 
@@ -659,9 +659,9 @@ printToolbar();
 print "<div class=\"titlebar\">" .
 	"<div id=\"logo\"><a href=\"/w2/index.php\"><img src=\"/w2/images/icon.png\"></a></div>" .
 	"<div class=\"title\">$title</div>" .
-	"<div class=\"edit-div\"> " .
+	"<div id=\"edit-div\"> " .
 		"<div><a class=\"first\" href=\"" . SELF . "?action=edit&amp;page=$upage\">Edit Page</a> </div>" .
-		"<div><span class=\"edittime\">Last Edited:</span></div>" .
+		"<div><span id=\"edittime\">Last Edited:</span></div>" .
 		"<div>$datetime</div>" .
 	"</div></div>\n";
 
