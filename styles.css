@@ -494,8 +494,8 @@ hr.minor {
 }
 
 @media (min-width: 501px){
-  #mobile-logo{
-      display: none;
+  #toolbar #mobile-logo{
+      display: none !important;
   }
 }
 
@@ -532,7 +532,7 @@ hr.minor {
     padding: 0;
   }
 
-  #mobile-logo{
+  #toolbar #mobile-logo{
     display: flex;
   }
 }
