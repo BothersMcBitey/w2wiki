@@ -475,3 +475,7 @@ hr.minor {
 #center {
   justify-content: center;
 }
+
+#search {
+  text-align: left;
+}
