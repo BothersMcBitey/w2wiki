@@ -534,6 +534,7 @@ hr.minor {
 
   #toolbar #mobile-logo{
     display: flex;
+    max-width: 50px;
   }
 }
 
