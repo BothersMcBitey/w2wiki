@@ -87,7 +87,7 @@ header input {
   text-align: center;
 }
 
-main {
+#main {
   background-color: white;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -98,7 +98,7 @@ main {
   font-size: 1rem;
 }
 
-main,
+#main,
 #padding {
   max-width: 1200px;
   width: max(60vw, 350px);
@@ -107,7 +107,7 @@ main,
 }
 
 @media (max-width: 400px) {
-    main,
+    #main,
   #padding {
     width: 90%;
     padding-left: 5%;
@@ -115,7 +115,7 @@ main,
   }
 }
 
-main form {
+#main form {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -123,7 +123,7 @@ main form {
   align-items: center;
 }
 
-main .content {
+#main .content {
   /*height: 100%;*/
   display: flex;
   flex-direction: column;
