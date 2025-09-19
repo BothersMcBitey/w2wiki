@@ -99,7 +99,7 @@ main {
 }
 
 main,
-.padding {
+#padding {
   max-width: 1200px;
   width: max(60vw, 350px);
   padding-left: 2.5vw;
@@ -108,7 +108,7 @@ main,
 
 @media (max-width: 400px) {
     main,
-  .padding {
+  #padding {
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
@@ -129,7 +129,7 @@ main .content {
   flex-direction: column;
 }
 
-.padding {
+#padding {
   background-color: white;
   flex-grow: 1;
   min-height: 0px;

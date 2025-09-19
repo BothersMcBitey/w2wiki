@@ -681,7 +681,7 @@ print "<div id=\"bottom\" class=\"float_button\">" .
     	"<a href=\"#foot\">Jump to Bottom</a>" .
 	  "</div>";
 
-print "<div class=\"padding\"></div>";
+print "<div id=\"padding\"></div>";
 
 print "<footer id=\"foot\">This is the footer</footer>";
 print "</body>\n";
