@@ -114,7 +114,7 @@ function printToolbar()
 {
 	global $upage, $page, $action;
 
-	print "<div class=\"toolbar\">";
+	print "<div id=\"toolbar\">";
 	# left hand side
 	print "<div id=\"left\">";	
 	print "<a class=\"tool\" href=\"/w2/index.php\">Home</a>";

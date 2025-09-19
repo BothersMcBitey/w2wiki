@@ -12,7 +12,7 @@ function enable_modible_mode(){
     /*document.getElementById("main").style.width = "90%";
     document.getElementById("main").style.paddingLeft ="5%";
     document.getElementById("main").style.paddingRight = "5%";*/
-    document.getElementById("main").style = `
+    /*document.getElementById("main").style = `
         background-color: white;
         padding-top: 1em;
         padding-bottom: 1em;
@@ -23,10 +23,10 @@ function enable_modible_mode(){
         font-size: 1rem;
         width: 90%;
         padding-left: 5%;
-        padding-right: 5%;;`
+        padding-right: 5%;`
     document.getElementById("padding").style.width = "90%";
     document.getElementById("padding").style.paddingLeft ="5%";
-    document.getElementById("padding").style.paddingRight = "5%";
+    document.getElementById("padding").style.paddingRight = "5%";*/
 
 
 }

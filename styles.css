@@ -106,7 +106,7 @@ header input {
   padding-right: 2.5vw;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     #main,
   #padding {
     width: 90%;
@@ -266,7 +266,7 @@ img {
   height: auto;
 }
 
-.toolbar {
+#toolbar {
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -274,16 +274,16 @@ img {
   padding: 1em;
 }
 
-.toolbar div {
+#toolbar div {
   display: flex;
   width: 30%;
 }
 
-.toolbar form{
+#toolbar form{
   width: 100%;
 }
 
-.toolbar div:last-of-type {
+#toolbar div:last-of-type {
   justify-content: flex-end;
 }
 
