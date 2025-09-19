@@ -259,11 +259,9 @@ img {
 .toolbar {
   display: flex;
   justify-content: space-between;
-  align-content: center;
   text-align: center;
   background-color: #444444;
-  padding: 0.5em 1em;
-  padding-top: 1em;
+  padding: 1em;
 }
 
 .toolbar div {
@@ -278,6 +276,8 @@ img {
 .tool {
   display: flex;
   padding: 0 1em;
+  align-items: center;
+  margin: 0;
 }
 
 .titlebar {
@@ -478,4 +478,5 @@ hr.minor {
 
 #search {
   text-align: left;
+  height: 1.5rem;
 }
