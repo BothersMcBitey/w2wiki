@@ -273,6 +273,9 @@ if ( $action == "edit" || $action == "new" )
 		$text = "";
 
 	$html .= "<p><textarea id=\"text\" name=\"newText\" rows=\"" . EDIT_ROWS . "\">$text</textarea></p>\n";
+	
+	$html .= "<script src=\"/w2/javascript/trap_keys.js\"></script>";
+	
 	$html .= "<p><input type=\"hidden\" name=\"action\" value=\"save\" />";
 	$html .= "<input id=\"save\" type=\"submit\" value=\"Save\" />\n";
 	$html .= "<input id=\"cancel\" type=\"button\" onclick=\"history.go(-1);\" value=\"Cancel\" /></p>\n";
