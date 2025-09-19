@@ -280,6 +280,10 @@ img {
   margin: 0;
 }
 
+.tool form{
+  width: 100%;
+}
+
 .titlebar {
   display: flex;
   justify-content: space-evenly;
@@ -479,4 +483,6 @@ hr.minor {
 #search {
   text-align: left;
   height: 1.5rem;
+  border-radius: 3px;
+  width: 100%;
 }
