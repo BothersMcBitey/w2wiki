@@ -295,7 +295,7 @@ img {
   padding: 4px 4px 4px 12px;
 }
 
-.title {
+#banner-title {
   display: flex;
   justify-content: flex-start;
   align-content: center;
@@ -486,7 +486,7 @@ hr.minor {
 }
 
 @media (max-width: 1400px) {
-  .title {
+  #banner-title {
     width: 50%;
   }
 }
@@ -502,6 +502,11 @@ hr.minor {
   
   #logo, #edittime, #titledate{
     display: none;
+  }
+
+  #banner-title{
+    padding-left: 0.1em;
+    width: 80%;
   }
 }
 
