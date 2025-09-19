@@ -479,6 +479,10 @@ hr.minor {
   width: 100%;
 }
 
+#mobile-logo{
+    display: none;
+}
+
 @media (max-height: 900px){
   .resource-gallery-element p {
     font-size: 1rem;
@@ -505,7 +509,7 @@ hr.minor {
   }
 
   #edit-button{
-    padding-right: 0.5rem;
+    padding-right: 1rem;
   }
 
   #banner-title{
@@ -521,7 +525,11 @@ hr.minor {
     width: 70%;
   }
   #toolbar #center .tool {
-    padding: 0 0.5em;
+    padding: 0;
+  }
+
+  #mobile-logo{
+    display: flex;
   }
 }
 
