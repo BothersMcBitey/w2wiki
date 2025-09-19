@@ -105,26 +105,6 @@ header input {
   padding-right: 2.5vw;
 }
 
-/* Mobile devices =====================================================*/
-@media (max-width: 500px) {
-  
-  #main, #padding {
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  
-  #logo, #edittime, #titledate{
-    display: none;
-  }
-}
-
-/*
-    document.getElementById("left").style.display = "none";
-    document.getElementById("right").style.display = "none";
-
-/* ====================================================================*/
-
 #main form {
   display: flex;
   flex-direction: column;
@@ -327,12 +307,6 @@ img {
   text-align: left;
 }
 
-@media (max-width: 1400px) {
-  .title {
-    width: 50%;
-  }
-}
-
 .titlebar .a {
   display: flex;
 }
@@ -482,11 +456,7 @@ hr.minor {
   font-size: 1.8rem;
 }
 
-@media (max-height: 900px){
-  .resource-gallery-element p {
-    font-size: 1rem;
-  }
-}
+
 
 .resource-gallery-element a {
   color: black;
@@ -508,3 +478,35 @@ hr.minor {
   border-radius: 3px;
   width: 100%;
 }
+
+@media (max-height: 900px){
+  .resource-gallery-element p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .title {
+    width: 50%;
+  }
+}
+
+/* Mobile devices =====================================================*/
+@media (max-width: 500px) {
+  
+  #main, #padding {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  #logo, #edittime, #titledate{
+    display: none;
+  }
+}
+
+/*
+    document.getElementById("left").style.display = "none";
+    document.getElementById("right").style.display = "none";
+
+/* ====================================================================*/
