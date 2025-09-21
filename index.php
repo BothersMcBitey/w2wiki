@@ -709,8 +709,6 @@ print "<script src=\"/w2/javascript/proccess_intra_page_links.js\"></script>\n";
 print "<script src=\"/w2/javascript/fancy_scroll.js\"></script>\n";
 print "<script src=\"/w2/javascript/insert_horizontal_rules.js\"></script>\n";
 
-print "<script src=\"/w2/javascript/mobile_page.js\"></script>\n";
-
 print "</html>\n";
 
 #debug_to_console($action);
