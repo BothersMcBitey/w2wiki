@@ -116,22 +116,6 @@ function printToolbar()
 
 	print "<div id=\"toolbar\">";
 	print "<div id=\"mobile-logo\"><a href=\"javascript:void(0);\" class=\"icon\" onclick=\"myFunction()\"><img src=\"/w2/images/icon.png\"></a></div>";
-	print "<div id=\"drop-menu\">";
-	print " <a href=\"" . SELF . "\">Home</a>";
-	print " <a href=\"" . SELF . "?action=all_name\">See All Pages</a";
-	print " <a href=\"" . SELF . "?action=add_resource\">Create or Upload</a>";
-	print "</div>";
-
-	print "<script>
-	function myFunction() {
-	var x = document.getElementById(\"drop-menu\");
-	if (x.style.display === \"block\") {
-		x.style.display = \"none\";
-	} else {
-		x.style.display = \"block\";
-	}
-	}
-	</script>";
 
 	# left hand side
 	print "<div id=\"left\">";	
@@ -158,6 +142,23 @@ function printToolbar()
 		print '<a class="tool" href="' . SELF . '?action=logout">Exit</a>';
 
 	print "</div>\n";
+	
+	print "<div id=\"drop-menu\">";
+	print " <a href=\"" . SELF . "\">Home</a>";
+	print " <a href=\"" . SELF . "?action=all_name\">See All Pages</a";
+	print " <a href=\"" . SELF . "?action=add_resource\">Create or Upload</a>";
+	print "</div>";
+
+	print "<script>
+	function myFunction() {
+	var x = document.getElementById(\"drop-menu\");
+	if (x.style.display === \"block\") {
+		x.style.display = \"none\";
+	} else {
+		x.style.display = \"block\";
+	}
+	}
+	</script>";
 }
 
 
