@@ -115,11 +115,11 @@ function printToolbar()
 	global $upage, $page, $action;
 
 	print "<div id=\"toolbar\">";
-	print "<div id=\"mobile-logo\"><a href=\"javascript:void(0);\" class=\"icon\" onclick=\"myFunction()\"><img src=\"/w2/images/icon.png\"></a></div>";
+	print "<div id=\"mobile-logo\"><a href=\"javascript:void(0);\" class=\"icon\" onclick=\"toggleDropdown()\"><img src=\"/w2/images/icon.png\"></a></div>";
 
 	# left hand side
 	print "<div id=\"left\">";	
-	print "<a class=\"tool\" href=\"/w2/index.php\">Home</a>";
+	print "<a class=\"tool\" href=\"" . SELF . "\">Home</a>";
  	print "<a class=\"tool\" href=\"" . SELF . "?action=all_name\">See All Pages</a> ";
 	print "<a class=\"tool\" href=\"" . SELF . "?action=all_images\">See All Images</a> ";
 	#print "<a class=\"tool\" href=\"" . SELF . "?action=graph\">View Graph</a> ";
@@ -146,11 +146,12 @@ function printToolbar()
 	print "<div id=\"drop-menu\">";
 	print " <a href=\"" . SELF . "\">Home</a>";
 	print " <a href=\"" . SELF . "?action=all_name\">See All Pages</a>";
+	print " <a href=\"" . SELF . "?action=all_images\">See All Images</a> ";
 	print " <a href=\"" . SELF . "?action=add_resource\">Create or Upload</a> ";
 	print "</div>";
 
 	print "<script>
-	function myFunction() {
+	function toggleDropdown() {
 	var x = document.getElementById(\"drop-menu\");
 	if (x.style.display === \"block\") {
 		x.style.display = \"none\";

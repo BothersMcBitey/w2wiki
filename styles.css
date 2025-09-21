@@ -494,6 +494,13 @@ hr.minor {
   width: 100%;
 }
 
+/*the enter title box for making a new page*/
+#title {
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: #fafafa;
+}
+
 
 @media (max-height: 900px){
   .resource-gallery-element p {
