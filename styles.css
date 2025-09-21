@@ -260,10 +260,12 @@ img {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  align-items: baseline;
-  text-align: left;
+  align-items: baseline;  
   background-color: #444444;
   padding: 1rem;
+  text-align: left;
+  color: white;
+  font-size: 2rem;
 }
 
 #toolbar {
