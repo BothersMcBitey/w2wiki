@@ -480,6 +480,11 @@ hr.minor {
 }
 
 
+#drop-menu {
+  display: none;
+}
+
+
 
 @media (max-height: 900px){
   .resource-gallery-element p {
