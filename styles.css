@@ -256,12 +256,22 @@ img {
   height: auto;
 }
 
+#drop-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  text-align: left;
+  background-color: #444444;
+  padding: 1rem;
+}
+
 #toolbar {
   display: flex;
   justify-content: space-between;
   text-align: center;
   background-color: #444444;
-  padding: 1em;
+  padding: 1rem;
 }
 
 #toolbar div {
@@ -478,12 +488,6 @@ hr.minor {
   border-radius: 3px;
   width: 100%;
 }
-
-
-#toolbar #drop-menu {
-  display: none;
-}
-
 
 
 @media (max-height: 900px){

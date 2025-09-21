@@ -142,7 +142,7 @@ function printToolbar()
 		print '<a class="tool" href="' . SELF . '?action=logout">Exit</a>';
 
 	print "</div>\n";
-	
+
 	print "<div id=\"drop-menu\">";
 	print " <a href=\"" . SELF . "\">Home</a>";
 	print " <a href=\"" . SELF . "?action=all_name\">See All Pages</a";
@@ -155,7 +155,7 @@ function printToolbar()
 	if (x.style.display === \"block\") {
 		x.style.display = \"none\";
 	} else {
-		x.style.display = \"block\";
+		x.style.display = \"flex\";
 	}
 	}
 	</script>";
