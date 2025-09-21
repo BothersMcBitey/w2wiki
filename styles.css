@@ -267,7 +267,6 @@ img {
 
 #drop-menu a {
   text-align: left;
-  color: white;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -509,7 +508,7 @@ hr.minor {
 }
 
 @media (min-width: 501px){
-  #toolbar #mobile-logo{
+  #toolbar #mobile-logo, #drop-menu{
       display: none !important;
   }
 }
