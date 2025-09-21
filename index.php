@@ -153,7 +153,7 @@ function printToolbar()
 	print "<script>
 	function toggleDropdown() {
 	var x = document.getElementById(\"drop-menu\");
-	if (x.style.display === \"block\") {
+	if (x.style.display === \"flex\") {
 		x.style.display = \"none\";
 	} else {
 		x.style.display = \"flex\";
