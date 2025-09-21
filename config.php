@@ -20,7 +20,7 @@
 // Global flag to disable/enable javascript features.
 // Each js feature is configured seperate below.
 
-define('JS_ENABLE', true);
+define('JS_ENABLE', false);
 
 // --------------------
 // Site layout settings
@@ -147,7 +147,7 @@ define('EDIT_ROWS', 18);
 //
 // Automatically scales the text editing area to fit all content.
 
-define('AUTOSCALE_TEXTEDIT', $JS_ENABLE ? "<script src=\"/w2/javascript/textbox_scale.js\"></script>" : "");
+define('AUTOSCALE_TEXTEDIT', JS_ENABLE ? "<script src=\"/w2/javascript/textbox_scale.js\"></script>" : "");
 
 // AUTOLINK_PAGE_TITLES
 //

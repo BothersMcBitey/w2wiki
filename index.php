@@ -314,7 +314,7 @@ if ( $action == "edit" || $action == "new" )
 	$html .= "<textarea id=\"text_edit\" name=\"newText\" rows=\"" . EDIT_ROWS . "\">$text</textarea>\n";
 	
 	# Edit specific Scripts
-	$html .= $AUTOSCALE_TEXTEDIT;
+	$html .= AUTOSCALE_TEXTEDIT;
 	$html .= "<script src=\"/w2/javascript/trap_tab.js\"></script>";
 	$html .= "<script src=\"/w2/javascript/trap_control.js\"></script>";
 
