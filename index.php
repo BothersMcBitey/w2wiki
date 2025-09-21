@@ -146,7 +146,7 @@ function printToolbar()
 	print "<div id=\"drop-menu\">";
 	print " <a href=\"" . SELF . "\">Home</a>";
 	print " <a href=\"" . SELF . "?action=all_name\">See All Pages</a";
-	print " <a class=\"tool\" href=\"" . SELF . "?action=add_resource\">Create or Upload</a> ";
+	print " <a href=\"google.com\">Poop</a> ";
 	print "</div>";
 
 	print "<script>
