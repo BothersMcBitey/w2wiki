@@ -317,8 +317,6 @@ if ( $action == "edit" || $action == "new" )
 	
 	# Edit specific Scripts
 	$html .= AUTOSCALE_TEXTEDIT;
-	dd(JS_ENABLE);
-	dd(AUTOSCALE_TEXTEDIT);
 	$html .= "<script src=\"/w2/javascript/trap_tab.js\"></script>";
 	$html .= "<script src=\"/w2/javascript/trap_control.js\"></script>";
 

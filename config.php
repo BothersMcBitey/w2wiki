@@ -20,7 +20,7 @@
 // Global flag to disable/enable javascript features.
 // Each js feature is configured seperate below.
 
-define('JS_ENABLE', false);
+define('JS_ENABLE', true);
 
 // --------------------
 // Site layout settings
