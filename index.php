@@ -92,8 +92,10 @@ function debug_to_console($data) {
 
 function dd($data)
 {
-    echo '<pre>'.print_r($data,1).'</pre>';
-    exit;
+    # echo '<pre>'.print_r($data,1).'</pre>';
+    # exit;
+    echo "<script>console.log('Debug Dump: " . var_dump($data) . "' );</script>";
+    var_dump($data);
 }
 
 // makes an <a> tag in the form of  "/rootdir/index.php/[match]", where match is the name of a page (in theory)
@@ -315,6 +317,8 @@ if ( $action == "edit" || $action == "new" )
 	
 	# Edit specific Scripts
 	$html .= AUTOSCALE_TEXTEDIT;
+	dd(JS_ENABLE);
+	dd(AUTOSCALE_TEXTEDIT);
 	$html .= "<script src=\"/w2/javascript/trap_tab.js\"></script>";
 	$html .= "<script src=\"/w2/javascript/trap_control.js\"></script>";
 
