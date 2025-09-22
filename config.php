@@ -11,6 +11,17 @@
  *
  */
 
+// =============================================================================
+// Contents:
+//      Javascript settings
+//      Site layout settings
+//      File upload settings
+//      File Creation settings
+//      Interface settings
+//      Markdown rendering settings
+//      Security and session settings
+// =============================================================================
+
 // -----------------------------------------------------------------------------
 // Javascript settings
 // -----------------------------------------------------------------------------
@@ -39,7 +50,7 @@ define('BASE_PATH', getcwd());
 // You should not use a trailing slash.
 
 define('IMAGE_FOLDER', '/img');
-define( 'PAGE_FOLDER', '/txt');
+define( 'PAGE_FOLDER', '/md');
 
 // IMAGE_PATH
 //
@@ -94,6 +105,14 @@ define('DEFAULT_PAGE', 'Home');
 // The CSS file to load to style the wiki, relative to BASE_URI
 
 define('CSS_FILE', 'styles.css');
+
+// BACKGROUND_IMAGE
+//
+// Allows you to set a global background image. This follows the
+// rules defined under the 'body' tag in styles.css
+// Switch to false to remove image entirely.
+
+define('BACKGROUND_IMAGE', true ? "style=\"background-image: url(" . IMAGE_PATH . "/background.png)\"" : "");
 
 // -----------------------------------------------------------------------------
 // File upload settings
@@ -193,7 +212,7 @@ define('LINK_HEADERS', (true && JS_ENABLE) ? "<script src=\"/w2/javascript/procc
 define('JUMP_BUTTONS', (true && JS_ENABLE) ? "<script src=\"/w2/javascript/fancy_scroll.js\"></script>\n" : "");
 
 // -----------------------------------------------------------------------------
-// Rendering settings
+// Markdown rendering settings
 // -----------------------------------------------------------------------------
 
 // UNDERLINE_HEADINGS (JS)

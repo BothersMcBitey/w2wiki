@@ -653,7 +653,7 @@ print "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, 
 print "<link type=\"text/css\" rel=\"stylesheet\" href=\"" . BASE_URI . "/" . CSS_FILE ."\" />\n";
 print "<title>$title</title>\n";
 print "</head>\n";
-print "<body id=\"body\">\n";
+print "<body id=\"body\" " . BACKGROUND_IMAGE . ">\n";
 
 print "<header>\n";
 
