@@ -695,8 +695,8 @@ print "<footer id=\"foot\">This is the footer</footer>";
 print "</body>\n";
 
 print "<script src=\"/w2/javascript/proccess_intra_page_links.js\"></script>\n";
-print "<script src=\"/w2/javascript/fancy_scroll.js\"></script>\n";
-print "<script src=\"/w2/javascript/insert_horizontal_rules.js\"></script>\n";
+print JUMP_BUTTONS;
+print UNDERLINE_HEADINGS;
 
 print "</html>\n";
 

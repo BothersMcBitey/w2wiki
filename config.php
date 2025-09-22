@@ -11,9 +11,9 @@
  *
  */
 
-// --------------------
+// -----------------------------------------------------------------------------
 // Javascript settings
-// --------------------
+// -----------------------------------------------------------------------------
 
 // ENABLE_JAVASCRIPT
 //
@@ -22,9 +22,9 @@
 
 define('JS_ENABLE', true);
 
-// --------------------
+// -----------------------------------------------------------------------------
 // Site layout settings
-// --------------------
+// -----------------------------------------------------------------------------
 
 // BASE_PATH
 //
@@ -80,9 +80,9 @@ define('DEFAULT_PAGE', 'Home');
 
 define('CSS_FILE', 'styles.css');
 
-// --------------------
+// -----------------------------------------------------------------------------
 // File upload settings
-// --------------------
+// -----------------------------------------------------------------------------
 
 // DISABLE_UPLOADS
 //
@@ -118,15 +118,15 @@ define('VALID_UPLOAD_IMG_EXTS', 'jpg,jpeg,png,gif');
 
 define('VALID_UPLOAD_PAGE_EXTS', 'md');
 
-// ------------------
+// -----------------------------------------------------------------------------
 // File Creation settings
-// ------------------
+// -----------------------------------------------------------------------------
 
 define('NEW_FILE_CONTENT', value:'<!-- Tags entered here are not visible, but are used to help search results !-->' . PHP_EOL . '<div class="tags">example-tag</div>' . PHP_EOL . PHP_EOL . "# Page Title" . PHP_EOL . "content");
 
-// ------------------
+// -----------------------------------------------------------------------------
 // Interface settings
-// ------------------
+// -----------------------------------------------------------------------------
 
 // TITLE_DATE
 //
@@ -147,7 +147,7 @@ define('EDIT_ROWS', 18);
 //
 // Automatically scales the text editing area to fit all content.
 
-define('AUTOSCALE_TEXTEDIT', JS_ENABLE ? "<script src=\"/w2/javascript/textbox_scale.js\"></script>" : "");
+define('AUTOSCALE_TEXTEDIT', (true && JS_ENABLE) ? "<script src=\"/w2/javascript/textbox_scale.js\"></script>" : "");
 
 // AUTOLINK_PAGE_TITLES
 //
@@ -157,10 +157,25 @@ define('AUTOSCALE_TEXTEDIT', JS_ENABLE ? "<script src=\"/w2/javascript/textbox_s
 
 define('AUTOLINK_PAGE_TITLES', false);
 
+// JUMP_BUTTONS (JS)
+//
+// Add floating buttons which jump to the top and bottom of the page.
 
-// -----------------------------
+define('JUMP_BUTTONS', (true && JS_ENABLE) ? "<script src=\"/w2/javascript/fancy_scroll.js\"></script>\n" : "");
+
+// -----------------------------------------------------------------------------
+// Rendering settings
+// -----------------------------------------------------------------------------
+
+// UNDERLINE_HEADINGS (JS)
+//
+// Add ruled lines of varying thicknesses beneath markdown headers
+
+define('UNDERLINE_HEADINGS', (true && JS_ENABLE) ? "<script src=\"/w2/javascript/insert_horizontal_rules.js\"></script>\n" : "");
+
+// -----------------------------------------------------------------------------
 // Security and session settings
-// -----------------------------
+// -----------------------------------------------------------------------------
 
 // REQUIRE_PASSWORD
 //
