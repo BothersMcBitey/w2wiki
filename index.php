@@ -125,7 +125,7 @@ function printToolbar()
 	print "<div class=\"toolbar\">";
 	# left hand side
 	print "<div>";	
-	print "<a class=\"tool\" href=\"/w2/index.php\">Home</a>";
+	print "<a class=\"tool\" href=\"" . SELF . "\">Home</a>";
  	print "<a class=\"tool\" href=\"" . SELF . "?action=all_name\">See All Pages</a> ";
 	print "<a class=\"tool\" href=\"" . SELF . "?action=all_images\">See All Images</a> ";
 	#print "<a class=\"tool\" href=\"" . SELF . "?action=graph\">View Graph</a> ";
