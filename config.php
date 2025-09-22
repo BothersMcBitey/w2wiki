@@ -50,7 +50,7 @@ define('BASE_PATH', getcwd());
 // You should not use a trailing slash.
 
 define('IMAGE_FOLDER', '/img');
-define( 'PAGE_FOLDER', '/md');
+define( 'PAGE_FOLDER', '/pages');
 
 // IMAGE_PATH
 //

@@ -660,7 +660,7 @@ print "<header>\n";
 printToolbar();
 
 print "<div class=\"titlebar\">" .
-	"<div class=\"logo\"><a href=\"/w2/index.php\"><img src=\"/w2/images/icon.png\"></a></div>" .
+	"<div class=\"logo\"><a href=\"/w2/index.php\"><img src=\"" . IMAGE_URI . "/icon.png\"></a></div>" .
 	"<div class=\"title\">$title</div>" .
 	"<div class=\"edit-div\"> " .
 		"<div><a class=\"first\" href=\"" . SELF . "?action=edit&amp;page=$upage\">Edit Page</a> </div>" .
