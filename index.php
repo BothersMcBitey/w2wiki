@@ -529,7 +529,7 @@ else if ( $action == "all_images" )
 		if ( $file[0] == "." )
 			continue;
 		array_push($filelist,	"<div class=\"gallery-element\">" . 
-												"<img src=\"" . IMAGE_URI . "/$file\"/>" . 
+												"<a href=\"" . IMAGE_URI . "/$file\" target=\"_blank\"><img src=\"" . IMAGE_URI . "/$file\"/></a>" . 
 												"<p><a href=\"" . IMAGE_URI . "/$file\" target=\"_blank\">$file</a></p>" .
 												"</div>");
 	}
