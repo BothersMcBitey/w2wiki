@@ -317,7 +317,7 @@ if ( $action == "edit" || $action == "new" )
 	$html .= AUTOSCALE_TEXTEDIT;
 	$html .= TRAP_KEY_INPUTS;
 
-	$html .= "<p><a href=\"/w2/index.php/Markdown Syntax\">Guide to Markdown</a></p>";
+	$html .= "<p><a href=\"" . SELF . "/Markdown Syntax\">Guide to Markdown</a></p>";
 	$html .= "<p><input type=\"hidden\" name=\"action\" value=\"save\" />";
 	$html .= "<input id=\"save\" type=\"submit\" value=\"Save\" />\n";
 	$html .= "<input id=\"cancel\" type=\"button\" onclick=\"history.go(-1);\" value=\"Cancel\" /></p>\n";
@@ -660,7 +660,7 @@ print "<header>\n";
 printToolbar();
 
 print "<div class=\"titlebar\">" .
-	"<div class=\"logo\"><a href=\"/w2/index.php\"><img src=\"/w2/icons/logo.png\"></a></div>" .
+	"<div class=\"logo\"><a href=\"" . SELF . "\"><img src=\"/w2/icons/logo.png\"></a></div>" .
 	"<div class=\"title\">$title</div>" .
 	"<div class=\"edit-div\"> " .
 		"<div><a class=\"first\" href=\"" . SELF . "?action=edit&amp;page=$upage\">Edit Page</a> </div>" .
