@@ -49,7 +49,7 @@ define('BASE_PATH', getcwd());
 // The path to the raw text documents maintained by W2
 // You should not use a trailing slash.
 
-define('IMAGE_FOLDER', '/img');
+define('IMAGE_FOLDER', '/images');
 define( 'PAGE_FOLDER', '/pages');
 
 // IMAGE_PATH
