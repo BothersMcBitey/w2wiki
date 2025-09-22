@@ -112,7 +112,7 @@ define('CSS_FILE', 'styles.css');
 // rules defined under the 'body' tag in styles.css
 // Switch to false to remove image entirely.
 
-define('BACKGROUND_IMAGE', true ? "style=\"background-image: url(" . IMAGE_PATH . "/background.png)\"" : "");
+define('BACKGROUND_IMAGE', true ? "style=\"background-image: url(" . IMAGE_URI . "/background.png)\"" : "");
 
 // -----------------------------------------------------------------------------
 // File upload settings
