@@ -1,4 +1,4 @@
-An extension of the [w2wiki project by Steven Frank](https://github.com/panicsteve/w2wiki)
+An in-progress extension of the [w2wiki project by Steven Frank](https://github.com/panicsteve/w2wiki)
 
 See a demo installation here: [w2 demo](https://creanderson.co.uk/w2/index.php)
 
