@@ -694,7 +694,7 @@ print "<div class=\"padding\"></div>";
 print "<footer id=\"foot\">This is the footer</footer>";
 print "</body>\n";
 
-print "<script src=\"/w2/javascript/proccess_intra_page_links.js\"></script>\n";
+print LINK_HEADERS;
 print JUMP_BUTTONS;
 print UNDERLINE_HEADINGS;
 

@@ -157,6 +157,13 @@ define('AUTOSCALE_TEXTEDIT', (true && JS_ENABLE) ? "<script src=\"/w2/javascript
 
 define('AUTOLINK_PAGE_TITLES', false);
 
+// LINK_HEADERS (JS)
+//
+// Scans the current page markdown and looks for any links targeting
+// headers within the same page.
+
+define('LINK_HEADERS', (true && JS_ENABLE) ? "<script src=\"/w2/javascript/proccess_intra_page_links.js\"></script>\n" : "");
+
 // JUMP_BUTTONS (JS)
 //
 // Add floating buttons which jump to the top and bottom of the page.
