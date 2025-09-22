@@ -647,7 +647,7 @@ print "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w
 print "<html>\n";
 print "<head>\n";
 print "<link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\"/>";
-print "<link rel=\"icon\" href=\"/w2/images/icon.png\">";
+print "<link rel=\"icon\" href=\"/w2/icons/logo.png\">";
 print "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=false\" />\n";
 
 print "<link type=\"text/css\" rel=\"stylesheet\" href=\"" . BASE_URI . "/" . CSS_FILE ."\" />\n";
@@ -660,7 +660,7 @@ print "<header>\n";
 printToolbar();
 
 print "<div class=\"titlebar\">" .
-	"<div class=\"logo\"><a href=\"/w2/index.php\"><img src=\"" . IMAGE_URI . "/icon.png\"></a></div>" .
+	"<div class=\"logo\"><a href=\"/w2/index.php\"><img src=\"/w2/icons/logo.png\"></a></div>" .
 	"<div class=\"title\">$title</div>" .
 	"<div class=\"edit-div\"> " .
 		"<div><a class=\"first\" href=\"" . SELF . "?action=edit&amp;page=$upage\">Edit Page</a> </div>" .
