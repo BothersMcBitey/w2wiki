@@ -315,7 +315,7 @@ if ( $action == "edit" || $action == "new" )
 	
 	# Edit specific Scripts
 	$html .= AUTOSCALE_TEXTEDIT;
-	$html .= "<script src=\"/w2/javascript/trap_keys.js\"></script>";
+	$html .= TRAP_KEY_INPUTS;
 
 	$html .= "<p><a href=\"/w2/index.php/Markdown Syntax\">Guide to Markdown</a></p>";
 	$html .= "<p><input type=\"hidden\" name=\"action\" value=\"save\" />";
@@ -367,8 +367,6 @@ else if ( $action == "uploaded" || $action == "markdown_uploaded" )
 			$valid_ext = VALID_UPLOAD_PAGE_EXTS;
 			$dest_folder = "pages";
 		}
-		debug_to_console("Filetype:");
-		debug_to_console($fileType);
 
 		if (in_array($fileType, explode(',', VALID_UPLOAD_TYPES)) &&
 			in_array($fileExt, explode(',', $valid_ext)))
@@ -696,8 +694,6 @@ print JUMP_BUTTONS;
 print UNDERLINE_HEADINGS;
 
 print "</html>\n";
-
-#debug_to_console($action);
 
 ?>
 

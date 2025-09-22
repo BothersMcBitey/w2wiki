@@ -164,6 +164,13 @@ define('EDIT_ROWS', 18);
 
 define('AUTOSCALE_TEXTEDIT', (true && JS_ENABLE) ? "<script src=\"/w2/javascript/textbox_scale.js\"></script>" : "");
 
+// TRAP_KEY_INPUTS (JS)
+//
+// On the edit scree, captures certain key inputs (e.g. ctrl+s) to
+// improve usability.
+
+define('TRAP_KEY_INPUTS', (true && JS_ENABLE) ? "<script src=\"/w2/javascript/trap_keys.js\"></script>" : "");
+
 // AUTOLINK_PAGE_TITLES
 //
 // Automatically converts any page titles appearing in text into links
