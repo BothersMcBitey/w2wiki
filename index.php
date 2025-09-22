@@ -522,7 +522,7 @@ else if ( $action == "all_date" )
 }
 else if ( $action == "all_images" )
 {
-	$dir = opendir(IMAGES_PATH);
+	$dir = opendir(IMAGE_PATH);
 	$filelist = array();
 	while ( $file = readdir($dir) )
 	{
