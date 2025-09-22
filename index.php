@@ -6,7 +6,7 @@
  * Copyright (C) 2007-2011 Steven Frank <http://stevenf.com/>
  *
  * Code may be re-used as long as the above copyright notice is retained.
- * See README.txt for full details.
+ * See README.md for full details.
  *
  * Written with Coda: <http://panic.com/coda/>
  *
@@ -281,7 +281,7 @@ $upage = urlencode($page);
 if ( $page == "" )
 	$page = DEFAULT_PAGE;
 
-$filename = PAGE_PATH . "/$page.txt";
+$filename = PAGE_PATH . "/$page.md";
 
 if ( file_exists($filename) )
 {
@@ -432,7 +432,7 @@ else if ( $action == "renamed" )
 	$prevpage = sanitizeFilename($pp);
 	$prevpage = urlencode($prevpage);
 	
-	$prevfilename = PAGE_PATH . "/$prevpage.txt";
+	$prevfilename = PAGE_PATH . "/$prevpage.md";
 
 	if ( rename($prevfilename, $filename) )
 	{
@@ -501,7 +501,7 @@ else if ( $action == "all_date" )
 		if ( $file[0] == "." )
 			continue;
 			
-		$filelist[preg_replace("/(.*?)\.txt/", "<a href=\"" . SELF . VIEW . "/\\1\">\\1</a>", $file)] = filemtime(PAGE_PATH . "/$file");
+		$filelist[preg_replace("/(.*?)\.md/", "<a href=\"" . SELF . VIEW . "/\\1\">\\1</a>", $file)] = filemtime(PAGE_PATH . "/$file");
 	}
 
 	closedir($dir);
