@@ -686,7 +686,7 @@ print "<div id=\"bottom\" class=\"float_button\">" .
 
 print "<div class=\"padding\"></div>";
 
-print "<footer id=\"foot\"><p>An extension of the w2wiki project by Steven Frank<p></footer>";
+print "<footer id=\"foot\"><p>An extension of the <a href=\"https://github.com/panicsteve/w2wiki\">w2wiki project</a> by Steven Frank<p></footer>";
 print "</body>\n";
 
 print LINK_HEADERS;
