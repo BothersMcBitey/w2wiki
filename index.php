@@ -108,7 +108,7 @@ function _handle_links($match)
 
 function _handle_images($match)
 {
-	return "<img src=\"" . BASE_URI . "/images/" . htmlentities($match[1]) . "\" alt=\"" . htmlentities($match[1]) . "\" />";
+	return "<img src=\"" . IMAGE_URI . "/" . htmlentities($match[1]) . "\" alt=\"" . htmlentities($match[1]) . "\" />";
 }
 
 
@@ -175,8 +175,7 @@ function toHTML($inText)
 	// removes any html <script> tags
 	$inText = preg_replace("/<[\/]*script>/", "", $inText);                
 
-	// not sure what this bit does. Something about looping through the Pages directory?
-	$dir = opendir(PAGES_PATH);
+	$dir = opendir(PAGE_PATH);
 	while ( $filename = readdir($dir) )
 	{
 		if ( $filename[0] == '.' )
@@ -282,7 +281,7 @@ $upage = urlencode($page);
 if ( $page == "" )
 	$page = DEFAULT_PAGE;
 
-$filename = PAGES_PATH . "/$page.md";
+$filename = PAGE_PATH . "/$page.txt";
 
 if ( file_exists($filename) )
 {
@@ -312,13 +311,11 @@ if ( $action == "edit" || $action == "new" )
 	if ( $action == "new" )
 		$text = NEW_FILE_CONTENT;
 
-	//$html .= "<p><textarea id=\"text\" name=\"newText\" rows=\"" . EDIT_ROWS . "\">$text</textarea></p>\n";
 	$html .= "<textarea id=\"text_edit\" name=\"newText\" rows=\"" . EDIT_ROWS . "\">$text</textarea>\n";
 	
 	# Edit specific Scripts
 	$html .= AUTOSCALE_TEXTEDIT;
-	$html .= "<script src=\"/w2/javascript/trap_tab.js\"></script>";
-	$html .= "<script src=\"/w2/javascript/trap_control.js\"></script>";
+	$html .= "<script src=\"/w2/javascript/trap_keys.js\"></script>";
 
 	$html .= "<p><a href=\"/w2/index.php/Markdown Syntax\">Guide to Markdown</a></p>";
 	$html .= "<p><input type=\"hidden\" name=\"action\" value=\"save\" />";
@@ -379,7 +376,7 @@ else if ( $action == "uploaded" || $action == "markdown_uploaded" )
 			$errLevel = error_reporting(0);
 
 			if ( move_uploaded_file($_FILES['userfile']['tmp_name'], 
-				BASE_PATH . "/$dest_folder/$dstName") === true ) 
+				BASE_PATH . "/img/$dstName") === true ) 
 			{
 				$html = "<p class=\"note\">File '$dstName' uploaded</p>\n";
 			}
@@ -414,7 +411,7 @@ else if ( $action == "save" )
 		//shell_exec("echo $return_code >> log.md");
 	}
 	else
-		$html = "<p class=\"note\">Error saving changes! Make sure your web server has write access to " . PAGES_PATH . "</p>\n";
+		$html = "<p class=\"note\">Error saving changes! Make sure your web server has write access to " . PAGE_PATH . "</p>\n";
 
 	$html .= toHTML($newText);
 }
@@ -437,12 +434,12 @@ else if ( $action == "renamed" )
 	$prevpage = sanitizeFilename($pp);
 	$prevpage = urlencode($prevpage);
 	
-	$prevfilename = PAGES_PATH . "/$prevpage.md";
+	$prevfilename = PAGE_PATH . "/$prevpage.txt";
 
 	if ( rename($prevfilename, $filename) )
 	{
 		// Success.  Change links in all pages to point to new page
-		if ( $dh = opendir(PAGES_PATH) )
+		if ( $dh = opendir(PAGE_PATH) )
 		{
 			while ( ($file = readdir($dh)) !== false )
 			{
@@ -461,7 +458,7 @@ else if ( $action == "renamed" )
 */
 else if ( $action == "all_name" )
 {
-	$dir = opendir(PAGES_PATH);
+	$dir = opendir(PAGE_PATH);
 	$filelist = array();
 
 	$color = "#ffffff";
@@ -499,14 +496,14 @@ else if ( $action == "all_name" )
 else if ( $action == "all_date" )
 {
 	$html = "<table>\n";
-	$dir = opendir(PAGES_PATH);
+	$dir = opendir(PAGE_PATH);
 	$filelist = array();
 	while ( $file = readdir($dir) )
 	{
 		if ( $file[0] == "." )
 			continue;
 			
-		$filelist[preg_replace("/(.*?)\.md/", "<a href=\"" . SELF . VIEW . "/\\1\">\\1</a>", $file)] = filemtime(PAGES_PATH . "/$file");
+		$filelist[preg_replace("/(.*?)\.txt/", "<a href=\"" . SELF . VIEW . "/\\1\">\\1</a>", $file)] = filemtime(PAGE_PATH . "/$file");
 	}
 
 	closedir($dir);
@@ -555,14 +552,14 @@ else if ( $action == "search" )
 
 	if ( trim($q) != "" )
 	{
-		$dir = opendir(PAGES_PATH);
+		$dir = opendir(PAGE_PATH);
 		
 		while ( $file = readdir($dir) )
 		{
 			if ( $file[0] == "." )
 				continue;
 
-			$text = file_get_contents(PAGES_PATH . "/$file");
+			$text = file_get_contents(PAGE_PATH . "/$file");
 			
                         if ( preg_match("/{$q}/i", $text) || preg_match("/{$q}/i", $file) )
 			{

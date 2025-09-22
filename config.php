@@ -33,19 +33,27 @@ define('JS_ENABLE', true);
 
 define('BASE_PATH', getcwd());
 
-// PAGES_PATH
+// PAGE_FOLDER and IMAGE_FOLDER
+// ============================
+// The path to the raw text documents maintained by W2
+// You should not use a trailing slash.
+
+define('IMAGE_FOLDER', '/img');
+define( 'PAGE_FOLDER', '/txt');
+
+// IMAGE_PATH
 //
 // The path to the raw markdown documents maintained by W2
 // You should not use a trailing slash.
 
-define('PAGES_PATH', BASE_PATH . '/pages');
+define('IMAGE_PATH', BASE_PATH . IMAGE_FOLDER);
 
-// IMAGES_PATH
+// PAGE_PATH
 //
-// The path to the images maintained by W2
+// The path to the raw text documents maintained by W2
 // You should not use a trailing slash.
 
-define('IMAGES_PATH', BASE_PATH . '/images');
+define('PAGE_PATH', BASE_PATH . PAGE_FOLDER);
 
 // BASE_URI
 //
@@ -53,6 +61,13 @@ define('IMAGES_PATH', BASE_PATH . '/images');
 // You should not use a trailing slash.
 
 define('BASE_URI', str_replace('/index.php', '', $_SERVER['SCRIPT_NAME']));
+
+// IMAGE_URI
+//
+// The base URI for this W2 installation. You only need to change this if we guess wrong.
+// You should not use a trailing slash.
+
+define('IMAGE_URI', BASE_URI . IMAGE_FOLDER);
 
 // SELF
 //
