@@ -44,13 +44,14 @@ define('JS_ENABLE', true);
 
 define('BASE_PATH', getcwd());
 
-// PAGE_FOLDER and IMAGE_FOLDER
+// PAGE_FOLDER, IMAGE_FOLDER, and ICON_FOLDER
 // ============================
 // The path to the raw text documents maintained by W2
 // You should not use a trailing slash.
 
 define('IMAGE_FOLDER', '/images');
 define( 'PAGE_FOLDER', '/pages');
+define('ICON_FOLDER', '/icons');
 
 // IMAGE_PATH
 //
@@ -79,6 +80,13 @@ define('BASE_URI', str_replace('/index.php', '', $_SERVER['SCRIPT_NAME']));
 // You should not use a trailing slash.
 
 define('IMAGE_URI', BASE_URI . IMAGE_FOLDER);
+
+// ICON_URI
+//
+// The URI to the icons used at various points in the site
+// You should not use a trailing slash.
+
+define('ICON_URI', BASE_URI . ICON_FOLDER);
 
 // SELF
 //

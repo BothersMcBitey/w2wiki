@@ -578,17 +578,17 @@ else if ( $action == "add_resource" )
 	$html .= "<div class=\"resource-gallery\">" . 
 				"<div class=\"resource-gallery-element\">" .
 					"<a href=\"" . SELF . "?action=new\">".
-					"<img src=\"/w2/icons/new_markdown.png\"/>" . 
+					"<img src=\"" . ICON_URI . "/new_markdown.png\"/>" . 
 					"<p>New Page</p></a>" .
 				"</div>" .
 				"<div class=\"resource-gallery-element\">" .
 					"<a href=\"" . SELF . "?action=new_from_template\">".
-					"<img src=\"/w2/icons/new_markdown_from_template.png\"/>" . 
+					"<img src=\"" . ICON_URI . "/new_markdown_from_template.png\"/>" . 
 					"<p>New From</p><p>Template</p></a>" .
 				"</div>" .
 				"<div class=\"resource-gallery-element\">" .
 					"<a href=\"" . SELF . "?action=upload_markdown\">" .
-					"<img src=\"/w2/icons/upload_markdown.png\"/>" . 
+					"<img src=\"" . ICON_URI . "/upload_markdown.png\"/>" . 
 					"<p>Upload Markdown</p></a>" .
 					"<p>[Doesn't work yet]</p>" . 
 				"</div>" .
@@ -597,7 +597,7 @@ else if ( $action == "add_resource" )
 			"<div class=\"resource-gallery\">" . 
 				"<div class=\"resource-gallery-element\">" .
 				    "<a href=\"" . SELF . "?action=upload\">" .
-					"<img src=\"/w2/icons/upload_image.png\"/>" . 
+					"<img src=\"" . ICON_URI . "/upload_image.png\"/>" . 
 					"<p>Upload Image</p></a>" .
 				"</div>" .
 			"</div>";		
@@ -647,7 +647,7 @@ print "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w
 print "<html>\n";
 print "<head>\n";
 print "<link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\"/>";
-print "<link rel=\"icon\" href=\"/w2/icons/logo.png\">";
+print "<link rel=\"icon\" href=\"" . ICON_URI . "/logo.png\">";
 print "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=false\" />\n";
 
 print "<link type=\"text/css\" rel=\"stylesheet\" href=\"" . BASE_URI . "/" . CSS_FILE ."\" />\n";
@@ -660,7 +660,7 @@ print "<header>\n";
 printToolbar();
 
 print "<div class=\"titlebar\">" .
-	"<div class=\"logo\"><a href=\"" . SELF . "\"><img src=\"/w2/icons/logo.png\"></a></div>" .
+	"<div class=\"logo\"><a href=\"" . SELF . "\"><img src=\"" . ICON_URI . "/logo.png\"></a></div>" .
 	"<div class=\"title\">$title</div>" .
 	"<div class=\"edit-div\"> " .
 		"<div><a class=\"first\" href=\"" . SELF . "?action=edit&amp;page=$upage\">Edit Page</a> </div>" .
