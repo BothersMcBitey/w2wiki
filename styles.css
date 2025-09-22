@@ -50,8 +50,12 @@ html {
 }
 
 a {
-  color: blue;
+  color: white;
   text-decoration: none;
+}
+
+a:hover {
+  background-color: red;
 }
 
 header a {
@@ -134,6 +138,7 @@ footer {
   color: white;
   display: flex;
   flex-direction: column;
+  padding-top: 1em;
 }
 
 header,
