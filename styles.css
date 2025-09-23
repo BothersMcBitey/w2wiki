@@ -557,6 +557,11 @@ hr.minor {
   font-size: 1.3rem;
 }
 
+#mobile-logo a img {
+  max-height: auto;
+  max-width: 50px;
+}
+
 @media (max-height: 900px){
   .resource-gallery-element p {
     font-size: 1rem;
