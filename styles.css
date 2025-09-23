@@ -65,17 +65,17 @@ footer a {
 }
 
 header a:hover, footer a:hover{
-  /*background-color: red;*/
+  background-color: rgb(34, 34, 34);
   animation: btn_hover 0.3s;
   animation-timing-function: ease;
 }
 
 @keyframes btn_hover {
   0%{
-    background-color: rgba(255, 0, 0, 0);
+    background-color: rgba(34, 34, 34, 0);
   }
   100%{
-    background-color: rgba(255, 0, 0, 255);
+    background-color: rgba(34, 34, 34, 255);
   }
 }
 
