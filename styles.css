@@ -367,7 +367,7 @@ img {
 
 #logo img {
   max-height: 6rem;
-  min-height: 4rem;
+  /* min-height: 4rem; */
   aspect-ratio: 1/1;
 }
 

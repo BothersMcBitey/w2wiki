@@ -683,8 +683,8 @@ print "<div class=\"titlebar\">" .
 	"<div id=\"logo\"><a href=\"" . SELF . "\"><img src=\"" . ICON_URI . "/logo.png\"></a></div>" .
 	"<div id=\"banner-title\">$title</div>" .
 	"<div id=\"edit-div\"> " .
-		"<div><a class=\"first\" href=\"" . SELF . "?action=edit&amp;page=$upage\">Edit Page</a> </div>" .
-		"<div><div id=\"edittime\">Last Edited:</div></div>" .
+		"<div><a id=\"edit-button\" href=\"" . SELF . "?action=edit&amp;page=$upage\">Edit Page</a> </div>" .
+		"<div><span id=\"edittime\">Last Edited:</span></div>" .
 		"<div>$datetime</div>" .
 	"</div></div>\n";
 
