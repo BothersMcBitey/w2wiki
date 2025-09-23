@@ -366,8 +366,8 @@ img {
 }
 
 #logo img {
-  max-height: 6rem;
-  min-height: 4rem;
+  max-height: 250px;
+  /*min-height: 4rem;*/
 }
 
 #edit-div {
