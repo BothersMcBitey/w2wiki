@@ -385,6 +385,10 @@ img {
   display: flex;
 }
 
+#edit-button{
+  padding: 0;
+}
+
 #edittime {
   padding-bottom: 0.1rem;
   font-size: 0.8rem;
