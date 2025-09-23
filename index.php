@@ -123,7 +123,7 @@ function printToolbar()
 	global $upage, $page, $action;
 
 	print "<div id=\"toolbar\">";
-	print "<div id=\"mobile-logo\"><a href=\"javascript:void(0);\" class=\"icon\" onclick=\"toggleDropdown()\"><img src=\"" . ICON_URI . "/logo.png\"></a></div>";
+	print "<div id=\"mobile-logo\"><a href=\"javascript:void(0);\" class=\"icon\" onclick=\"toggleDropdown()\"><img src=\"" . ICON_URI . "/logo.png\">↓</a></div>";
 
 	# left hand side
 	print "<div id=\"left\">";	
