@@ -54,12 +54,22 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+header a {
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+header a:hover, footer a:hover{
   background-color: red;
 }
 
-header a {
+.float_button a {
   color: white;
+  text-decoration: none;
 }
 
 body {
@@ -139,11 +149,6 @@ footer {
   display: flex;
   flex-direction: column;
   padding-top: 1em;
-}
-
-footer a {
-  color: white;
-  text-decoration: underline;
 }
 
 header,
@@ -375,11 +380,6 @@ img {
   background-color: #444444;
   border-radius: 6px;
   padding: 0.2em 0.4em;
-}
-
-.float_button a {
-  color: white;
-  text-decoration: none;
 }
 
 #top {
