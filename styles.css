@@ -41,7 +41,7 @@
 
 * {
   font-family: Helvetica, sans-serif;
-  font-size: 68pt;
+  font-size: 14pt;
   border: 0px solid black;
 }
 
@@ -568,7 +568,7 @@ hr.minor {
   }
 }
 
-@media (max-width: 6800px) {
+@media (max-width: 1400px) {
   #banner-title {
     width: 50%;
   }
