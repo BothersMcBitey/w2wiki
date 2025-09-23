@@ -72,27 +72,27 @@ header a:hover, footer a:hover{
 
 .titlebar a:hover{
   background-color: rgb(68, 68, 68);
+  animation: btn_hover_titlebar 0.3s;
+  animation-timing-function: ease;
 }
 
 @keyframes btn_hover {
-  0%{
-    /* background-color: rgba(34, 34, 34, 0); */
-    opacity: 0;
-  }
-  100%{
-    /* background-color: rgba(34, 34, 34, 255); */
-    opacity: 1;
-  }
-}
-
-/*@keyframes btn_hover {
   0%{
     background-color: rgba(34, 34, 34, 0);
   }
   100%{
     background-color: rgba(34, 34, 34, 255);
   }
-}*/
+}
+
+@keyframes btn_hover_titlebar {
+  0%{
+    background-color: rgba(68, 68, 68, 0);
+  }
+  100%{
+    background-color: rgba(68, 68, 68, 255);
+  }
+}
 
 
 .float_button a {
