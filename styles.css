@@ -54,13 +54,13 @@ a {
   text-decoration: none;
 }
 
-header a {
+header a, footer a {
   color: white;
+  padding: 0.1rem;
 }
 
 footer a {
-  color: white;
-  text-decoration: underline;
+  text-decoration: underline;  
 }
 
 header a:hover, footer a:hover{
