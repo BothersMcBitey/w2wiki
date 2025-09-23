@@ -381,6 +381,11 @@ img {
   align-items: center;
 }
 
+#logo a {
+  background-color: none;
+  animation: none;
+}
+
 #logo img {
   max-height: 6rem;
   /* min-height: 4rem; */
@@ -402,7 +407,6 @@ img {
 }
 
 #edit-button{
-  padding: inherit;
 }
 
 #edittime {
