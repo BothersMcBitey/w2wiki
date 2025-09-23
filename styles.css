@@ -71,7 +71,7 @@ header a:hover, footer a:hover{
 }
 
 .titlebar a:hover{
-  background-color: rgb(68, 68, 68);
+  background-color: rgb(14, 14, 14);
   animation: btn_hover_titlebar 0.3s;
   animation-timing-function: ease;
 }
@@ -87,10 +87,10 @@ header a:hover, footer a:hover{
 
 @keyframes btn_hover_titlebar {
   0%{
-    background-color: rgba(68, 68, 68, 0);
+    background-color: rgba(14, 14, 14, 0);
   }
   100%{
-    background-color: rgba(68, 68, 68, 255);
+    background-color: rgba(14, 14, 14, 255);
   }
 }
 
@@ -402,11 +402,11 @@ img {
 }
 
 #edit-button{
-  padding: 0;
+  padding: inherit;
 }
 
 #edittime {
-  padding-bottom: 0.1rem;
+  padding-bottom: 0.32rem;
   font-size: 0.8rem;
   text-align: right;
   color: #999999;
@@ -414,7 +414,7 @@ img {
 }
 
 #titledate {
-  padding-bottom: 0.1rem;
+  padding-bottom: 0.32rem;
   font-size: 0.8rem;
   text-align: right;
   color: #999999;
