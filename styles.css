@@ -601,6 +601,9 @@ hr.minor {
 
   #toolbar #mobile-logo{
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
     max-width: 50px;
   }
 }
