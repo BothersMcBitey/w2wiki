@@ -548,6 +548,13 @@ hr.minor {
 }
 
 
+#mobile-logo a {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
 @media (max-height: 900px){
   .resource-gallery-element p {
     font-size: 1rem;
@@ -601,9 +608,6 @@ hr.minor {
 
   #toolbar #mobile-logo{
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
     max-width: 50px;
   }
 }
