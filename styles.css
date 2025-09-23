@@ -41,8 +41,8 @@
 
 * {
   font-family: Helvetica, sans-serif;
-  font-size: 12pt;
-/*  border: 1px solid blackwwwww;*/
+  font-size: 14pt;
+  border: 0px solid black;
 }
 
 html {
@@ -112,7 +112,7 @@ header input {
   text-align: center;
 }
 
-main {
+#main {
   background-color: white;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -120,10 +120,17 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 14pt;
+  font-size: 1rem;
 }
 
-main form {
+#main, #padding {
+  max-width: 1200px;
+  width: max(60vw, 350px);
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+}
+
+#main form {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -131,26 +138,19 @@ main form {
   align-items: center;
 }
 
-main .content {
+#main .content {
   /*height: 100%;*/
   display: flex;
   flex-direction: column;
 }
 
-.padding {
+#padding {
   background-color: white;
   flex-grow: 1;
   min-height: 0px;
-  padding: 0;
+  padding: 0 auto;
 }
 
-main,
-.padding {
-  max-width: 1500px;
-  width: 75vw;
-  padding-left: 2.5vw;
-  padding-right: 2.5vw;
-}
 
 footer {
   width: 100%;
@@ -190,19 +190,19 @@ h5 {
 }
 
 h1 {
-  font-size: 20pt;
+  font-size: 2rem;
   font-weight: bold;
   /*	margin-bottom: 8px;*/
 }
 
 h2 {
-  font-size: 16pt;
+  font-size: 1.5rem;
   font-weight: bold;
   /*	margin-bottom: 8px;*/
 }
 
 h3 {
-  font-size: 14pt;
+  font-size: 1.2rem;
   font-weight: bold;
   /*	margin-bottom: 8px;*/
 }
@@ -239,7 +239,7 @@ p {
 
 pre {
   font-family: Menlo, Courier, monospace;
-  font-size: 12pt;
+  font-size: 1rem;
   margin-left: 12px;
   margin-bottom: 12px;
 
@@ -253,7 +253,7 @@ pre {
 
 code {
   font-family: "Ubuntu Mono", Menlo, Courier, monospace;
-  font-size: 12pt;
+  font-size: 1rem;
   border: 1px solid black;
   border-radius: 3px;
   background-color: aliceblue;
@@ -270,7 +270,7 @@ td {
 }
 
 textarea {
-  font-size: 12pt;
+  font-size: 1rem;
   width: 90%;
   background-color: #fafafa;
   padding: 1em;
@@ -282,28 +282,47 @@ img {
   height: auto;
 }
 
-.toolbar {
-  display: flex;
+#drop-menu {
+  display: none;
+  flex-direction: column;
   justify-content: space-between;
-  align-content: center;
-  text-align: center;
+  align-items: baseline;  
   background-color: #444444;
-  padding: 0.5em 1em;
-  padding-top: 1em;
+  padding: 0 1rem;
 }
 
-.toolbar div {
+#drop-menu a {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#toolbar {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #444444;
+  padding: 1rem;
+}
+
+#toolbar div {
   display: flex;
   width: 30%;
 }
 
-.toolbar div:last-of-type {
+#toolbar form{
+  width: 100%;
+}
+
+#toolbar div:last-of-type {
   justify-content: flex-end;
 }
 
 .tool {
   display: flex;
   padding: 0 1em;
+  align-items: center;
+  margin: 0;
 }
 
 .titlebar {
@@ -311,13 +330,13 @@ img {
   justify-content: space-evenly;
   background-color: #222222;
   color: #ffffff;
-  font-size: 36pt;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
   padding: 4px 4px 4px 12px;
 }
 
-.title {
+#banner-title {
   display: flex;
   justify-content: flex-start;
   align-content: center;
@@ -326,37 +345,32 @@ img {
   width: 80%;
   font-size: 1em;
   font-weight: bold;
-}
-
-@media (max-width: 1400px) {
-  .title {
-    width: 50%;
-  }
+  text-align: left;
 }
 
 .titlebar .a {
   display: flex;
 }
 
-.logo {
+#logo {
   width: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.logo a {
+#logo a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.logo img {
-  max-height: 8rem;
+#logo img {
+  max-height: 6rem;
   min-height: 4rem;
 }
 
-.edit-div {
+#edit-div {
   width: 30%;
   font-weight: normal;
   display: flex;
@@ -365,24 +379,25 @@ img {
   align-items: flex-end;
 }
 
-.edit-div div {
+#edit-div div {
   margin-bottom: 1em;
   display: flex;
 }
 
-.edittime {
-  padding-bottom: 3px;
-  font-size: 10pt;
+#edittime {
+  padding-bottom: 0.1rem;
+  font-size: 0.8rem;
   text-align: right;
   color: #999999;
-  margin: 0 0.5em 1em 2em;
+  margin: 0 0.2rem 0 2rem;
 }
 
-.titledate {
-  font-size: 10pt;
+#titledate {
+  padding-bottom: 0.1rem;
+  font-size: 0.8rem;
   text-align: right;
   color: #999999;
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 
 .float_button {
@@ -474,14 +489,10 @@ hr.minor {
   color: black;
   text-align: center;
   font-weight: bold;
-  font-size: 20pt;
+  font-size: 1.8rem;
 }
 
-@media (max-height: 900px){
-  .resource-gallery-element p {
-    font-size: 14pt;
-  }
-}
+
 
 .resource-gallery-element a {
   color: black;
@@ -496,3 +507,81 @@ hr.minor {
 #center {
   justify-content: center;
 }
+
+#search {
+  text-align: left;
+  height: 1.5rem;
+  border-radius: 3px;
+  width: 100%;
+}
+
+/*the enter title box for making a new page*/
+#title {
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: #fafafa;
+}
+
+
+@media (max-height: 900px){
+  .resource-gallery-element p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  #banner-title {
+    width: 50%;
+  }
+}
+
+@media (min-width: 501px){
+  #toolbar #mobile-logo, #drop-menu{
+      display: none !important;
+  }
+}
+
+/* Mobile devices =====================================================*/
+@media (max-width: 500px) {
+  
+  #main, #padding {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  #logo, #edittime, #titledate{
+    display: none;
+  }
+
+  #edit-button{
+    padding-right: 1rem;
+  }
+
+  #banner-title{
+    padding-left: 0.1em;
+    width: 80%;
+  }
+
+  /* Switch to mobile toolbar */
+  #toolbar #left, #toolbar #right{
+    display: none;
+  }
+  #toolbar #center{
+    width: 70%;
+  }
+  #toolbar #center .tool {
+    padding: 0;
+  }
+
+  #toolbar #mobile-logo{
+    display: flex;
+    max-width: 50px;
+  }
+}
+
+/*
+    document.getElementById("left").style.display = "none";
+    document.getElementById("right").style.display = "none";
+
+/* ====================================================================*/

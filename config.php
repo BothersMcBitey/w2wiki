@@ -204,7 +204,7 @@ define('TRAP_KEY_INPUTS', (true && JS_ENABLE) ? "<script src=\"/w2/javascript/tr
 // to the named page. This might degrade performance if you have many
 // thousands of pages.
 
-define('AUTOLINK_PAGE_TITLES', false);
+define('AUTOLINK_PAGE_TITLES', true);
 
 // LINK_HEADERS (JS)
 //

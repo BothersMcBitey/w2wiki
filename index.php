@@ -122,9 +122,11 @@ function printToolbar()
 {
 	global $upage, $page, $action;
 
-	print "<div class=\"toolbar\">";
+	print "<div id=\"toolbar\">";
+	print "<div id=\"mobile-logo\"><a href=\"javascript:void(0);\" class=\"icon\" onclick=\"toggleDropdown()\"><img src=\"/w2/images/icon.png\"></a></div>";
+
 	# left hand side
-	print "<div>";	
+	print "<div id=\"left\">";	
 	print "<a class=\"tool\" href=\"" . SELF . "\">Home</a>";
  	print "<a class=\"tool\" href=\"" . SELF . "?action=all_name\">See All Pages</a> ";
 	print "<a class=\"tool\" href=\"" . SELF . "?action=all_images\">See All Images</a> ";
@@ -138,7 +140,7 @@ function printToolbar()
 	print "</div>";
 
 	# right hand side
-	print "<div>";
+	print "<div id=\"right\">";
 	print "<a class=\"tool\" href=\"" . SELF . "?action=add_resource\">Create or Upload</a> ";
 	//print "<a class=\"tool\" href=\"" . SELF . "?action=new\">New Entry</a> ";
 	//if ( !DISABLE_UPLOADS )
@@ -148,6 +150,24 @@ function printToolbar()
 		print '<a class="tool" href="' . SELF . '?action=logout">Exit</a>';
 
 	print "</div>\n";
+
+	print "<div id=\"drop-menu\">";
+	print " <a href=\"" . SELF . "\">Home</a>";
+	print " <a href=\"" . SELF . "?action=all_name\">See All Pages</a>";
+	print " <a href=\"" . SELF . "?action=all_images\">See All Images</a> ";
+	print " <a href=\"" . SELF . "?action=add_resource\">Create or Upload</a> ";
+	print "</div>";
+
+	print "<script>
+	function toggleDropdown() {
+	var x = document.getElementById(\"drop-menu\");
+	if (x.style.display === \"flex\") {
+		x.style.display = \"none\";
+	} else {
+		x.style.display = \"flex\";
+	}
+	}
+	</script>";
 }
 
 
@@ -633,7 +653,7 @@ else
 
 	if ( TITLE_DATE )
 	{
-		$datetime = "<span class=\"titledate\">" . date(TITLE_DATE, @filemtime($filename)) . "</span>";
+		$datetime = "<span id=\"titledate\">" . date(TITLE_DATE, @filemtime($filename)) . "</span>";
 	}
 }
 
@@ -684,7 +704,7 @@ print "<div id=\"bottom\" class=\"float_button\">" .
     	"<a href=\"#foot\">Jump to Bottom</a>" .
 	  "</div>";
 
-print "<div class=\"padding\"></div>";
+print "<div id=\"padding\"></div>";
 
 print "<footer id=\"foot\"><p>An extension of the <a href=\"https://github.com/panicsteve/w2wiki\">w2wiki project</a> by Steven Frank<p></footer>";
 print "</body>\n";
