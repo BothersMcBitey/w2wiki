@@ -41,7 +41,7 @@
 
 * {
   font-family: Helvetica, sans-serif;
-  font-size: 14pt;
+  font-size: 68pt;
   border: 0px solid black;
 }
 
@@ -71,7 +71,7 @@ header a:hover, footer a:hover{
 }
 
 .titlebar a:hover{
-  background-color: rgb(14, 14, 14);
+  background-color: rgb(68, 68, 68);
   animation: btn_hover_titlebar 0.3s;
   animation-timing-function: ease;
 }
@@ -87,10 +87,10 @@ header a:hover, footer a:hover{
 
 @keyframes btn_hover_titlebar {
   0%{
-    background-color: rgba(14, 14, 14, 0);
+    background-color: rgba(68, 68, 68, 0);
   }
   100%{
-    background-color: rgba(14, 14, 14, 255);
+    background-color: rgba(68, 68, 68, 255);
   }
 }
 
@@ -568,7 +568,7 @@ hr.minor {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 6800px) {
   #banner-title {
     width: 50%;
   }
