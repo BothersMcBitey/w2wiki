@@ -365,9 +365,9 @@ img {
   align-items: center;
 }
 
-#logo a img {
-  max-height: 250px;
-  /*min-height: 4rem;*/
+#logo img {
+  max-height: 6rem;
+  min-height: 4rem;
 }
 
 #edit-div {
